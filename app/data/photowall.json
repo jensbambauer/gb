@@ -1,0 +1,686 @@
+{
+    "quotes": [
+        {
+            "text": "It bridges gorgeous architectural photography with breathtakingly good graphic design and branding skills and some solid compositing skills, while maintaining a firm grip on an imaginary, yet exemplar, mid-20th century design aesthetic.",
+            "author": "Artémis Psathas"
+        },
+        {
+            "text": "We are pulled into a thrilling game of allusion, recognition and idealisation.",
+            "author": "Stefan Reisner, LUMAS"
+        },
+        {
+            "text": "The American roadside vernacular architecture that never was. Haunting images.",
+            "author": "Michael Doret"
+        },
+        {
+            "text": "A scrumptious visual mash-up of 20th century art, design, architecture, photography and cinema.",
+            "author": "Messynessychic, FR"
+        },
+        {
+            "text": "A scrumptious visual mash-up of 20th century art, design, architecture, photography and cinema.",
+            "author": "Messynessychic, FR"
+        }
+    ],
+    "photos": [
+        {
+            "src": "/images/wall/artwork/1.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/2.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/3.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/4.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/5.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/6.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/7.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/8.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/9.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/10.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/11.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/12.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/13.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/14.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/15.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/16.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/17.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/18.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/19.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/20.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/21.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/22.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/23.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/24.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/25.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/26.jpg"
+        },
+        {
+            "src": "/images/wall/artwork/27.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/1.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/2.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/3.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/4.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/5.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/6.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/7.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/8.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/9.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/10.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/11.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/12.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/13.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/14.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/15.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/16.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/17.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/18.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/19.jpg"
+        },
+        {
+            "src": "/images/wall/misc/1.jpg"
+        },
+        {
+            "src": "/images/wall/misc/2.jpg"
+        },
+        {
+            "src": "/images/wall/misc/3.jpg"
+        },
+        {
+            "src": "/images/wall/misc/4.jpg"
+        },
+        {
+            "src": "/images/wall/misc/5.jpg"
+        },
+        {
+            "src": "/images/wall/misc/6.jpg"
+        },
+        {
+            "src": "/images/wall/misc/7.jpg"
+        },
+        {
+            "src": "/images/wall/misc/8.jpg"
+        },
+        {
+            "src": "/images/wall/misc/9.jpg"
+        },
+        {
+            "src": "/images/wall/misc/10.jpg"
+        },
+        {
+            "src": "/images/wall/misc/11.jpg"
+        },
+        {
+            "src": "/images/wall/misc/12.jpg"
+        },
+        {
+            "src": "/images/wall/misc/13.jpg"
+        },
+        {
+            "src": "/images/wall/misc/14.jpg"
+        },
+        {
+            "src": "/images/wall/misc/15.jpg"
+        },
+        {
+            "src": "/images/wall/misc/16.jpg"
+        },
+        {
+            "src": "/images/wall/misc/17.jpg"
+        },
+        {
+            "src": "/images/wall/misc/18.jpg"
+        },
+        {
+            "src": "/images/wall/misc/19.jpg"
+        },
+        {
+            "src": "/images/wall/misc/20.jpg"
+        },
+        {
+            "src": "/images/wall/misc/21.jpg"
+        },
+        {
+            "src": "/images/wall/misc/22.jpg"
+        },
+        {
+            "src": "/images/wall/misc/23.jpg"
+        },
+        {
+            "src": "/images/wall/misc/24.jpg"
+        },
+        {
+            "src": "/images/wall/misc/25.jpg"
+        },
+        {
+            "src": "/images/wall/misc/26.jpg"
+        },
+        {
+            "src": "/images/wall/misc/27.jpg"
+        },
+        {
+            "src": "/images/wall/misc/28.jpg"
+        },
+        {
+            "src": "/images/wall/misc/29.jpg"
+        },
+        {
+            "src": "/images/wall/misc/30.jpg"
+        },
+        {
+            "src": "/images/wall/misc/31.jpg"
+        },
+        {
+            "src": "/images/wall/misc/32.jpg"
+        },
+        {
+            "src": "/images/wall/misc/33.jpg"
+        },
+        {
+            "src": "/images/wall/misc/34.jpg"
+        },
+        {
+            "src": "/images/wall/misc/35.jpg"
+        },
+        {
+            "src": "/images/wall/misc/36.jpg"
+        },
+        {
+            "src": "/images/wall/misc/37.jpg"
+        },
+        {
+            "src": "/images/wall/misc/38.jpg"
+        },
+        {
+            "src": "/images/wall/misc/39.jpg"
+        },
+        {
+            "src": "/images/wall/misc/40.jpg"
+        },
+        {
+            "src": "/images/wall/misc/41.jpg"
+        },
+        {
+            "src": "/images/wall/misc/42.jpg"
+        },
+        {
+            "src": "/images/wall/misc/43.jpg"
+        },
+        {
+            "src": "/images/wall/misc/44.jpg"
+        },
+        {
+            "src": "/images/wall/misc/45.jpg"
+        },
+        {
+            "src": "/images/wall/misc/46.jpg"
+        },
+        {
+            "src": "/images/wall/misc/47.jpg"
+        },
+        {
+            "src": "/images/wall/misc/48.jpg"
+        },
+        {
+            "src": "/images/wall/misc/49.jpg"
+        },
+        {
+            "src": "/images/wall/misc/50.jpg"
+        },
+        {
+            "src": "/images/wall/misc/51.jpg"
+        },
+        {
+            "src": "/images/wall/misc/52.jpg"
+        },
+        {
+            "src": "/images/wall/misc/53.jpg"
+        },
+        {
+            "src": "/images/wall/misc/54.jpg"
+        },
+        {
+            "src": "/images/wall/misc/55.jpg"
+        },
+        {
+            "src": "/images/wall/misc/56.jpg"
+        },
+        {
+            "src": "/images/wall/misc/57.jpg"
+        },
+        {
+            "src": "/images/wall/misc/58.jpg"
+        },
+        {
+            "src": "/images/wall/misc/59.jpg"
+        },
+        {
+            "src": "/images/wall/misc/60.jpg"
+        },
+        {
+            "src": "/images/wall/misc/61.jpg"
+        },
+        {
+            "src": "/images/wall/misc/62.jpg"
+        },
+        {
+            "src": "/images/wall/misc/63.jpg"
+        },
+        {
+            "src": "/images/wall/misc/64.jpg"
+        },
+        {
+            "src": "/images/wall/misc/65.jpg"
+        },
+        {
+            "src": "/images/wall/misc/66.jpg"
+        },
+        {
+            "src": "/images/wall/misc/67.jpg"
+        },
+        {
+            "src": "/images/wall/misc/68.jpg"
+        },
+        {
+            "src": "/images/wall/misc/69.jpg"
+        },
+        {
+            "src": "/images/wall/misc/70.jpg"
+        },
+        {
+            "src": "/images/wall/misc/71.jpg"
+        },
+        {
+            "src": "/images/wall/misc/72.jpg"
+        },
+        {
+            "src": "/images/wall/misc/1.jpg"
+        },
+        {
+            "src": "/images/wall/misc/2.jpg"
+        },
+        {
+            "src": "/images/wall/misc/3.jpg"
+        },
+        {
+            "src": "/images/wall/misc/4.jpg"
+        },
+        {
+            "src": "/images/wall/misc/5.jpg"
+        },
+        {
+            "src": "/images/wall/misc/6.jpg"
+        },
+        {
+            "src": "/images/wall/misc/7.jpg"
+        },
+        {
+            "src": "/images/wall/misc/8.jpg"
+        },
+        {
+            "src": "/images/wall/misc/9.jpg"
+        },
+        {
+            "src": "/images/wall/misc/10.jpg"
+        },
+        {
+            "src": "/images/wall/misc/11.jpg"
+        },
+        {
+            "src": "/images/wall/misc/12.jpg"
+        },
+        {
+            "src": "/images/wall/misc/13.jpg"
+        },
+        {
+            "src": "/images/wall/misc/14.jpg"
+        },
+        {
+            "src": "/images/wall/misc/15.jpg"
+        },
+        {
+            "src": "/images/wall/misc/16.jpg"
+        },
+        {
+            "src": "/images/wall/misc/17.jpg"
+        },
+        {
+            "src": "/images/wall/misc/18.jpg"
+        },
+        {
+            "src": "/images/wall/misc/19.jpg"
+        },
+        {
+            "src": "/images/wall/misc/20.jpg"
+        },
+        {
+            "src": "/images/wall/misc/21.jpg"
+        },
+        {
+            "src": "/images/wall/misc/22.jpg"
+        },
+        {
+            "src": "/images/wall/misc/23.jpg"
+        },
+        {
+            "src": "/images/wall/misc/24.jpg"
+        },
+        {
+            "src": "/images/wall/misc/25.jpg"
+        },
+        {
+            "src": "/images/wall/misc/26.jpg"
+        },
+        {
+            "src": "/images/wall/misc/27.jpg"
+        },
+        {
+            "src": "/images/wall/misc/28.jpg"
+        },
+        {
+            "src": "/images/wall/misc/29.jpg"
+        },
+        {
+            "src": "/images/wall/misc/30.jpg"
+        },
+        {
+            "src": "/images/wall/misc/31.jpg"
+        },
+        {
+            "src": "/images/wall/misc/32.jpg"
+        },
+        {
+            "src": "/images/wall/misc/33.jpg"
+        },
+        {
+            "src": "/images/wall/misc/34.jpg"
+        },
+        {
+            "src": "/images/wall/misc/35.jpg"
+        },
+        {
+            "src": "/images/wall/misc/36.jpg"
+        },
+        {
+            "src": "/images/wall/misc/37.jpg"
+        },
+        {
+            "src": "/images/wall/misc/38.jpg"
+        },
+        {
+            "src": "/images/wall/misc/39.jpg"
+        },
+        {
+            "src": "/images/wall/misc/40.jpg"
+        },
+        {
+            "src": "/images/wall/misc/41.jpg"
+        },
+        {
+            "src": "/images/wall/misc/42.jpg"
+        },
+        {
+            "src": "/images/wall/misc/43.jpg"
+        },
+        {
+            "src": "/images/wall/misc/44.jpg"
+        },
+        {
+            "src": "/images/wall/misc/45.jpg"
+        },
+        {
+            "src": "/images/wall/misc/46.jpg"
+        },
+        {
+            "src": "/images/wall/misc/47.jpg"
+        },
+        {
+            "src": "/images/wall/misc/48.jpg"
+        },
+        {
+            "src": "/images/wall/misc/49.jpg"
+        },
+        {
+            "src": "/images/wall/misc/50.jpg"
+        },
+        {
+            "src": "/images/wall/misc/51.jpg"
+        },
+        {
+            "src": "/images/wall/shows/1.jpg"
+        },
+        {
+            "src": "/images/wall/shows/2.jpg"
+        },
+        {
+            "src": "/images/wall/shows/3.jpg"
+        },
+        {
+            "src": "/images/wall/shows/4.jpg"
+        },
+        {
+            "src": "/images/wall/shows/5.jpg"
+        },
+        {
+            "src": "/images/wall/shows/6.jpg"
+        },
+        {
+            "src": "/images/wall/shows/7.jpg"
+        },
+        {
+            "src": "/images/wall/shows/8.jpg"
+        },
+        {
+            "src": "/images/wall/shows/9.jpg"
+        },
+        {
+            "src": "/images/wall/shows/10.jpg"
+        },
+        {
+            "src": "/images/wall/shows/11.jpg"
+        },
+        {
+            "src": "/images/wall/shows/12.jpg"
+        },
+        {
+            "src": "/images/wall/shows/13.jpg"
+        },
+        {
+            "src": "/images/wall/shows/14.jpg"
+        },
+        {
+            "src": "/images/wall/shows/15.jpg"
+        },
+        {
+            "src": "/images/wall/shows/16.jpg"
+        },
+        {
+            "src": "/images/wall/shows/17.jpg"
+        },
+        {
+            "src": "/images/wall/shows/18.jpg"
+        },
+        {
+            "src": "/images/wall/shows/19.jpg"
+        },
+        {
+            "src": "/images/wall/shows/20.jpg"
+        },
+        {
+            "src": "/images/wall/shows/21.jpg"
+        },
+        {
+            "src": "/images/wall/shows/22.jpg"
+        },
+        {
+            "src": "/images/wall/shows/23.jpg"
+        },
+        {
+            "src": "/images/wall/shows/24.jpg"
+        },
+        {
+            "src": "/images/wall/shows/25.jpg"
+        },
+        {
+            "src": "/images/wall/shows/26.jpg"
+        },
+        {
+            "src": "/images/wall/shows/27.jpg"
+        },
+        {
+            "src": "/images/wall/shows/28.jpg"
+        },
+        {
+            "src": "/images/wall/shows/29.jpg"
+        },
+        {
+            "src": "/images/wall/shows/30.jpg"
+        },
+        {
+            "src": "/images/wall/shows/31.jpg"
+        },
+        {
+            "src": "/images/wall/shows/32.jpg"
+        },
+        {
+            "src": "/images/wall/shows/33.jpg"
+        },
+        {
+            "src": "/images/wall/shows/34.jpg"
+        },
+        {
+            "src": "/images/wall/shows/35.jpg"
+        },
+        {
+            "src": "/images/wall/shows/36.jpg"
+        },
+        {
+            "src": "/images/wall/shows/37.jpg"
+        },
+        {
+            "src": "/images/wall/shows/38.jpg"
+        },
+        {
+            "src": "/images/wall/shows/39.jpg"
+        },
+        {
+            "src": "/images/wall/shows/40.jpg"
+        },
+        {
+            "src": "/images/wall/shows/41.jpg"
+        },
+        {
+            "src": "/images/wall/shows/42.jpg"
+        },
+        {
+            "src": "/images/wall/shows/43.jpg"
+        },
+        {
+            "src": "/images/wall/shows/44.jpg"
+        },
+        {
+            "src": "/images/wall/shows/45.jpg"
+        },
+        {
+            "src": "/images/wall/shows/46.jpg"
+        },
+        {
+            "src": "/images/wall/shows/47.jpg"
+        },
+        {
+            "src": "/images/wall/shows/48.jpg"
+        },
+        {
+            "src": "/images/wall/shows/49.jpg"
+        },
+        {
+            "src": "/images/wall/shows/50.jpg"
+        },
+        {
+            "src": "/images/wall/shows/51.jpg"
+        }
+    ]
+}

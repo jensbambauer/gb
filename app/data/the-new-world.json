@@ -1,0 +1,239 @@
+{   
+    "sizes": [
+        {
+            "size": "100cm x 62,5cm / 39.4\" x 24.6\"",
+            "edition": "Edition of 100",
+            "finishing-options": [
+                {
+                    "title": "Print only",
+                    "price": "{\"eu\": \"460\",\"usa\": \"380\",\"world\": \"380\"}",
+                    "weight": "3"
+                },
+                {
+                    "title": "Alum. Dibond",
+                    "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\"}",
+                    "weight": "9.5"
+                },
+                {
+                    "title": "Framed",
+                    "price": "{\"eu\": \"660\",\"usa\": \"560\",\"world\": \"560\"}",
+                    "weight": "12"   
+                }
+            ]
+        }
+    ],
+    "artworks": {
+        "all-mart": {
+            "title": "All Mart",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "broken-hearts-hotel": {
+            "title": "The Broken Hearts Hotel",
+            "series": "Series II / 2013",
+            "image": "tnw_bhh.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "ever-mall": {
+            "title": "Ever Mall",
+            "series": "Series II / 2013",
+            "image": "tnw_evermall.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "fox-theatre": {
+            "title": "Fox Theatre",
+            "series": "Series I / 2011",
+            "image": "tnw_fox.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "liquor-swamp": {
+            "title": "Liquor Swamp",
+            "series": "Series II / 2013",
+            "image": "tnw_lsw.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "oasis-diner": {
+            "title": "Oasis Diner",
+            "series": "Series II / 2013",
+            "image": "tnw_ooasisdiner.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "trans-pacific-terminal": {
+            "title": "Trans Pacific Terminal",
+            "series": "Series I / 2011",
+            "image": "tnw_terminal.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "the-goodlife": {
+            "title": "The Good Life",
+            "series": "Series I / 2011",
+            "image": "tnw_tgl.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "modern-gentleman": {
+            "title": "The Modern Gentleman",
+            "series": "Series I / 2011",
+            "image": "tnw_tmg.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "world-of-drugs": {
+            "title": "World of Drugs",
+            "series": "Series II / 2013",
+            "image": "tnw_wod.jpg",
+            "additional-buying-options": [
+                {
+                    "title": "At Lumas Galleries and Online Store",
+                    "sizes": [
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": ""
+                        },
+                        {
+                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
+                            "link": "",
+                            "soldout": true
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+
+

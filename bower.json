@@ -1,0 +1,14 @@
+{
+  "name": "gb-v10",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {
+    "flexslider": "~2.5.0",
+    "handlebars": "~3.0.3",
+    "knockout": "knockoutjs#~3.3.0",
+    "twitter-fetcher": "~13.1.0"
+  }
+}

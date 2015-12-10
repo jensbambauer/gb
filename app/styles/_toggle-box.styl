@@ -1,0 +1,33 @@
+.toggle-trigger {
+    position: absolute;
+    left: -3000%;
+}
+
+.toggle-box {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+    
+    .toggle-trigger:checked + & {
+        max-height: 300px;
+        opacity: 1;
+    }
+}
+
+.toggle-box-container {
+    
+    .toggle-trigger:checked + & {
+        
+        .toggle-box {
+            max-height: 600px;
+            opacity: 1;
+        }
+        
+        .toggle-hide {
+            opacity: 0;
+        }
+        
+    }
+    
+}

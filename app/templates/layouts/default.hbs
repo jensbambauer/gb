@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        {{>html-head}}
+    </head>
+    <body>
+        <div class="page{{#if transparent-header}} transparent-header{{/if}}">
+            {{>header}}
+                
+            <div class="main">
+                {{> body }}
+            </div>
+            
+            <footer class="legal-footer content">
+                © 2009 - 2015 | ALL RIGHTS RESERVED | <a href="">TERMS AND CONDITIONS</a> | <a href="">CONTACT</a>
+            </footer>
+        </div>
+
+        {{>before-body}}
+    </body>
+</html>

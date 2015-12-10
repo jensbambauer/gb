@@ -1,0 +1,122 @@
+.collection-thumbnails {
+    overflow: hidden;
+    background-size: 100%;
+    
+    li {
+        float: left;
+        width: 256px;
+        height: 256px;
+        
+        
+        &.collection-title {
+            width: 512px;
+            
+            h1 {
+                text-indent: -3000%;
+            }
+        }
+        
+        a {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-indent: -3000%;
+            display: block;
+            
+            span {
+                display: none;
+            }
+            
+            &:before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-image: url(../images/thumb-sprite.jpg);
+                background-size: 400% auto;
+                filter: grayscale(100%) brightness(0.5);
+                transition: all 0.5s ease-in-out;
+            }
+            
+            &:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-image: url(../images/thumb-logos.png);
+                background-size: 400% auto;
+            }
+            
+            &:hover {
+                &:before {
+                    filter: grayscale(0%) brightness(0.75);
+                }
+            }
+            
+            &.the-modern-gentleman {
+                &:after {
+                    
+                }
+            }
+            
+            &.fox-theatre {
+                &:before , &:after {
+                    background-position: -256px 0;
+                }
+            }
+            
+            &.trans-pacific-terminal {
+                &:before , &:after {
+                    background-position: -512px 0;
+                }
+            }
+            &.all-mart {
+                &:before , &:after {
+                    background-position: -768px 0;
+                }
+            }
+            &.the-goodlife {
+                &:before , &:after {
+                    background-position: 0 -256px;
+                }
+            }
+            &.liquor-swamp {
+                &:before , &:after {
+                    background-position: -256px -256px;
+                }
+            }
+            &.broken-hearts-hotel {
+                &:before , &:after {
+                    background-position: 0 -512px;
+                }
+            }
+            &.ever-mall {
+                &:before , &:after {
+                    background-position: 0px -512px;
+                }
+            }
+            &.oasis-diner {
+                &:before , &:after {
+                    background-position: -256px -512px;
+                }
+            }
+            &.world-of-drugs {
+                &:before , &:after {
+                    background-position: -512px -512px;
+                }
+            }
+            &.broken-hearts-hotel {
+                &:before , &:after {
+                    background-position: -768px -512px;
+                }
+            }
+        }
+    }
+    
+}

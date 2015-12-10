@@ -1,0 +1,57 @@
+---
+template: default.hbs
+slug: the-new-world
+title: The New World
+---
+<section class="content">
+    <ul class="collection-thumbnails">
+        {{#each the-new-world.artworks }}
+            <li>
+                <a href="{{@key}}/index.html" class="{{@key}}">{{title}}</a>
+            </li>
+        {{/each}}
+    </ul>
+    <div class="collection-intro">
+        <label for="collection-intoduction" class="button">Show Introduction</label>
+        <input type="checkbox" class="toggle-trigger" id="collection-intoduction">
+        <div class="toggle-box-container">
+            <h2 class="toggle-hide">Anonymous Places of the 20th Century</h2>
+            <div class="toggle-box has-delay">
+                <div class="scroll">
+                    <p>"The New World" revisits anonymous places of the 20th century. It is set in a time characterized by the conflict of Modernist and Postmodernist convictions, its influence on later 20th century history, and ultimately, the world we live in today.</p>
+                    <p>On a formal level, this conflict defines the aesthetics of the collection. The interrelation of rational graphic design and anonymous photorealism reflects the contrast of manmade ideals and the acceptance of life in chaos. "The New World" is shaped by an original set of rules, metrics and processes. This enables the revelation of eclectic utopias that, for better or worse, withhold the definition of a photograph.</p>
+                    <p>Manufactured in limited editions of 100 per piece, the photographic exposures, optionally laminated on DIBOND® or framed, are essentially based on the partnership's architectural photography in the United States.</p>
+                    <p>"The New World" revisits anonymous places of the 20th century. It is set in a time characterized by the conflict of Modernist and Postmodernist convictions, its influence on later 20th century history, and ultimately, the world we live in today.</p>
+                    <p>On a formal level, this conflict defines the aesthetics of the collection. The interrelation of rational graphic design and anonymous photorealism reflects the contrast of manmade ideals and the acceptance of life in chaos. "The New World" is shaped by an original set of rules, metrics and processes. This enables the revelation of eclectic utopias that, for better or worse, withhold the definition of a photograph.</p>
+                    <p>Manufactured in limited editions of 100 per piece, the photographic exposures, optionally laminated on DIBOND® or framed, are essentially based on the partnership's architectural photography in the United States.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+<section class="content">
+    <ul class="teaser grid">
+        <li class="col-1-3">
+            <a href="" class="teaser-content">
+                <img src="http://placehold.it/682x384">
+                <span>View Series</span>
+            </a>
+        </li>
+        <li class="col-1-3">
+            <a href="" class="teaser-content">
+                <img src="http://placehold.it/682x384">
+                <span>View Series</span>
+            </a>
+        </li>
+        <li class="col-1-3">
+            <a href="" class="teaser-content">
+                <img src="http://placehold.it/682x384">
+            </a>
+        </li>
+    </ul>
+</section>
+
+{{>photowall-quote }}

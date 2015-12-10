@@ -1,0 +1,321 @@
+open-animation = 0.6s
+
+.overlay-cart {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    position: fixed;
+    top: -2000px;
+    z-index: 20;
+    overflow: auto;
+    color: black;
+
+    .overlay-cart-container {
+        position: relative;
+        
+        .content:before {
+            width: 143px;
+            height: 48px;
+            content: "";
+            position: absolute;
+            right: 80px;
+            top: 0;
+            background: white;
+            transition: all open-animation ease-in-out;
+        }
+    }
+
+    .header, .cart-footer , .cart-total , .row {
+        opacity: 0;
+    }
+
+    &.open {
+        top: 0;
+        
+        .overlay-cart-container .content:before,
+        .header,
+        .cart-total , .cart-footer,
+        .button.primary.push-right {
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        .overlay-cart-container .content:before {
+            animation-name: cartReveal;
+        }
+        
+        .header {
+            animation-name: fadeIn;
+            animation-delay: 0.5s;
+        }
+        
+        .cart-total , .cart-footer {
+            animation-name: fadeIn;
+            animation-delay: 1.5s;
+        }
+        
+        .cart-total {
+            animation-delay: 1s;
+        }
+        
+        .button.primary.push-right {
+            /*animation-name: pulse;
+            animation-delay: 2s;*/
+        }
+        
+        .row {
+            animation-name: flipInX;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        .cart-rows .row:nth-child(1) {
+            animation-delay: 0.4s;
+        };
+        .cart-rows .row:nth-child(2) {
+            animation-delay: 0.6s;
+        };
+        .cart-rows .row:nth-child(3) {
+            animation-delay: 0.8s;
+        };
+        .cart-rows .row:nth-child(4) {
+            animation-delay: 1s;
+        };
+        .cart-rows .row:nth-child(5) {
+            animation-delay: 1.2s;
+        };
+        .cart-rows .row:nth-child(6) {
+            animation-delay: 1.4s;
+        };
+        .cart-rows .row:nth-child(7) {
+            animation-delay: 1.6s;
+        };        
+            
+        
+    }
+
+    .content {
+        position: relative;
+    }
+    
+    .logo {
+        background: transparent;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .close {
+        position: absolute;
+        right: 32px;
+        top: 0;
+    }
+    
+}
+
+.cart-table {
+    padding: 64px 0; 
+    position: relative;
+    
+    .header {
+        padding: 0 64px; 
+    }
+    
+    .col-1 {
+        width: 192px;
+    }
+    
+    .col-2 {
+        width: 320px;
+        padding-right: 75px;
+    }
+    
+    .col-3 {
+        width: 155px;
+    }
+    
+    .col-4 {
+        width: 120px;
+    }
+    
+    .col-5 {
+        width: 108px;
+        padding-right: 20px;
+    }
+    
+    .no-headline {
+        padding-top: 43px;
+    }
+    
+    .price {
+        font-size: 24px;
+        padding-top: 37px;
+        display: block;
+        text-align: right;
+    }
+    
+    .row {
+        height: 128px;
+        position: relative;
+        padding: 0 64px;
+        margin-bottom: 32px;
+        color: black;
+        font-size: 16px;
+        
+        .remove {
+            position: absolute;
+            left: 0;
+            margin-top: -16px;
+            top: 50%;
+        }
+        
+        h3 {
+            font-size: 20px;
+            margin-bottom: 23px;
+        }
+        
+        .ups-shipping {
+            background: #2e1711;
+            color: white;
+            border-top: 4px solid #ffb323;
+            padding: 22px 30px;
+            overflow: hidden;
+            position: relative;
+            
+            h2 {
+                color: #ffb323;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .left {
+                width: 316px;
+                float: left;
+            }
+            
+            .price {
+                position: absolute;
+                right: 20px;
+                bottom: 30px;
+                color: #ffb323;
+            }
+        }
+    }
+    
+    .cart-total {
+        border-top: 4px solid black;
+        padding-top: 30px;
+        font-size: 24px;
+        margin: 0 64px;
+        
+        .price {
+            float: right;
+            padding-top: 0;
+            padding-right: 20px;
+        }
+    }
+    
+    h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .shipping-table {
+        padding-bottom: 60px;
+        
+        .header , .row {
+            height: auto;
+            padding: 0;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .col-1 {
+            width: 192px;
+            color: #999999;
+        }
+        .col-2 , .col-3 {
+            width: 257px;
+            padding-right: 0;
+        }
+        .col-4 {
+            width: 62px;
+        }
+    }
+    
+    .cart-footer {
+        margin: 60px 64px 0;
+        
+        .primary {
+            margin-left: 16px;
+        }
+    }
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -10deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 5deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -3deg);
+  }
+
+  to {
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes cartReveal {
+  from {
+      width: 143px;
+      height: 48px;
+  }
+
+  50% {
+      width: 100%;
+      right: 0;
+      height: 48px;
+  }   
+
+  to {
+      width: 100%;
+      height: 100%;
+      right: 0;
+  }
+}

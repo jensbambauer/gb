@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        {{>html-head}}
+    </head>
+    <body>
+        <div class="page{{#if transparent-header}} transparent-header{{/if}}">
+            {{>header}}
+                
+            <div class="main">
+
+                {{#if overview}}
+                    <section class="content blog">
+                        
+                        {{#withSort journal 'data.date'}}
+                            {{#each this.pages }}
+                                <article>
+                                    <time>{{data.date}}</time>
+                    
+                                    {{#if data.slides }}
+                                        <div class="flexslider" data-role="slider">
+                                            <ul class="slides">
+                                                {{#each data.slides}}
+                                                    <li>
+                                                        <figure>
+                                                            <img src="{{this.src}}">
+                                                            {{#if this.caption}}
+                                                                <figcaption>{{this.caption}}</figcaption>
+                                                            {{/if}}
+                                                        </figure>
+                                                    </li>
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    {{/if}}
+                                    <div class="collapsed">
+                                        {{#markdown}}
+                                            {{this.page}}
+                                        {{/markdown}}
+                                    </div>
+                                    <a href="posts/{{this.slug}}/index.html">Continue reading…</a>
+                            </article>
+                            {{/each}}
+                        {{/withSort}}
+                        
+                    </section>
+                {{else}}
+                    <article class="content blog">
+                    
+                        <time>{{date}}</time>
+                    
+                        {{#if slides }}
+                            <div class="flexslider" data-role="slider">
+                                <ul class="slides">
+                                    {{#each slides}}
+                                        <li>
+                                            <figure>
+                                                <img src="{{this.src}}">
+                                                {{#if this.caption}}
+                                                    <figcaption>{{this.caption}}</figcaption>
+                                                {{/if}}
+                                            </figure>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        {{/if}}
+                    
+                        {{#markdown}}
+                            {{> body }}
+                        {{/markdown}}
+                        
+                        <p class="back-button">
+                            <a href="../../index.html" class="button inverted">View all entries</a>
+                        </p>
+                    </article>
+                {{/if}}
+                
+                <section class="content">
+                    <ul class="teaser grid">
+                        <li class="col-1-3">
+                            <a href="/the-new-world/index.html" class="teaser-content">
+                                <img src="/images/teaser/the-new-world.jpg">
+                                <span>View Series</span>
+                            </a>
+                        </li>
+                        <li class="col-1-3">
+                            <div class="teaser-content">
+                                <img src="/images/teaser/twitter.jpg">
+                                <div class="tweets" data-role="tweets">
+                                    <h4>Activity on <a href="http://www.twitter.com/geebirdandbamby" target="_blank">@geebirdandbamby</a></h4>
+                                    <div class="tweet-container">
+                                        <ul data-bind="foreach: tweets">
+                                            <li data-bind="css: {active: $index() === 0}">
+                                                <a data-bind="text: date, attr: {href: link}" target="_blank"></a><br>
+                                                <div data-bind="html: tweet"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="icon-more more-tweets" data-role="next-tweet"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-1-3">
+                            <a href="" class="teaser-content">
+                                <img src="/images/teaser/about.jpg">
+                                <span class="center">About G&amp;B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                {{>photowall-newsletter }}
+                
+            </div>
+            
+            <footer class="legal-footer content">
+                © 2009 - 2015 | ALL RIGHTS RESERVED | <a href="">TERMS AND CONDITIONS</a> | <a href="">CONTACT</a>
+            </footer>
+        </div>
+
+        {{>before-body}}
+    </body>
+</html>

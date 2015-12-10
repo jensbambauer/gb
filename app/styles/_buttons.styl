@@ -1,0 +1,62 @@
+.button-list {
+    button {
+        width: 100%;
+    }
+    
+    li {
+        margin-bottom: 4px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+button , .button {
+    display: inline-block;
+    background: white;
+    color: black;
+    border: 0;
+    cursor: pointer;
+    @extend $uppercase;
+    font-family: 'nimbussanbold';
+    font-size: 12px;
+    padding: 0 30px;
+    line-height: 32px;
+    text-align: center;
+    white-space: nowrap;
+    
+    &.primary {
+        background-color: #4b9e70;
+        color: white;
+    }
+    
+    &.inverted {
+        background-color: black;
+        color: white;
+    }
+    
+}
+
+.hint-box {
+    @extend .button;
+    
+    background: transparent;
+    color: #c74a46;
+    border: 2px solid #c74a46;
+    line-height: 30px;    
+}
+
+input[type="text"] , input[type="email"] {
+    @extend .button;
+    cursor: default;
+    padding: 0 10px;
+}
+
+.input-submit-group {
+    input[type="email"] {
+        display: block;
+        float: left;
+        width: 154px;
+    }
+}

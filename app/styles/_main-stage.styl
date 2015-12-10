@@ -1,0 +1,76 @@
+.main-stage {
+    position: relative;
+    overflow: hidden;
+    
+    .stage {
+        width: 100%;
+        margin: auto;
+        display: block;
+        height: 640px;
+        
+        @media screen and (min-width: 1024px) and (min-height: 640px) {
+            width: calc(100vw - 48px); 
+            height: calc(62.5782228vw - 48px); /* 100/56.25 = 1.778 */
+            max-height: calc(100vh - 48px);
+            max-width: calc(159.80vh - 48px); /* 16/9 = 1.778  1.5980*/
+        }
+    
+        @media screen and (max-height: 640px) {
+            height: 640px;
+            width: auto;
+        }
+    }
+    
+    .transparent-header & .stage {
+        @media screen and (min-width: 1024px) and (min-height: 640px) {
+            width: 100vw; 
+            height: 62.5782228vw; /* 100/56.25 = 1.778 */
+            max-height: 100vh;
+            max-width: 100%; /* 16/9 = 1.778  1.5980*/
+        }
+    }
+    
+    &.single {
+        .stage {
+            @media screen and (min-width: 1024px) and (min-height: 640px) {
+                width: auto; 
+                height: calc(62.5782228vw); /* 100/56.25 = 1.778 */
+                max-height: calc(100vh - 128px);
+                max-width: calc(159.80vh - 224px); /* 16/9 = 1.778  1.5980*/
+            }    
+        }
+    }
+    
+    .flex-viewport {
+        height: 100%;
+    }
+    
+    .slides {
+        height: 100%;
+        
+        li {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            text-align: center;
+            
+            img {
+                transform: translate3d(1px, 0, 0);
+                margin-left: -1px;
+            }
+            
+            .button {
+                position: absolute;
+                right: 3.125%;
+                bottom: 3.125%;
+            }
+    
+        }
+        
+        .slide-content {
+            height: 100%;
+            position: relative;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+#navigation-toggle {
+    position: absolute;
+    left: -3000%;
+}
+
+.main-nav {
+    position: absolute;
+    right: 32px;
+    top: 0;
+    overflow: hidden;
+    transform: translate3d(0,-100%,0);
+    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    margin-top: 48px;
+    
+    
+    #navigation-toggle:checked + & {
+        transform: translate3d(0,0,0);
+        margin-top: 0px;
+        
+        label {
+            background: #eeeeee;
+            color: black;
+        }
+    }
+    
+    li {
+        width: 192px;
+        height: 48px;
+        display: block;
+        background: white;
+        border-bottom: 2px solid #eee;
+    }
+    
+    a {
+        width: 100%;
+        display: block;
+        line-height: 46px;
+        font-size: 16px;
+        padding-left: 32px;
+        color: black;
+    }
+    
+    .cart-link {
+        background: white;
+        width: 144px;
+        height: 48px;
+        line-height: 48px;
+        float: left;
+        font-size: 20px;
+    }
+    
+    label {
+        @extend $squarebutton;
+    }
+}
