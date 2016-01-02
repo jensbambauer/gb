@@ -128,3 +128,54 @@
         position: absolute;
     }
 }
+
+.contact-form , .contact-message, .thank-you{
+    
+    label {
+        width: 184px;
+        display: inline-block;
+        line-height: 32px;
+    }
+    
+    input {
+        width: 320px;
+        text-align: left;
+    }
+    
+    .text-input {
+        width: 740px;
+        height: 167px;
+        
+        textarea {
+            height: 100%;
+            width: 100%;            
+        }
+    }
+    
+    .form-row {
+        display: flex;
+    }
+    
+    .form-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 22px;
+    }
+    
+    .form-row + .form-row {
+        margin-top: 8px;
+    }
+    
+    legend {
+        line-height: 32px;
+        margin-right: 32px;
+    }
+    
+    button + button {
+        margin-left: 18px;
+    }
+    
+    &.hidden {
+        display: none !important;
+    }
+}

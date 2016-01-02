@@ -34,6 +34,8 @@ var overlay = (function (overlay, $, undefined) {
                 .append( $(id).html() )
                 .append( '<a class="icon-button close">close</a>' );
             
+            $(document).trigger('overlay-content-ready');
+            
             $('.overlay .close').one('click', onCloseClick);
         }
         

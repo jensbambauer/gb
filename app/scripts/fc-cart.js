@@ -50,6 +50,16 @@ FC.override = FC.override || {};
             totalWeight(FC.json.total_weight);
             
             total(FC.json.total_item_price + shipping);
+            
+            // update navigaiton link
+            $('[data-role="toggle-cart"]')
+                .attr('data-item-count', FC.json.item_count);
+            
+            if(items().length) {
+                $('[data-role="toggle-cart"]').addClass('hasItems');
+            } else {
+                $('[data-role="toggle-cart"]').removeClass('hasItems');
+            }
         };
         
         var calcShippingPrice = function() {
@@ -218,7 +228,7 @@ FC.override = FC.override || {};
         });
         
         FC.client.on('cart-update', function() {
-            console.log('update');
+            //console.log('update');
         });
         
         $(document).on('regionUpdate', function() {

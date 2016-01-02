@@ -1,17 +1,17 @@
 ---
 template: default.hbs
-slug: the-new-world
-title: The New World
+slug: in-the-news
+title: In The News
 ---
 <section class="content">
-    <ul class="collection-thumbnails">
-        {{#each the-new-world.artworks }}
+    <ul class="collection-thumbnails collection-itn">
+        {{#each in-the-news.artworks }}
             <li>
                 <a href="{{@key}}/index.html" class="{{@key}}">{{title}}</a>
             </li>
         {{/each}}
     </ul>
-    <div class="collection-intro">
+    <!--div class="collection-intro">
         <label for="collection-intoduction" class="button toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>
         <input type="checkbox" class="toggle-trigger" id="collection-intoduction">
         <div class="toggle-box-container">
@@ -24,9 +24,7 @@ title: The New World
                 </div>
             </div>
         </div>
-        
-        
-    </div>
+    </div-->
 </section>
 
 {{>photowall-quote }}

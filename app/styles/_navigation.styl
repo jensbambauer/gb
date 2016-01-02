@@ -45,11 +45,34 @@
         width: 144px;
         height: 48px;
         line-height: 48px;
-        float: left;
+        float: right;
         font-size: 20px;
+        position: relative;
+        display: none;
+                
+        &[data-item-count]:after {
+            content: attr(data-item-count);
+            background: #4b9e70;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;            
+            display: block;
+            position: absolute;
+            right: 32px;
+            top: 10px;
+            line-height: 30px;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        &.hasItems {
+            display: block;
+        }
     }
     
     label {
         @extend $squarebutton;
+        float: right;
     }
 }

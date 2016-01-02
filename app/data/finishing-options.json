@@ -2,7 +2,13 @@
     "options": [
         {
             "id": "print-only",
-            "images": [
+            "slides": [
+                {
+                    "src": "http://placehold.it/768x512"
+                },
+                {
+                    "src": "http://placehold.it/768x512"
+                },
                 {
                     "src": "http://placehold.it/768x512"
                 }
@@ -12,7 +18,7 @@
         },
         {
             "id": "aluminium-dibond",
-            "images": [
+            "slides": [
                 {
                     "src": "http://placehold.it/768x512"
                 }
@@ -22,7 +28,7 @@
         },
         {
             "id": "framed",
-            "images": [
+            "slides": [
                 {
                     "src": "http://placehold.it/768x512"
                 }

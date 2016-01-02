@@ -1,11 +1,12 @@
+<!-- artwork-single -->
 {{ include 'main-stage' this }}
 
 <section class="content">
     {{ include 'artwork-details' this }}
-    
-    {{ include 'artwork-finishing-teaser' the-new-world }}
+
+    {{ includeYamlStringAsContext 'artwork-finishing-teaser' this 'category' }}
 </section>
 
-{{>photowall-journal }}
+{{>photowall-contact }}
 
 {{>finishing-options-layer }}

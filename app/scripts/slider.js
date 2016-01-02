@@ -70,8 +70,8 @@ var slider = (function (slider, $, undefined) {
         onResize();
     }
     
-    var init = function() {
-        $('[data-role="slider"]').each(function() {
+    var init = function(selector) {
+        $(selector).each(function() {
             
             if ( $(this).data('order') === 'random') {
                 var categories = [];
@@ -136,6 +136,10 @@ var slider = (function (slider, $, undefined) {
         
     };
 
-    init();
+    init('[data-role="slider"]');
+    
+    $(document).on('overlay-content-ready', function() {
+        init('[data-role="overlay-slider"]');
+    });
   
 })(slider || {}, jQuery);

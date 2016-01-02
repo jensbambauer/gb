@@ -313,7 +313,7 @@ module.exports = function (grunt) {
               files: [{
                   expand: true,
                   cwd: '<%= config.app %>/pages/',
-                  src: ['{,*/}*.hbs'],
+                  src: ['{,*/}*.hbs', '{,*/}*.md'],
                   dest: '.tmp/'
               }, {
                   expand: true,
@@ -326,11 +326,20 @@ module.exports = function (grunt) {
           build: {
               options: {
                   assets: 'dist'
-              },    
-              expand: true,
-              cwd: '<%= config.app %>/pages/',
-              src: ['{,*/}*.hbs'],
-              dest: 'dist/'
+              },
+              files: [
+                 {
+                     expand: true,
+                     cwd: '<%= config.app %>/pages/',
+                     src: ['{,*/}*.hbs', '{,*/}*.md'],
+                     dest: 'dist/'
+                 }, {
+                    expand: true,
+                    cwd: '<%= config.app %>/journal/',
+                    src: ['{,*/}*.hbs', '{,*/}*.md'],
+                    dest: 'dist/journal/'
+                }
+              ]
           }
         },
         
@@ -530,7 +539,7 @@ module.exports = function (grunt) {
     grunt.registerTask('deploy-dev', [
         'build',
         'ftp-deploy:dev',
-        /*'nodemailer'*/
+        'nodemailer'
     ]);
 
     grunt.registerTask('default', [

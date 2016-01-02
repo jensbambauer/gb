@@ -45,9 +45,8 @@
                         
                     </section>
                 {{else}}
-                    <article class="content blog">
-                    
-                        <time>{{date}}</time>
+                    <article class="content blog {{#if meta-page}}meta{{/if}} {{#if fullslider}}fullslider{{/if}}">
+                        {{#if date}}<time>{{date}}</time>{{/if}}
                     
                         {{#if slides }}
                             <div class="flexslider" data-role="slider">
@@ -69,10 +68,13 @@
                         {{#markdown}}
                             {{> body }}
                         {{/markdown}}
-                        
-                        <p class="back-button">
-                            <a href="../../index.html" class="button inverted">View all entries</a>
-                        </p>
+
+                        {{#if date}}
+                            <p class="back-button">
+                                <a href="../../index.html" class="button inverted">View all entries</a>
+                            </p>
+                        {{/if}}
+
                     </article>
                 {{/if}}
                 
@@ -114,9 +116,7 @@
                 
             </div>
             
-            <footer class="legal-footer content">
-                © 2009 - 2015 | ALL RIGHTS RESERVED | <a href="">TERMS AND CONDITIONS</a> | <a href="">CONTACT</a>
-            </footer>
+            {{>footer}}
         </div>
 
         {{>before-body}}

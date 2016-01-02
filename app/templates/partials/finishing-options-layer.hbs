@@ -1,14 +1,19 @@
+<!-- finishing-options-layer -->
 <div class="overlay-contents">
     {{#finishing-options }}
         {{~#each options}}
             <div id="{{id}}">
-                <div class="flexslider">
-                    <ul>
-                        <li>
-                            <img src="http://placehold.it/768x512">
-                        </li>
+                <div class="flexslider" data-role="overlay-slider">
+                    <ul class="slides">
+                        {{#each slides}}
+                            <li>
+                                <figure>
+                                    <img src="{{this.src}}">
+                                </figure>
+                            </li>
+                        {{/each}}
                     </ul>
-                </div>
+                </div>                
                 <div class="text-content">
                     <h3>{{{headline}}}</h3>
                     {{{text}}}

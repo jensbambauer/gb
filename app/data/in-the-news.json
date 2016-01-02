@@ -1,0 +1,51 @@
+{   
+    "sizes": [
+        {
+            "size": "62cm x 40,5cm / 24.4\" x 15.94\"",
+            "edition": "Edition of 100",
+            "finishing-options": [
+                {
+                    "title": "Print only",
+                    "price": "{\"eu\": \"460\",\"usa\": \"380\",\"world\": \"380\"}",
+                    "weight": "3"
+                },
+                {
+                    "title": "Framed",
+                    "price": "{\"eu\": \"660\",\"usa\": \"560\",\"world\": \"560\"}",
+                    "weight": "12"   
+                }
+            ]
+        }
+    ],
+    "finish-teaser": [
+        {
+            "title": "Print only",
+            "id": "print-only",
+            "img": "/images/teaser/finish-print.jpg"
+        },
+        {
+            "title": "Framed",
+            "id": "framed",
+            "img": "/images/teaser/finish-framed.jpg"
+        }
+    ],
+    "artworks": {
+        "liquor-swamp": {
+            "title": "Liquor Swampg",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg"
+        },
+        "world-of-drugs": {
+            "title": "World of Drugs",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg"
+        },
+        "all-mart": {
+            "title": "All Mart",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg"
+        }
+    }
+}
+
+

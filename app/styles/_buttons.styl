@@ -47,10 +47,20 @@ button , .button {
     line-height: 30px;    
 }
 
-input[type="text"] , input[type="email"] {
-    @extend .button;
+input[type="text"] , input[type="email"], textarea {
+    @extend $typewriter;
+    font-size: 16px;
+    font-weight: normal;
     cursor: default;
-    padding: 0 10px;
+    padding: 0 30px;
+    color: black;
+}
+
+
+textarea {
+    text-align: left;
+    line-height: 22px;
+    padding-top: 5px;
 }
 
 .input-submit-group {

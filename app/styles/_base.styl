@@ -209,6 +209,10 @@ header {
         padding: 100px 32px 97px;
         color: black;
     }
+    
+    &.fullslider {
+        padding: 0px 32px 97px;
+    }
 }
 
 .round {
@@ -263,4 +267,21 @@ header {
     img {
         opacity: 0;
     }
+}
+
+.toggle-switch {
+    
+    .on {
+        display: none;
+    }
+    
+    &.toggled {
+        .off {
+            display: none;
+        }
+        .on {
+            display: inline;
+        }
+    }
+    
 }

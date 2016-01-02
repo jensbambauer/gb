@@ -118,5 +118,45 @@
             }
         }
     }
-    
+ 
+    &.collection-itn {
+        li {
+            width: 33%;
+            height: 512px;
+            
+            a {
+                &:before {
+                    background-image: url(../images/itn-thumb-sprite.jpg);
+                    background-size: 1024px auto;
+                    background-position: 0 0;
+                    filter: none;
+                }
+                
+                &:after {
+                    height: 50%;
+                    top: 75%;
+                    margin-top: -256px;
+                    background-position: -335px -380px;
+                }
+                
+                &.all-mart {
+                    &:before {
+                        background-position: -682px 0;
+                    }
+                    &:after {
+                        background-position: -1012px -51px;
+                    }
+                }
+                
+                &.world-of-drugs {
+                    &:before {
+                        background-position: -341px 0;
+                    }
+                    &:after {
+                        background-position: -670px -715px;
+                    }
+                }
+            }
+        }
+    }
 }
