@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     // Configurable paths
     var config = {
         app: 'app',
-        dist: 'dist'
+        dist: 'docs'
     };
 
     // Define the configuration for all the tasks
@@ -207,7 +207,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '.tmp/styles/',
                     src: '{,*/}*.css',
-                    dest: 'dist/styles/'
+                    dest: 'docs/styles/'
                 }]
             }
         },
@@ -336,19 +336,19 @@ module.exports = function (grunt) {
           },
           build: {
               options: {
-                  assets: 'dist'
+                  assets: 'docs'
               },
               files: [
                  {
                      expand: true,
                      cwd: '<%= config.app %>/pages/',
                      src: ['{,*/}*.hbs', '{,*/}*.md'],
-                     dest: 'dist/'
+                     dest: 'docs/'
                  }, {
                     expand: true,
                     cwd: '<%= config.app %>/journal/',
                     src: ['{,*/}*.hbs', '{,*/}*.md'],
-                    dest: 'dist/journal/'
+                    dest: 'docs/journal/'
                 }
               ]
           }
@@ -391,17 +391,6 @@ module.exports = function (grunt) {
                     dest: '<%= config.dist %>',
                     src: [
                         'scripts/{,*/}*.*'
-                    ]
-                }]
-            },
-            assets: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '/Users/Jens/Dropbox/G&B/website/assets',
-                    dest: '<%= config.app %>/images',
-                    src: [
-                        '*'
                     ]
                 }]
             },
@@ -547,8 +536,7 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'useminPrepare',
         'copy:scripts',
-        'concat',
-        'uglify',
+        //'uglify',
         'copy:dist',
         //'modernizr',
         'rev',
