@@ -1,11 +1,7 @@
 
 Cart DHL
 Cart Spinner
-
 Checkout Styling
-
-ITN Collecton Overview
-
 Icon Font / Icons einbinden
 
 

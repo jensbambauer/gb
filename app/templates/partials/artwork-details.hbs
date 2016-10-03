@@ -19,7 +19,7 @@
                     {{ includeYamlStringAsContext 'artwork-finishing-options' this 'category' }}
                 </tbody>
             </table>
-            
+
             {{#each additional-buying-options }}
                 <table>
                     <thead>
@@ -27,16 +27,21 @@
                             <td colspan="4">{{title}}</td>
                         </tr>
                     </thead>
-                    
+
                     <tbody>
                         {{#each sizes}}
                             <tr>
                                 <td colspan="3">{{size}}</td>
-                                {{#if soldout}}
-                                <td class="col-4"><span class="hint-box">Sold Out</span></td>
+                                {{#if fewleft}}
+                                    <td class="col-4"><a class="button outline-button" target="_blank" href="{{link}}">Few Left</a></td>
                                 {{else}}
-                                    <td class="col-4"><a class="button" href="{{link}}">Visit Lumas</a></td>
+                                    {{#if soldout}}
+                                        <td class="col-4"><a class="button hint-box" target="_blank" href="{{link}}">Sold Out</a></td>
+                                    {{else}}
+                                        <td class="col-4"><a class="button" target="_blank" href="{{link}}">Visit Lumas</a></td>
+                                    {{/if}}
                                 {{/if}}
+
                             </tr>
                         {{/each}}
                     </tbody>

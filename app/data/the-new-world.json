@@ -1,4 +1,4 @@
-{   
+{
     "sizes": [
         {
             "size": "100cm x 62,5cm / 39.4\" x 24.6\"",
@@ -6,18 +6,18 @@
             "finishing-options": [
                 {
                     "title": "Print only",
-                    "price": "{\"eu\": \"460\",\"usa\": \"380\",\"world\": \"380\"}",
-                    "weight": "3"
+                    "price": "{\"eu\": \"439\",\"usa\": \"369\",\"world\": \"369\"}",
+                    "weight": "0.615"
                 },
                 {
                     "title": "Alum. Dibond",
                     "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\"}",
-                    "weight": "9.5"
+                    "weight": "10"
                 },
                 {
                     "title": "Framed",
-                    "price": "{\"eu\": \"660\",\"usa\": \"560\",\"world\": \"560\"}",
-                    "weight": "12"   
+                    "price": "{\"eu\": \"899\",\"usa\": \"755\",\"world\": \"755\"}",
+                    "weight": "15"
                 }
             ]
         }
@@ -43,23 +43,7 @@
         "all-mart": {
             "title": "All Mart",
             "series": "Series I / 2011",
-            "image": "tnw_allmart.jpg",
-            "additional-buying-options": [
-                {
-                    "title": "At Lumas Galleries and Online Store",
-                    "sizes": [
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
-                        },
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
-                        }
-                    ]
-                }
-            ]
+            "image": "tnw_allmart.jpg"
         },
         "broken-hearts-hotel": {
             "title": "The Broken Hearts Hotel",
@@ -67,16 +51,15 @@
             "image": "tnw_bhh.jpg",
             "additional-buying-options": [
                 {
-                    "title": "At Lumas Galleries and Online Store",
+                    "title": "At LUMAS Galleries and Online Store",
                     "sizes": [
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
+                            "size": "167cm x 100cm / 65.8\" x 39.4\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/the_broken_hearts_hotel"
                         },
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
+                            "size": "67cm x 40cm / 26.4\" x 15.8\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/the_broken_hearts_hotel/"
                         }
                     ]
                 }
@@ -85,23 +68,7 @@
         "ever-mall": {
             "title": "Ever Mall",
             "series": "Series II / 2013",
-            "image": "tnw_evermall.jpg",
-            "additional-buying-options": [
-                {
-                    "title": "At Lumas Galleries and Online Store",
-                    "sizes": [
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
-                        },
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
-                        }
-                    ]
-                }
-            ]
+            "image": "tnw_evermall.jpg"
         },
         "fox-theatre": {
             "title": "Fox Theatre",
@@ -109,16 +76,16 @@
             "image": "tnw_fox.jpg",
             "additional-buying-options": [
                 {
-                    "title": "At Lumas Galleries and Online Store",
+                    "title": "At LUMAS Galleries and Online Store",
                     "sizes": [
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
+                            "size": "167cm x 100cm / 65.8\" x 39.4\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/fox_theatre/"
                         },
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
+                            "size": "67cm x 40cm / 26.4\" x 15.8\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/fox_theatre/",
+                            "fewleft": true
                         }
                     ]
                 }
@@ -130,16 +97,16 @@
             "image": "tnw_lsw.jpg",
             "additional-buying-options": [
                 {
-                    "title": "At Lumas Galleries and Online Store",
+                    "title": "At LUMAS Galleries and Online Store",
                     "sizes": [
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
+                            "size": "167cm x 100cm / 65.8\" x 39.4\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/liquor_swamp/"
                         },
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
+                            "size": "67cm x 40cm / 26.4\" x 15.8\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/liquor_swamp/",
+                            "fewleft": true
                         }
                     ]
                 }
@@ -151,16 +118,15 @@
             "image": "tnw_ooasisdiner.jpg",
             "additional-buying-options": [
                 {
-                    "title": "At Lumas Galleries and Online Store",
+                    "title": "At LUMAS Galleries and Online Store",
                     "sizes": [
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
+                            "size": "167cm x 100cm / 65.8\" x 39.4\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/oasis_diner/"
                         },
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
+                            "size": "67cm x 40cm / 26.4\" x 15.8\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/oasis_diner/"
                         }
                     ]
                 }
@@ -169,23 +135,7 @@
         "trans-pacific-terminal": {
             "title": "Trans Pacific Terminal",
             "series": "Series I / 2011",
-            "image": "tnw_terminal.jpg",
-            "additional-buying-options": [
-                {
-                    "title": "At Lumas Galleries and Online Store",
-                    "sizes": [
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
-                        },
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
-                        }
-                    ]
-                }
-            ]
+            "image": "tnw_terminal.jpg"
         },
         "the-goodlife": {
             "title": "The Good Life",
@@ -193,16 +143,15 @@
             "image": "tnw_tgl.jpg",
             "additional-buying-options": [
                 {
-                    "title": "At Lumas Galleries and Online Store",
+                    "title": "At LUMAS Galleries and Online Store",
                     "sizes": [
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
+                            "size": "167cm x 100cm / 65.8\" x 39.4\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/the_good_life/"
                         },
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
+                            "size": "67cm x 40cm / 26.4\" x 15.8\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/the_good_life/"
                         }
                     ]
                 }
@@ -214,16 +163,17 @@
             "image": "tnw_tmg.jpg",
             "additional-buying-options": [
                 {
-                    "title": "At Lumas Galleries and Online Store",
+                    "title": "At LUMAS Galleries and Online Store",
                     "sizes": [
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
+                            "size": "167cm x 100cm / 65.8\" x 39.4\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/the_modern_gentleman/",
+                            "soldout": true
                         },
                         {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
+                            "size": "67cm x 40cm / 26.4\" x 15.8\" / Edition of 100",
+                            "link": "http://www.LUMAS.de/pictures/geebird_bamby_geebird_bamby/the_modern_gentleman/",
+                            "fewleft": true
                         }
                     ]
                 }
@@ -232,25 +182,7 @@
         "world-of-drugs": {
             "title": "World of Drugs",
             "series": "Series II / 2013",
-            "image": "tnw_wod.jpg",
-            "additional-buying-options": [
-                {
-                    "title": "At Lumas Galleries and Online Store",
-                    "sizes": [
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": ""
-                        },
-                        {
-                            "size": "100cm x 62,5cm / 39.4\" x 24.6\" / Edition of 100",
-                            "link": "",
-                            "soldout": true
-                        }
-                    ]
-                }
-            ]
+            "image": "tnw_wod.jpg"
         }
     }
 }
-
-

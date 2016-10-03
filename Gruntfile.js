@@ -25,9 +25,9 @@ module.exports = function (grunt) {
 
     // Define the configuration for all the tasks
     grunt.initConfig({
-    
+
         pkg: grunt.file.readJSON('./package.json'),
-    
+
         // Project settings
         config: config,
 
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
                 open: true,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
@@ -157,27 +157,38 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         stylus: {
-          
+
             options: {
                 paths: ['<%= config.app %>/styles/main.styl'],
                 sourcemap:{
-                  comment:true, //Adds a comment with the `sourceMappingURL` to the generated CSS (default: `true`) 
-                  inline: true, //Inlines the sourcemap with full source text in base64 format (default: `false`) 
-                  sourceRoot: ".", //"sourceRoot" property of the generated sourcemap 
-                  basePath:"." //Base path from which sourcemap and all sources are relative (default: `.`) 
+                  comment:true, //Adds a comment with the `sourceMappingURL` to the generated CSS (default: `true`)
+                  inline: true, //Inlines the sourcemap with full source text in base64 format (default: `false`)
+                  sourceRoot: ".", //"sourceRoot" property of the generated sourcemap
+                  basePath:"." //Base path from which sourcemap and all sources are relative (default: `.`)
                 }
-                
+
             },
             serve: {
                 files: {
                   '.tmp/styles/main.css': ['<%= config.app %>/styles/main.styl'] // compile and concat into single file
                 }
             }
-          
+
         },
-        
+
+        svgstore: {
+            options: {
+                prefix : 'icon-'
+            },
+            default : {
+              files: {
+                'app/images/icon-sprite.svg': ['/Users/Jens/Dropbox/G&B/website/assets/icons/*.svg'],
+              },
+            }
+        },
+
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
@@ -285,7 +296,7 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        
+
         assemble: {
           options: {
             // metadata
@@ -296,12 +307,12 @@ module.exports = function (grunt) {
                 structure: ':slug/index.html'
             },
             layoutdir: "<%= config.app %>/templates/layouts/",
-              
+
             // templates
             partials: ['<%= config.app %>/templates/partials/*.hbs'],
             layout: ['default.hbs'],
             helpers: ['helpers/helper-*.js'],
-            
+
             collections: [{
                 name: 'journal',
                 sortby: 'date',
@@ -321,7 +332,7 @@ module.exports = function (grunt) {
                   src: ['{,*/}*.hbs', '{,*/}*.md'],
                   dest: '.tmp/journal/'
               }]
-              
+
           },
           build: {
               options: {
@@ -342,8 +353,8 @@ module.exports = function (grunt) {
               ]
           }
         },
-        
-        
+
+
         // By default, your `index.html`'s <!-- Usemin block --> will take care of
         // minification. These next options are pre-configured if you do not wish
         // to use the Usemin blocks.
@@ -383,7 +394,17 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
-            
+            assets: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '/Users/Jens/Dropbox/G&B/website/assets',
+                    dest: '<%= config.app %>/images',
+                    src: [
+                        '*'
+                    ]
+                }]
+            },
             dist: {
                 files: [{
                     expand: true,
@@ -431,19 +452,19 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 'stylus:serve',
-                'assemble:serve'
+                'assemble:serve',
+                'svgstore'
             ],
             test: [
                 'copy:styles'
             ],
             dist: [
                 //'imagemin',
-                'copy',
-                'svgmin'
+                'copy'
             ]
         },
-        
-        
+
+
         'ftp-deploy': {
           dev: {
             auth: {
@@ -455,7 +476,7 @@ module.exports = function (grunt) {
             dest: '/gandb/preview/webroot'
           }
         },
-        
+
         nodemailer: {
             options: {
               transport: {
@@ -480,7 +501,7 @@ module.exports = function (grunt) {
             },
             inline: { /* use above options*/ }
           }
-        
+
     });
 
 
@@ -497,8 +518,7 @@ module.exports = function (grunt) {
             'watch'
         ]);
     });
-    
-    
+
     grunt.registerTask('server', function (target) {
         grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
         grunt.task.run([target ? ('serve:' + target) : 'serve']);
@@ -535,7 +555,7 @@ module.exports = function (grunt) {
         'usemin',
         //'htmlmin'
     ]);
-    
+
     grunt.registerTask('deploy-dev', [
         'build',
         'ftp-deploy:dev',

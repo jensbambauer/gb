@@ -4,16 +4,18 @@
         {{>html-head}}
     </head>
     <body>
+
         <div class="page{{#if transparent-header}} transparent-header{{/if}}">
             {{>header}}
-                
+
             <div class="main">
                 {{> body }}
             </div>
-            
+
             {{>footer}}
         </div>
 
+        {{includeSvgSprite "app/images/icon-sprite.svg"}}
         {{>before-body}}
     </body>
 </html>

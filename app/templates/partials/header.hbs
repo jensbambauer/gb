@@ -8,10 +8,7 @@
                                 <a href="{{assets}}/index.html">Home</a>
                             </li>
                             <li>
-                                <a href="{{assets}}/the-new-world/index.html">The new world</a>
-                            </li>
-                            <li>
-                                <a href="{{assets}}/in-the-news/index.html">In the News</a>
+                                <a href="{{assets}}/the-new-world/index.html">The New World</a>
                             </li>
                             <li>
                                 <a href="{{assets}}/meta/about/index.html">About</a>
@@ -23,7 +20,7 @@
                                 <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>
                             </li>
                         </ul>
-                        <label for="navigation-toggle" class="icon-navi"></label>
+                        <label for="navigation-toggle" class="icon-navi"><svg><use xlink:href="#icon-hamburger"/></svg></label>
                         <a href="" class="cart-link" data-role="toggle-cart">Cart</a>
                     </nav>
                 </div>
@@ -32,7 +29,7 @@
                 <div class="overlay-cart-container">
                     <div class="content">
                         <a class="logo" href="index.html"><img src="/images/logo_black.svg" width="198" height="28"></a>
-                        <a class="icon-button close" href="#" data-role="toggle-cart"></a>
+                        <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
                         <div class="cart-table">
                             <ul class="header">
                                 <li class="col-1">Identifier</li>
@@ -44,12 +41,22 @@
                             <div class="cart-rows">
                                 <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
                                 <div class="row">
+                                    <!--ko if: totalWeight() > 5 -->
                                     <div class="ups-shipping">
-                                        <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br><small style="font-size: 14px" data-bind="text: shippingFormula"></small></h2>
-                                        <p class="left"><span data-bind="text: totalWeight"></span>kg Billed Dimensional Weight<br>Insurance covering Order Value</p>
-                                        <p class="left" data-bind="if: region() === 'eu'">Includes 19% VAT</p>
+                                        <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                        <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                        <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
                                         <span class="price" data-bind="text: shippingCost"></span>
                                     </div>
+                                    <!-- /ko -->
+                                    <!--ko if: totalWeight() < 5 -->
+                                    <div class="dhl-shipping">
+                                        <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                        <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                        <p class="left">DHL GoGreen</p>
+                                        <span class="price" data-bind="text: shippingCost"></span>
+                                    </div>
+                                    <!-- /ko -->
                                 </div>
                             </div>
                             <div class="cart-total">
@@ -59,40 +66,13 @@
                                 <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
                             </div>
                             <div class="cart-footer">
-                                <!--input type="checkbox" class="toggle-trigger" id="shipping-cost">
-                                <div class="toggle-box">
-                                    <h3>Shipping Cost Overview</h3>
-                                    <div class="shipping-table">
-                                        <ul class="header">
-                                            <li class="col-2">European Union</li>
-                                            <li class="col-2">European Union Multiple</li>
-                                            <li class="col-3">United States</li>
-                                            <li class="col-4">World</li>
-                                        </ul>
-                                        <div class="row">
-                                            <div class="col-2">
-                                                
-                                            </div>
-                                            <div class="col-2">
-                                                
-                                            </div>
-                                            <div class="col-3">
-                                                
-                                            </div>
-                                            <div class="col-4">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <label for="shipping-cost" class="button inverted">Show Shipping Cost</label-->
                                 <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
                                 <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
                             </div>
-                            
+
                             <script type="text/html" id="cart-row">
-                                <div class="row">
-                                    <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem" data-id="\{{id}}"></a>
+                                <div class="row" data-id="\{{id}}">
+                                    <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"></a>
                                     <div class="col-1">
                                         <img src="http://placehold.it/128x128" width="128" height="128" class="round">
                                     </div>
@@ -105,14 +85,15 @@
                                         <!--ko text: finish--><!--/ko-->
                                     </div>
                                     <div class="col-4 no-headline">
-                                        <!--ko text: quantity--><!--/ko-->
+                                        <input type="text" data-bind="value: qty">
+                                        <!--ko text: qty--><!--/ko-->
                                     </div>
                                     <div class="col-5">
                                         <span class="price" data-bind="text: price"></span>
                                     </div>
                                 </div>
                             </script>
-                            
+
                         </div>
                     </div>
                 </div>
