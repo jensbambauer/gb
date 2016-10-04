@@ -7,7 +7,7 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['<%= config.app %>/scripts/{,*/}*.js'],
-//                tasks: ['jshint'],
+                tasks: ['concat:serve'],
                 options: {
                     livereload: true
                 }
@@ -53,12 +53,10 @@ module.exports = function (grunt) {
             },
             styles: {
                 files: ['<%= config.app %>/styles/{,*/}*.styl'],
-                /*tasks: ['newer:copy:styles', 'autoprefixer']*/
                 tasks: ['stylus', 'autoprefixer']
             },
             hbs: {
                 files: ['<%= config.app %>/{,*/}*.hbs', '<%= config.app %>/templates/{,*/}*.hbs', '<%= config.app %>/pages/{,*/}*.*'],
-                /*tasks: ['newer:copy:styles', 'autoprefixer']*/
                 tasks: ['assemble:serve']
             },
             md: {
@@ -138,17 +136,17 @@ module.exports = function (grunt) {
 
             options: {
                 paths: ['<%= config.app %>/styles/main.styl'],
-                sourcemap:{
-                  comment:true, //Adds a comment with the `sourceMappingURL` to the generated CSS (default: `true`)
-                  inline: true, //Inlines the sourcemap with full source text in base64 format (default: `false`)
-                  sourceRoot: ".", //"sourceRoot" property of the generated sourcemap
-                  basePath:"." //Base path from which sourcemap and all sources are relative (default: `.`)
+                sourcemap: {
+                    comment: true, //Adds a comment with the `sourceMappingURL` to the generated CSS (default: `true`)
+                    inline: true, //Inlines the sourcemap with full source text in base64 format (default: `false`)
+                    sourceRoot: ".", //"sourceRoot" property of the generated sourcemap
+                    basePath: "." //Base path from which sourcemap and all sources are relative (default: `.`)
                 }
 
             },
             serve: {
                 files: {
-                  '.tmp/styles/main.css': ['<%= config.app %>/styles/main.styl'] // compile and concat into single file
+                    '.tmp/styles/main.css': ['<%= config.app %>/styles/main.styl'] // compile and concat into single file
                 }
             }
 
@@ -156,12 +154,39 @@ module.exports = function (grunt) {
 
         svgstore: {
             options: {
-                prefix : 'icon-'
+                prefix: 'icon-'
             },
-            default : {
-              files: {
-                'app/images/icon-sprite.svg': ['app/images/icons/*.svg'],
-              },
+            default: {
+                files: {
+                    'app/images/icon-sprite.svg': ['app/images/icons/*.svg'],
+                },
+            }
+        },
+
+        // combine javascript
+        concat: {
+            options: {
+                sourceMap: true
+            },
+            serve: {
+                src: [
+                    'bower_components/jquery/dist/jquery.js',
+                    'bower_components/chosen/chosen.jquery.min.js',
+                    'bower_components/handlebars/handlebars.js',
+                    'bower_components/knockout/dist/knockout.js',
+                    'bower_components/flexslider/jquery.flexslider.js',
+                    'bower_components/twitter-fetcher/js/twitterFetcher.js',
+                    'app/scripts/{,*/}*.js'
+                ],
+                dest: '.tmp/scripts/main.js'
+            }
+        },
+
+        uglify: {
+            dist: {
+                files: {
+                    'dist/scripts/main.js': '.tmp/scripts/main.js'
+                }
             }
         },
 
@@ -197,75 +222,62 @@ module.exports = function (grunt) {
         },
 
         assemble: {
-          options: {
-            // metadata
-            data: ['<%= config.app %>/data/*.{json,yml}'],
-            flatten: false,
-            plugins: ['assemble-contrib-permalinks'],
-            permalinks: {
-                structure: ':slug/index.html'
+            options: {
+                // metadata
+                data: ['<%= config.app %>/data/*.{json,yml}'],
+                flatten: false,
+                plugins: ['assemble-contrib-permalinks'],
+                permalinks: {
+                    structure: ':slug/index.html'
+                },
+                layoutdir: "<%= config.app %>/templates/layouts/",
+
+                // templates
+                partials: ['<%= config.app %>/templates/partials/*.hbs'],
+                layout: ['default.hbs'],
+                helpers: ['helpers/helper-*.js'],
+
+                collections: [{
+                    name: 'journal',
+                    sortby: 'date',
+                    sortorder: 'descending'
+                }]
             },
-            layoutdir: "<%= config.app %>/templates/layouts/",
+            // This is really all you need!
+            serve: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>/pages/',
+                    src: ['{,*/}*.hbs', '{,*/}*.md'],
+                    dest: '.tmp/'
+                }, {
+                    expand: true,
+                    cwd: '<%= config.app %>/journal/',
+                    src: ['{,*/}*.hbs', '{,*/}*.md'],
+                    dest: '.tmp/journal/'
+                }]
 
-            // templates
-            partials: ['<%= config.app %>/templates/partials/*.hbs'],
-            layout: ['default.hbs'],
-            helpers: ['helpers/helper-*.js'],
-
-            collections: [{
-                name: 'journal',
-                sortby: 'date',
-                sortorder: 'descending'
-            }]
-          },
-          // This is really all you need!
-          serve: {
-              files: [{
-                  expand: true,
-                  cwd: '<%= config.app %>/pages/',
-                  src: ['{,*/}*.hbs', '{,*/}*.md'],
-                  dest: '.tmp/'
-              }, {
-                  expand: true,
-                  cwd: '<%= config.app %>/journal/',
-                  src: ['{,*/}*.hbs', '{,*/}*.md'],
-                  dest: '.tmp/journal/'
-              }]
-
-          },
-          build: {
-              options: {
-                  assets: 'docs'
-              },
-              files: [
-                 {
-                     expand: true,
-                     cwd: '<%= config.app %>/pages/',
-                     src: ['{,*/}*.hbs', '{,*/}*.md'],
-                     dest: 'docs/'
-                 }, {
+            },
+            build: {
+                options: {
+                    assets: 'docs'
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>/pages/',
+                    src: ['{,*/}*.hbs', '{,*/}*.md'],
+                    dest: 'docs/'
+                }, {
                     expand: true,
                     cwd: '<%= config.app %>/journal/',
                     src: ['{,*/}*.hbs', '{,*/}*.md'],
                     dest: 'docs/journal/'
-                }
-              ]
-          }
+                }]
+            }
         },
 
         // Copies remaining files to places other tasks can use
         copy: {
-            scripts: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.app %>',
-                    dest: '<%= config.dist %>',
-                    src: [
-                        'scripts/{,*/}*.*'
-                    ]
-                }]
-            },
             dist: {
                 files: [{
                     expand: true,
@@ -282,13 +294,6 @@ module.exports = function (grunt) {
                         'styles/fonts/{,*/}*.*'
                     ]
                 }]
-            },
-            styles: {
-                expand: true,
-                dot: true,
-                cwd: '<%= config.app %>/styles',
-                dest: '.tmp/styles/',
-                src: '{,*/}*.css'
             }
         },
 
@@ -309,64 +314,45 @@ module.exports = function (grunt) {
             }
         },
 
-        // Run some tasks in parallel to speed up build process
-        concurrent: {
-            server: [
-                'stylus:serve',
-                'assemble:serve',
-                'svgstore'
-            ],
-            test: [
-                'copy:styles'
-            ],
-            dist: [
-                //'imagemin',
-                'copy'
-            ]
-        },
-
-
         'ftp-deploy': {
-          dev: {
-            auth: {
-              host: 'www.8ways.de',
-              port: 21,
-              authKey: 'key1'
-            },
-            src: 'dist',
-            dest: '/gandb/preview/webroot'
-          }
+            dev: {
+                auth: {
+                    host: 'www.8ways.de',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'dist',
+                dest: '/gandb/preview/webroot'
+            }
         },
 
         nodemailer: {
             options: {
-              transport: {
-                type: 'SMTP',
-                options: {
-                  service: 'Gmail',
-                  auth: {
-                    user: 'jens.bambauer@dobago.de',
-                    pass: '#Cellardoor00'
-                  }
-                }
-              },
-              message: {
-                subject: 'Geebird&Bamby Dev New Version',
-                html: '<body><a href="http://preview.geebirdandbamby.com">preview.geebirdandbamby.com</a></body>',
-              },
-              recipients: [
-                {
-                  email: 'rob@8ways.de'
-                }
-              ]
+                transport: {
+                    type: 'SMTP',
+                    options: {
+                        service: 'Gmail',
+                        auth: {
+                            user: 'jens.bambauer@dobago.de',
+                            pass: '#Cellardoor00'
+                        }
+                    }
+                },
+                message: {
+                    subject: 'Geebird&Bamby Dev New Version',
+                    html: '<body><a href="http://preview.geebirdandbamby.com">preview.geebirdandbamby.com</a></body>',
+                },
+                recipients: [{
+                    email: 'rob@8ways.de'
+                }]
             },
             inline: { /* use above options*/ }
-          }
+        }
 
     });
 
 
-    grunt.registerTask('serve', function (target) {
+    grunt.registerTask('serve', function(target) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
         }
@@ -374,6 +360,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'stylus:serve',
+            'concat:serve',
             'assemble:serve',
             'svgstore',
             'autoprefixer:serve',
@@ -386,10 +373,10 @@ module.exports = function (grunt) {
         'clean:dist',
         'assemble:build',
         'stylus:serve',
-        'autoprefixer',
-        'copy',
-        'copy:scripts',
-        'copy:dist'
+        'autoprefixer:dist',
+        'concat:serve',
+        'copy:dist',
+        'uglify'
     ]);
 
     grunt.registerTask('deploy-dev', [
