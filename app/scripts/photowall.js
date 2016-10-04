@@ -112,7 +112,7 @@ var photowall = (function (photowall, $, undefined) {
                 columns.push($(this));
             });
 
-            $.get('/data/photowall.json', function(result) {
+            $.get( config.assetsPath + '/data/photowall.json', function(result) {
                 photos = result.photos;
                 photoData = result.photos;
 

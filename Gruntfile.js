@@ -223,6 +223,7 @@ module.exports = function(grunt) {
 
         assemble: {
             options: {
+                assets: '.tmp',
                 // metadata
                 data: ['<%= config.app %>/data/*.{json,yml}'],
                 flatten: false,

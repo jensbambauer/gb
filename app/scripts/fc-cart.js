@@ -179,7 +179,7 @@ FC.override = FC.override || {};
             //FC.client.request('https://'+FC.settings.storedomain+'/cart?name=shipping&price=10&size=asdf&edition=asf&finish=aa&quantity=1');
 
             deleteShippingItem(function() {
-                $.get('/data/ups.json', function(data) {
+                $.get(config.assetsPath + '/data/ups.json', function(data) {
                     shippingData = data;
                     if(region()) {
                         update();
@@ -224,7 +224,7 @@ FC.override = FC.override || {};
         };
 
         var addToCart = function( options ) {
-            FC.client.request('https://'+FC.settings.storedomain+'/cart?' + options ).done(function() {
+            FC.client.request('//'+FC.settings.storedomain+'/cart?' + options ).done(function() {
                 cart.update();
                 cart.toggle();
             });
