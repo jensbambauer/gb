@@ -31,7 +31,8 @@
 
     function openRegionSelect() {
         $.get(config.assetsPath + '/data/region-select.html', function(data) {
-            $('body').append('<div class="overlay-contents">'+ data +'</div>');
+            var d = data.split('#assetsPath#').join(config.assetsPath);
+            $('body').append('<div class="overlay-contents">'+ d +'</div>');
             var layer = overlay.api;
 
             layer.open('#region-select');
