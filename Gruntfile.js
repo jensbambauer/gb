@@ -185,7 +185,7 @@ module.exports = function(grunt) {
         uglify: {
             dist: {
                 files: {
-                    'dist/scripts/main.js': '.tmp/scripts/main.js'
+                    'docs/scripts/main.js': '.tmp/scripts/main.js'
                 }
             }
         },
@@ -291,7 +291,16 @@ module.exports = function(grunt) {
                         '{,*/}*.html',
                         'data/photowall.json',
                         'data/ups.json',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                    ]
+                },
+                {
+                    expand: true,
+                    dot: true,
+                    cwd: '.tmp',
+                    dest: '<%= config.dist %>',
+                    src: [
+                        'scripts/vendor/{,*/}*.*',
                     ]
                 }]
             }
@@ -299,10 +308,11 @@ module.exports = function(grunt) {
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
+
         modernizr: {
-            dist: {
+            serve: {
                 devFile: 'bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
+                dest: '.tmp/scripts/vendor/modernizr.js',
                 files: {
                     src: [
                         '<%= config.dist %>/scripts/{,*/}*.js',
@@ -310,6 +320,10 @@ module.exports = function(grunt) {
                         '!<%= config.dist %>/scripts/vendor/*'
                     ]
                 },
+                options: [
+                  'prefixed',
+                  'setClasses'
+                ],
                 uglify: true
             }
         },
@@ -365,6 +379,7 @@ module.exports = function(grunt) {
             'svgstore',
             'autoprefixer:serve',
             'connect:livereload',
+            'modernizr:serve',
             'watch'
         ]);
     });
@@ -375,6 +390,7 @@ module.exports = function(grunt) {
         'stylus:serve',
         'autoprefixer:dist',
         'concat:serve',
+        'modernizr:serve',
         'copy:dist',
         'uglify'
     ]);
