@@ -22,7 +22,7 @@ var photowall = (function (photowall, $, undefined) {
             var randomIndex = Math.min(Math.round(Math.random() * photos.length), photos.length - 1);
             var randomPhoto =  photos[randomIndex];
             photos.splice(randomIndex, 1);
-            return '<img src="' + randomPhoto.src + '" width="256">';
+            return '<img src="' + config.assetsPath + randomPhoto.src + '" width="256">';
         };
 
         var initialContent = function() {
