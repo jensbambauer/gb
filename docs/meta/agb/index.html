@@ -5,15 +5,19 @@
         <title> | Geebird&amp;Bamby</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/6df2b309.favicon.ico">
-        <link rel="stylesheet" href="/styles/8b5eeb5c.main.css"/>
-        <script src="/scripts/vendor/modernizr.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- build:css(.tmp) /styles/main.css -->
+        <link rel="stylesheet" href="../../styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js /scripts/vendor/modernizr.js -->
+        <script src="../../../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <div class="page transparent-header">
                         <header class="transparent">
                 <div class="content">
-                    <a class="logo" href="/index.html"><img src="/images/08403a76.logo.svg" width="198" height="28"></a>
+                    <a class="logo" href="/index.html"><img src="/images/logo.svg" width="198" height="28"></a>
                     <input id="navigation-toggle" name="nav" type="checkbox" autocomplete="off">
                     <nav class="main-nav">
                         <ul>
@@ -41,7 +45,7 @@
             <div class="overlay-cart">
                 <div class="overlay-cart-container">
                     <div class="content">
-                        <a class="logo" href="index.html"><img src="/images/6417c1ce.logo_black.svg" width="198" height="28"></a>
+                        <a class="logo" href="index.html"><img src="/images/logo_black.svg" width="198" height="28"></a>
                         <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
                         <div class="cart-table">
                             <ul class="header">
@@ -140,13 +144,13 @@
                     <ul class="teaser grid">
                         <li class="col-1-3">
                             <a href="/the-new-world/index.html" class="teaser-content">
-                                <img src="/images/teaser/ee118f50.the-new-world.jpg">
+                                <img src="/images/teaser/the-new-world.jpg">
                                 <span>View Series</span>
                             </a>
                         </li>
                         <li class="col-1-3">
                             <div class="teaser-content">
-                                <img src="/images/teaser/90c6b0a7.twitter.jpg">
+                                <img src="/images/teaser/twitter.jpg">
                                 <div class="tweets" data-role="tweets">
                                     <h4>Activity on <a href="http://www.twitter.com/geebirdandbamby" target="_blank">@geebirdandbamby</a></h4>
                                     <div class="tweet-container">
@@ -163,7 +167,7 @@
                         </li>
                         <li class="col-1-3">
                             <a href="" class="teaser-content">
-                                <img src="/images/teaser/ff6651f0.about.jpg">
+                                <img src="/images/teaser/about.jpg">
                                 <span class="center">About G&amp;B</span>
                             </a>
                         </li>
@@ -201,12 +205,37 @@
 
                 <div class="overlay-container"><div class="overlay-wrapper"><div class="overlay-content"><div class="overlay"></div></div></div><div class="overlay-background"></div></div>
 
-        <script src="/scripts/vendor.js"></script>
-        
+        <!-- build:js /scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../../../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../../../bower_components/chosen/chosen.jquery.min.js"></script>
+        <script src="../../../bower_components/handlebars/handlebars.js"></script>
+        <script src="../../../bower_components/knockout/dist/knockout.js"></script>
+        <script src="../../../bower_components/flexslider/jquery.flexslider.js"></script>
+        <script src="../../../bower_components/twitter-fetcher/js/twitterFetcher.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
         <!-- FOXYCART -->
         <script src="http://cdn.foxycart.com/geebeedev/foxycart.jsonp.min.1439929745.js" async defer></script>
         <!-- /FOXYCART -->
-        
-        <script src="/scripts/main.js"></script>
+
+        <!-- build:js /scripts/main.js -->
+        <script src="../../scripts/overlay.js"></script>
+        <script src="../../scripts/photowall.js"></script>
+        <script src="../../scripts/select-box.js"></script>
+        <script src="../../scripts/fc-cart.js"></script>
+        <script src="../../scripts/vm-artwork-details.js"></script>
+        <script src="../../scripts/vm-region-select.js"></script>
+        <script src="../../scripts/vm-tweets.js"></script>
+        <script src="../../scripts/slider.js"></script>
+        <script src="../../scripts/image-preloader.js"></script>
+        <script src="../../scripts/newsletter-form.js"></script>
+        <script src="../../scripts/scroll-indicator.js"></script>
+        <script src="../../scripts/contact-form.js"></script>
+        <script src="../../scripts/scroll-in-view.js"></script>
+        <script src="../../scripts/toggle-switch.js"></script>
+        <!-- endbuild -->
+
     </body>
 </html>
