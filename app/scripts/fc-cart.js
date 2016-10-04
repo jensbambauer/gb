@@ -170,6 +170,7 @@ FC.override = FC.override || {};
         }
 
         var init = function() {
+
             $el = $('.overlay-cart');
 
             $('[data-role="toggle-cart"]').on('click', toggleCart);
@@ -274,5 +275,7 @@ FC.override = FC.override || {};
     	});
 
     };
+
+    $.getScript('//cdn.foxycart.com/geebeedev/foxycart.jsonp.min.1439929745.js');
 
 })(jQuery);
