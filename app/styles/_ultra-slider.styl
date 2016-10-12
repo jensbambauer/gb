@@ -1,0 +1,36 @@
+.ultra-slider {
+  height: 100%;
+  width: 100%;
+
+  .slides {
+    backface-visibility: hidden;
+
+    .slide {
+      position: absolute;
+      will-change: transform;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      backface-visibility: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .direction-nav {
+
+    a {
+      @extend $squarebutton;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      cursor: pointer;
+
+      &.next {
+        right: 0;
+      }
+    }
+  }
+}
