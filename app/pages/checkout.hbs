@@ -1,0 +1,10 @@
+---
+template: checkout.hbs
+---
+{% set cart_is_fullpage = true %}
+<div data-fc-container="cart">
+    {% embed 'cart.inc.twig' %}
+    {% endembed %}
+</div>
+
+<!-- FC footer script insertion -->{% include template_from_string(fc_footer_content) %}<!-- /FC footer scripts -->

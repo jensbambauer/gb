@@ -146,7 +146,8 @@ module.exports = function(grunt) {
             },
             serve: {
                 files: {
-                    '.tmp/styles/main.css': ['<%= config.app %>/styles/main.styl'] // compile and concat into single file
+                    '.tmp/styles/main.css': ['<%= config.app %>/styles/main.styl'], // compile and concat into single file
+                    '.tmp/styles/checkout.css': ['<%= config.app %>/styles/checkout.styl'] // compile and concat into single file
                 }
             }
 
