@@ -1,13 +1,13 @@
 ---
 layout: journal.hbs
 journal: true
-title: Geebird&Bamby announces a collaboration with L’Horizon Resort and Spa in Palm Springs, California
+title: Geebird&Bamby announces collaboration with L’Horizon Resort and Spa in Palm Springs, California
 transparent-header: true
 date: May 31st, 2016
-slides: [{src: 'http://8ways.de/journaltest/horizon.jpg', caption: 'Images © L’Horizon Palm Springs'}]
+slides: [{src: 'http://8ways.de/journaltest/horizon.jpg', caption: 'Images ©L’Horizon Palm Springs'}]
 ---
 
-# Geebird&Bamby announces a collaboration with L’Horizon Resort and Spa in Palm Springs, California
+# Geebird&Bamby announces collaboration with L’Horizon Resort and Spa in Palm Springs, California
 
 We are happy to announce our collaboration with the [L’Horizon Resort and Spa](http://www.lhorizonpalmsprings.com), a recently re-envisioned luxury boutique hotel in Palm Springs, California. Originally designed by desert modern architect William F. Cody in 1952, the L’Horizon was a favorite destination spot in Hollywood’s golden era, attracting celebrities like Marilyn Monroe as well as several U.S. Presidents. 
 
