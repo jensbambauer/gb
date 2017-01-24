@@ -3,8 +3,8 @@ layout: journal.hbs
 journal: true
 title: Geebird&Bamby announces a collaboration with L’Horizon Resort and Spa in Palm Springs, California
 transparent-header: true
-date: May 31st, 2015
-slides: [{src: 'http://8ways.de/journaltest/horizon.jpg'}]
+date: May 31st, 2016
+slides: [{src: 'http://8ways.de/journaltest/horizon.jpg', caption: 'Images © L’Horizon Palm Springs'}]
 ---
 
 # Geebird&Bamby announces a collaboration with L’Horizon Resort and Spa in Palm Springs, California
