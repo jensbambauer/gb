@@ -10,11 +10,11 @@
             <div class="main">
 
                 {{#if overview}}
-                    <section class="content blog">
+                    <section>
 
                         {{#withSort journal 'data.date'}}
                             {{#each this.pages }}
-                                <article>
+                                <article class="content blog">
                                     <time>{{data.date}}</time>
 
                                     {{#if data.slides }}
