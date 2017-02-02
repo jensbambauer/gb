@@ -238,7 +238,7 @@ module.exports = function(grunt) {
                 // templates
                 partials: ['<%= config.app %>/templates/partials/*.hbs'],
                 layout: ['default.hbs'],
-                helpers: ['helpers/helper-*.js'],
+                helpers: ['helpers/helper-*.js', 'node_modules/handlebars-helpers/index.js'],
 
                 collections: [{
                     name: 'journal',

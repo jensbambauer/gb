@@ -1,7 +1,9 @@
 {
   "name": "gb-v10",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars-helpers": "^0.8.0"
+  },
   "devDependencies": {
     "assemble-contrib-permalinks": "^0.3.6",
     "grunt": "~0.4.1",

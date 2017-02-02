@@ -70,7 +70,7 @@ var slider = (function (slider, $, undefined) {
         onResize();
     }
 
-    var init = function(selector) {
+    var init = function(selector, options) {
         $(selector).each(function() {
 
             if ( $(this).data('order') === 'random') {
@@ -122,14 +122,14 @@ var slider = (function (slider, $, undefined) {
             }
 
 
-            $(this).flexslider({
+            $(this).flexslider($.extend({
                 animation: "slide",
                 slideshow: false,
                 start: initLoading,
                 after: loadNext,
                 nextText: '<svg><use xlink:href="#icon-arrow-right"/></svg>',
                 prevText: '<svg><use xlink:href="#icon-arrow-left"/></svg>'
-            });
+            }, options || {}));
 
         });
 
@@ -141,7 +141,10 @@ var slider = (function (slider, $, undefined) {
     init('[data-role="slider"]');
 
     $(document).on('overlay-content-ready', function() {
-        init('[data-role="overlay-slider"]');
+        init('[data-role="overlay-slider"]', {
+            animationLoop: false,
+            slideshow: true
+        });
     });
 
 })(slider || {}, jQuery);

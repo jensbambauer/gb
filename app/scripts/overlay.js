@@ -32,7 +32,7 @@ var overlay = (function (overlay, $, undefined) {
             
             $('.overlay').empty()
                 .append( $(id).html() )
-                .append( '<a class="icon-button close">close</a>' );
+                .append( '<a class="icon-button close"><svg><use xlink:href="#icon-close"/></svg></a>' );
             
             $(document).trigger('overlay-content-ready');
             

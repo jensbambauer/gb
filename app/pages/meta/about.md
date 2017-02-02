@@ -3,8 +3,7 @@ layout: journal.hbs
 transparent-header: true
 meta-page: true
 fullslider: true
-video: http://player.vimeo.com/video/76824282?quality=720p
-slides: [{src: 'http://placehold.it/1024x640', caption: 'shitty caption'}, {src: 'http://placehold.it/1024x640'}]
+slides: [{src: '../../images/about/about-1.jpg'}, {src: '../../images/about/about-2.jpg'},{src: '../../images/about/about-3.jpg'}, {src: '../../images/about/about-4.jpg', caption: 'gay'}, {src: '../../images/about/about-5.jpg'}, {src: '../../images/about/about-6.jpg', caption: 'cool'}, {src: '../../images/about/about-7.jpg'}, {src: '../../images/about/about-8.jpg'},{src: '../../images/about/about-9.jpg'}]
 ---
 
 # About

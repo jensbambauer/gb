@@ -10,7 +10,7 @@
                     "src": "http://placehold.it/768x512"
                 },
                 {
-                    "src": "http://placehold.it/768x512"
+                    "src": "../../images/spec_frame.jpg"
                 }
             ],
             "headline": "Print",
@@ -20,7 +20,7 @@
             "id": "aluminium-dibond",
             "slides": [
                 {
-                    "src": "http://placehold.it/768x512"
+                    "src": "../../images/spec_dibond.jpg"
                 }
             ],
             "headline": "Dibond&reg;",
@@ -30,7 +30,7 @@
             "id": "framed",
             "slides": [
                 {
-                    "src": "http://placehold.it/768x512"
+                    "src": "../../images/spec_frame.jpg"
                 }
             ],
             "headline": "Frame",
