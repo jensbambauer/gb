@@ -26,17 +26,17 @@
         {
             "title": "Print only",
             "id": "print-only",
-            "img": "/images/teaser/finish-print.jpg"
+            "img": "../../images/teaser/finish-print.jpg"
         },
         {
             "title": "Alum. Dibond",
             "id": "aluminium-dibond",
-            "img": "/images/teaser/finish-dibond.jpg"
+            "img": "../../images/teaser/finish-dibond.jpg"
         },
         {
             "title": "Framed",
             "id": "framed",
-            "img": "/images/teaser/finish-framed.jpg"
+            "img": "../../images/teaser/finish-framed.jpg"
         }
     ],
     "artworks": {
