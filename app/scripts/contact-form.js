@@ -21,16 +21,16 @@ var contactForm = (function (contactForm, $, undefined) {
                 method: "POST",
                 data: {
                     name: $el.find('.contact-name').val(),
-                    email: $el.find('.contact-email').val(),                    
+                    email: $el.find('.contact-email').val(),
                     message: $el.find('.contact-text').val()
                 },
                 dataType: "json"
             }).then(function(data) {
-                if ( data.next === '/thanks') {
-                    $el.find('.contact-form').addClass('hidden');                    
+                if ( data.next.indexOf('/thanks') > -1) {
+                    $el.find('.contact-form').addClass('hidden');
                     $el.parents('.photowall').css('height', 192);
                     setTimeout(function() {
-                        $el.find('.thank-you').removeClass('hidden');                    
+                        $el.find('.thank-you').removeClass('hidden');
                     }, 500);
                 }
             });
@@ -40,7 +40,7 @@ var contactForm = (function (contactForm, $, undefined) {
             $el.find('.contact-message').addClass('hidden');
             $el.parents('.photowall').css('height', 392);
             setTimeout(function() {
-                $el.find('.contact-form').removeClass('hidden');                    
+                $el.find('.contact-form').removeClass('hidden');
             }, 500);
         });
         
@@ -49,7 +49,7 @@ var contactForm = (function (contactForm, $, undefined) {
             $el.find('.contact-form').addClass('hidden');
             $el.parents('.photowall').css('height', 192);
             setTimeout(function() {
-                $el.find('.contact-message').removeClass('hidden');                    
+                $el.find('.contact-message').removeClass('hidden');
             }, 500);
         });
     }

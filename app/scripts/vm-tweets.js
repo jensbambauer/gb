@@ -26,26 +26,22 @@
             var config8 = {
               "id": '669982199421214721',
               "dataOnly": true,
-                "maxTweets": 30,
+              "maxTweets": 30,
               "customCallback": populateTpl
             };
 
             twitterFetcher.fetch(config8);
 
             function populateTpl(tweets){
-                
                 var filtered = [];
                 
                 $.each(tweets, function(i, tweet) {
-                    if ($(tweet).find('[data-scribe="element:screen_name"]').text() === '@geebirdandbamby') {
 
-                        var div = $('<div></div>');
-                        div.append(tweet);
-
+                    if ($(tweet.author).find('[data-scribe="element:screen_name"]').text() === '@geebirdandbamby') {
                         filtered.push({
-                            date: div.find('.timePosted').text(),
-                            link: div.find('.timePosted a').attr('href'),
-                            tweet: div.find('.tweet').html()
+                            date: tweet.time,
+                            link: tweet.permalinkURL,
+                            tweet: tweet.tweet
                         });
                     }
                 });

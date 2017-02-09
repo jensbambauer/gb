@@ -34,7 +34,7 @@ var newsletterForm = (function (newsletterForm, $, undefined) {
         }
         
         function onError($form, data) {
-            $form.find('.error-response').text(data.msg);
+            $form.find('.error-response').html(data.msg);
         }
         
         function onSuccess($form, data) {

@@ -9,7 +9,7 @@
     "flexslider": "~2.5.0",
     "handlebars": "~3.0.3",
     "knockout": "knockoutjs#~3.3.0",
-    "twitter-fetcher": "~13.1.0",
+    "twitter-fetcher": "16.0.3",
     "velocity": "~1.3.1"
   }
 }
