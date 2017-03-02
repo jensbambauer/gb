@@ -8,16 +8,19 @@ transparent-header: true
     <ul class="collection-thumbnails">
         {{#each the-new-world.artworks }}
             <li>
-                <a href="{{@key}}/index.html" class="{{@key}}">{{title}}</a>
+                <a href="{{@key}}/index.html" class="{{@key}}">
+                    {{title}}
+                    <span class="button inverted">View Piece</span>
+                </a>
             </li>
         {{/each}}
     </ul>
     <div class="collection-logo-tnw"></div>
     <div class="collection-intro">
-        <label for="collection-introduction" class="button inverted toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>
+        <label for="collection-introduction" class="button toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>
         <input type="checkbox" class="toggle-trigger" id="collection-introduction">
         <div class="toggle-box-container">
-            <h2 class="toggle-hide">Anonymous Places of the 20th Century</h2>
+            <h2>Anonymous Places of the 20th Century</h2>
             <div class="toggle-box has-delay">
                 <div class="scroll">
                     <p>"The New World" revisits anonymous places of the 20th century. It is set in a time characterized by the conflict of Modernist and Postmodernist convictions, its influence on later 20th century history, and ultimately, the world we live in today.</p>

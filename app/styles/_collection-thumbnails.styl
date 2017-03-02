@@ -22,9 +22,17 @@
             height: 100%;
             text-indent: -3000%;
             display: block;
+            overflow: hidden;
             
             span {
-                display: none;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%) translateY(100%);
+                display: block;
+                text-indent: 0;
+                color: black;
+                transition: all 0.3s ease-in-out;
             }
             
             &:before {
@@ -51,12 +59,21 @@
                 top: 0;
                 background-image: url(../images/thumb-logos.png);
                 background-size: 400% auto;
+                transition: all 0.3s ease-in-out;
             }
             
             &:hover {
                 &:before {
                     filter: grayscale(0%) brightness(0.75);
                 }
+                
+                 &:after {
+                     transform: scale(0.8);
+                     opacity: 0;
+                 }
+                 span {
+                     transform: translateX(-50%) translateY(0);
+                 }
             }
             
             &.the-modern-gentleman {
