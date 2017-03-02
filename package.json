@@ -5,6 +5,7 @@
     "handlebars-helpers": "^0.8.0"
   },
   "devDependencies": {
+    "assemble": "^0.23.0",
     "assemble-contrib-permalinks": "^0.3.6",
     "grunt": "~0.4.1",
     "grunt-assemble": "^0.4.0",
@@ -24,7 +25,6 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-ftp-deploy": "^0.1.10",
     "grunt-ftpush": "^0.3.3",
-    "grunt-metalsmith": "^1.0.0",
     "grunt-mocha": "~0.4.10",
     "grunt-modernizr": "1.0.2",
     "grunt-newer": "~0.7.0",
@@ -36,7 +36,8 @@
     "grunt-usemin": "~2.1.0",
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.4.0",
-    "metalsmith-permalinks": "^0.4.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.4.0",
     "time-grunt": "~0.3.1"
   },
   "engines": {

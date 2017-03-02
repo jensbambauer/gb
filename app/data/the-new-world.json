@@ -1,22 +1,38 @@
+
 {
     "sizes": [
         {
-            "size": "100cm x 62,5cm / 39.4\" x 24.6\"",
+            "size": "100cm x 62cm / 39.4\" x 24.4\"",
             "edition": "Edition of 100",
             "finishing-options": [
                 {
-                    "title": "Print only",
-                    "price": "{\"eu\": \"439\",\"usa\": \"369\",\"world\": \"369\"}",
+                    "title": "Print Glossy",
+                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
                     "weight": "0.615"
+                },
+                {
+                    "title": "Print Matte",
+                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "weight": "10"
                 },
                 {
                     "title": "Alum. Dibond",
                     "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\"}",
-                    "weight": "10"
+                    "weight": "15"
                 },
-                {
-                    "title": "Framed",
-                    "price": "{\"eu\": \"899\",\"usa\": \"755\",\"world\": \"755\"}",
+                 {
+                    "title": "Black Frame",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "weight": "15"
+                },
+                 {
+                    "title": "White Frame",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "weight": "15"
+                },
+                 {
+                    "title": "Maple Frame",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
                     "weight": "15"
                 }
             ]
@@ -29,7 +45,7 @@
             "img": "../../images/teaser/finish-print.jpg"
         },
         {
-            "title": "Alum. Dibond",
+            "title": "Aluminium Dibond®",
             "id": "aluminium-dibond",
             "img": "../../images/teaser/finish-dibond.jpg"
         },

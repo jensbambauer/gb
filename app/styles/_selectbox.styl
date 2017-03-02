@@ -11,6 +11,20 @@
         white-space: nowrap;
         width: 100%;
         text-align: left;
+        
+        div b {
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-image: url('data:image/svg+xml;utf8,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20195.6%20107.8%22%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M609%2C771h9l-4.5%2C8Z%22%20transform%3D%22translate(-597.5%20-759)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-size: 200px auto;
+            background-position: 0 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 0.3s;
+        }
     }
     
     &.chosen-container-single-nosearch {
@@ -34,6 +48,17 @@
     &.chosen-with-drop {
         .chosen-drop {
             left: 0;
+        }
+        
+        .chosen-single {
+            @extend button;
+            white-space: nowrap;
+            width: 100%;
+            text-align: left;
+        
+            div b {
+                transform: rotate(180deg);
+            }
         }
     }
     

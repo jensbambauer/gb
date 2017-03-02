@@ -2,6 +2,7 @@
 template: default.hbs
 slug: the-new-world
 title: The New World
+transparent-header: true
 ---
 <section class="content">
     <ul class="collection-thumbnails">
@@ -11,9 +12,10 @@ title: The New World
             </li>
         {{/each}}
     </ul>
+    <div class="collection-logo-tnw"></div>
     <div class="collection-intro">
-        <label for="collection-intoduction" class="button toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>
-        <input type="checkbox" class="toggle-trigger" id="collection-intoduction">
+        <label for="collection-introduction" class="button inverted toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>
+        <input type="checkbox" class="toggle-trigger" id="collection-introduction">
         <div class="toggle-box-container">
             <h2 class="toggle-hide">Anonymous Places of the 20th Century</h2>
             <div class="toggle-box has-delay">
@@ -24,8 +26,6 @@ title: The New World
                 </div>
             </div>
         </div>
-        
-        
     </div>
 </section>
 

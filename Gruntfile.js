@@ -135,14 +135,7 @@ module.exports = function(grunt) {
         stylus: {
 
             options: {
-                paths: ['<%= config.app %>/styles/main.styl'],
-                sourcemap: {
-                    comment: true, //Adds a comment with the `sourceMappingURL` to the generated CSS (default: `true`)
-                    inline: true, //Inlines the sourcemap with full source text in base64 format (default: `false`)
-                    sourceRoot: ".", //"sourceRoot" property of the generated sourcemap
-                    basePath: "." //Base path from which sourcemap and all sources are relative (default: `.`)
-                }
-
+                paths: ['<%= config.app %>/styles/main.styl']
             },
             serve: {
                 files: {

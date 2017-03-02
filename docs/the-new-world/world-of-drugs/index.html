@@ -3,120 +3,118 @@
     <head>
         <title>World of Drugs - The New World | Geebird&Bamby™</title>
                 <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="../../styles/main.css">
-        <script src="../../scripts/vendor/modernizr.js"></script>
-        <script>
-            var config = {
-                assetsPath: '../..'
-            };
-        </script>
-    </head>
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width">
+                <link rel="shortcut icon" href="/favicon.ico">
+                <link rel="stylesheet" href="../../styles/main.css">
+                <script src="../../scripts/vendor/modernizr.js"></script>
+                <script>
+                    var config = {
+                        assetsPath: '../..'
+                    };
+                </script>    </head>
     <body>
         <div class="page">
                         <header>
-                <div class="content">
-                    <a class="logo" href="../../index.html"><img src="../../images/logo.svg" width="198" height="28"></a>
-                    <input id="navigation-toggle" name="nav" type="checkbox" autocomplete="off">
-                    <nav class="main-nav">
-                        <ul>
-                            <li>
-                                <a href="../../index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="../../the-new-world/index.html">The New World</a>
-                            </li>
-                            <li>
-                                <a href="../../meta/about/index.html">About</a>
-                            </li>
-                            <li>
-                                <a href="../../journal/index.html">Journal</a>
-                            </li>
-                            <li>
-                                <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>
-                            </li>
-                        </ul>
-                        <label for="navigation-toggle" class="icon-navi"><svg><use xlink:href="#icon-hamburger"/></svg></label>
-                        <a href="" class="cart-link" data-role="toggle-cart">Cart</a>
-                    </nav>
-                </div>
-            </header>
-            <div class="overlay-cart">
-                <div class="overlay-cart-container">
-                    <div class="content">
-                        <a class="logo" href="index.html"><img src="../../images/logo_black.svg" width="198" height="28"></a>
-                        <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
-                        <div class="cart-table">
-                            <ul class="header">
-                                <li class="col-1">Identifier</li>
-                                <li class="col-2">Artwork Title &amp; Info</li>
-                                <li class="col-3">Finish</li>
-                                <li class="col-4">Quantity</li>
-                                <li class="col-5">Price</li>
-                            </ul>
-                            <div class="cart-rows">
-                                <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
-                                <div class="row">
-                                    <!--ko if: totalWeight() > 5 -->
-                                    <div class="ups-shipping">
-                                        <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
-                                        <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
-                                        <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
-                                        <span class="price" data-bind="text: shippingCost"></span>
+                            <div class="content">
+                                <a class="logo" href="../../index.html"><img src="../../images/logo.svg" width="198" height="28"></a>
+                                <input id="navigation-toggle" name="nav" type="checkbox" autocomplete="off">
+                                <nav class="main-nav">
+                                    <ul>
+                                        <li>
+                                            <a href="../../index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../the-new-world/index.html">The New World</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../meta/about/index.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../journal/index.html">Journal</a>
+                                        </li>
+                                        <li>
+                                            <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>
+                                        </li>
+                                    </ul>
+                                    <label for="navigation-toggle" class="icon-navi"><svg><use xlink:href="#icon-hamburger"/></svg></label>
+                                    <a href="" class="cart-link" data-role="toggle-cart">Cart</a>
+                                </nav>
+                            </div>
+                        </header>
+                        <div class="overlay-cart">
+                            <div class="overlay-cart-container">
+                                <div class="content">
+                                    <a class="logo" href="index.html"><img src="../../images/logo_black.svg" width="198" height="28"></a>
+                                    <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
+                                    <div class="cart-table">
+                                        <ul class="header">
+                                            <li class="col-1">Identifier</li>
+                                            <li class="col-2">Artwork Title &amp; Info</li>
+                                            <li class="col-3">Finish</li>
+                                            <li class="col-4">Quantity</li>
+                                            <li class="col-5">Price</li>
+                                        </ul>
+                                        <div class="cart-rows">
+                                            <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
+                                            <div class="row">
+                                                <!--ko if: totalWeight() > 5 -->
+                                                <div class="ups-shipping">
+                                                    <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
+                                                    <span class="price" data-bind="text: shippingCost"></span>
+                                                </div>
+                                                <!-- /ko -->
+                                                <!--ko if: totalWeight() < 5 -->
+                                                <div class="dhl-shipping">
+                                                    <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">DHL GoGreen</p>
+                                                    <span class="price" data-bind="text: shippingCost"></span>
+                                                </div>
+                                                <!-- /ko -->
+                                            </div>
+                                        </div>
+                                        <div class="cart-total">
+                                            <!--ko if: region() == "eu" -->
+                                            Order Value incl. 19% VAT
+                                            <!-- /ko -->
+                                            <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
+                                            <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
+                                        </div>
+            
+                                        <script type="text/html" id="cart-row">
+                                            <div class="row" data-id="{{id}}">
+                                                <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"></a>
+                                                <div class="col-1">
+                                                    <img src="http://placehold.it/128x128" width="128" height="128" class="round">
+                                                </div>
+                                                <div class="col-2">
+                                                    <h3><!--ko text: name--><!--/ko--></h3>
+                                                    <!--ko text: size--><!--/ko--> <br>
+                                                    <!--ko text: edition--><!--/ko-->
+                                                </div>
+                                                <div class="col-3 no-headline">
+                                                    <!--ko text: finish--><!--/ko-->
+                                                </div>
+                                                <div class="col-4 no-headline">
+                                                    <input type="text" data-bind="value: qty">
+                                                    <!--ko text: qty--><!--/ko-->
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="price" data-bind="text: price"></span>
+                                                </div>
+                                            </div>
+                                        </script>
+            
                                     </div>
-                                    <!-- /ko -->
-                                    <!--ko if: totalWeight() < 5 -->
-                                    <div class="dhl-shipping">
-                                        <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
-                                        <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
-                                        <p class="left">DHL GoGreen</p>
-                                        <span class="price" data-bind="text: shippingCost"></span>
-                                    </div>
-                                    <!-- /ko -->
                                 </div>
                             </div>
-                            <div class="cart-total">
-                                <!--ko if: region() == "eu" -->
-                                Order Value incl. 19% VAT
-                                <!-- /ko -->
-                                <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
-                            </div>
-                            <div class="cart-footer">
-                                <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
-                                <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
-                            </div>
-
-                            <script type="text/html" id="cart-row">
-                                <div class="row" data-id="{{id}}">
-                                    <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"></a>
-                                    <div class="col-1">
-                                        <img src="http://placehold.it/128x128" width="128" height="128" class="round">
-                                    </div>
-                                    <div class="col-2">
-                                        <h3><!--ko text: name--><!--/ko--></h3>
-                                        <!--ko text: size--><!--/ko--> <br>
-                                        <!--ko text: edition--><!--/ko-->
-                                    </div>
-                                    <div class="col-3 no-headline">
-                                        <!--ko text: finish--><!--/ko-->
-                                    </div>
-                                    <div class="col-4 no-headline">
-                                        <input type="text" data-bind="value: qty">
-                                        <!--ko text: qty--><!--/ko-->
-                                    </div>
-                                    <div class="col-5">
-                                        <span class="price" data-bind="text: price"></span>
-                                    </div>
-                                </div>
-                            </script>
-
                         </div>
-                    </div>
-                </div>
-            </div>
-
 
             <div class="main">
                 
@@ -148,28 +146,26 @@
                 </thead>
                 <tbody>
                     <!-- artwork-finishing-options -->
-
     <tr>
         <td colspan="4">
             <form action="#" method="get" data-role="add-to-cart-form" data-ko-model="artwork-details">
                 <table class="subtable">
                     <tbody>
                         <tr>
-                            <td class="col-1">100cm x 62,5cm / 39.4&quot; x 24.6&quot; / Edition of 100</td>
+                            <td class="col-1">100cm x 62cm / 39.4&quot; x 24.4&quot; / Edition of 100</td>
                             <td class="col-2">
                                 <select data-role="selectbox" data-bind="value: priceObject">
-                                     
-                                        <option value='{&quot;eu&quot;: &quot;439&quot;,&quot;usa&quot;: &quot;369&quot;,&quot;world&quot;: &quot;369&quot;}' data-weight="0.615">Print only</option>
-                                     
-                                        <option value='{&quot;eu&quot;: &quot;819&quot;,&quot;usa&quot;: &quot;689&quot;,&quot;world&quot;: &quot;689&quot;}' data-weight="10">Alum. Dibond</option>
-                                     
-                                        <option value='{&quot;eu&quot;: &quot;899&quot;,&quot;usa&quot;: &quot;755&quot;,&quot;world&quot;: &quot;755&quot;}' data-weight="15">Framed</option>
-                                    
+                                        <option value='{&quot;eu&quot;: &quot;499&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="0.615">Print Glossy</option>
+                                        <option value='{&quot;eu&quot;: &quot;499&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="10">Print Matte</option>
+                                        <option value='{&quot;eu&quot;: &quot;819&quot;,&quot;usa&quot;: &quot;689&quot;,&quot;world&quot;: &quot;689&quot;}' data-weight="15">Alum. Dibond</option>
+                                        <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">Black Frame</option>
+                                        <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">White Frame</option>
+                                        <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">Maple Frame</option>
                                 </select>
                                 <input type="hidden" name="name" value="World of Drugs">
                                 <input type="hidden" name="finish" data-bind="value: finishOptionText">
                                 <input type="hidden" name="price" class="price" data-bind="value: price">
-                                <input type="hidden" name="size" value="100cm x 62,5cm / 39.4&quot; x 24.6&quot;">
+                                <input type="hidden" name="size" value="100cm x 62cm / 39.4&quot; x 24.4&quot;">
                                 <input type="hidden" name="edition" value="Edition of 100">
                                 <input type="hidden" name="weight" data-bind="value: weight">
                             </td>
@@ -184,7 +180,6 @@
                 </tbody>
             </table>
 
-            
         </div>
     </div>
 </div>
@@ -193,28 +188,24 @@
 <div class="teaser-container">
     <h3>Available finishing options</h3>
     <ul class="teaser grid teaser-center">
-        
             <li class="col-1-3">
                 <a href="#print-only" class="teaser-content" data-role="overlay">
                     <img src="../../images/teaser/finish-print.jpg">
                     <span>Print only</span>
                 </a>
             </li>
-        
             <li class="col-1-3">
                 <a href="#aluminium-dibond" class="teaser-content" data-role="overlay">
                     <img src="../../images/teaser/finish-dibond.jpg">
-                    <span>Alum. Dibond</span>
+                    <span>Aluminium Dibond®</span>
                 </a>
             </li>
-        
             <li class="col-1-3">
                 <a href="#framed" class="teaser-content" data-role="overlay">
                     <img src="../../images/teaser/finish-framed.jpg">
                     <span>Framed</span>
                 </a>
             </li>
-        
     </ul>
 </div>
 </section>
@@ -259,32 +250,26 @@
         <div class="wrapper"></div>
     </div>
 </section>
-
 <!-- finishing-options-layer -->
 <div class="overlay-contents">
-    
             <div id="print-only">
                 <div class="flexslider" data-role="overlay-slider">
                     <ul class="slides">
-                        
                             <li>
                                 <figure>
                                     <img src="http://placehold.it/768x512">
                                 </figure>
                             </li>
-                        
                             <li>
                                 <figure>
                                     <img src="http://placehold.it/768x512">
                                 </figure>
                             </li>
-                        
                             <li>
                                 <figure>
                                     <img src="../../images/spec_frame.jpg">
                                 </figure>
                             </li>
-                        
                     </ul>
                 </div>                
                 <div class="text-content">
@@ -293,17 +278,14 @@
                     <p class="text">Our digital photo exposures / prints are produced in cooperation with Oschatz GmbH & CO KG, one of Germany’s largest image production firms, founded as a photo laboratory in 1922.<br><br>Utilizing a Durst Lambda 130, the industry leading photochemical printer, reference image quality is maintained during the process of digital exposure and chemical development.<br><br>We use 100 x 62,5 cm of Fuji Color DPII FG Crystal Archive paper for precise color reproduction and maximum longevity. As digital photo exposure remains a sensitive chemical process, each print is individually inspected before receiving the certificate of authenticity including the serial number and signature.<br><br>A white border of 1cm / inch around the print is added to allow easy framing. Prints are carefully wrapped in silk paper and packaged in a cardboard box for safe shipping.</p>
                 </div>
             </div>
-        
             <div id="aluminium-dibond">
                 <div class="flexslider" data-role="overlay-slider">
                     <ul class="slides">
-                        
                             <li>
                                 <figure>
                                     <img src="../../images/spec_dibond.jpg">
                                 </figure>
                             </li>
-                        
                     </ul>
                 </div>                
                 <div class="text-content">
@@ -312,17 +294,14 @@
                     <p class="text">Since the beginning, our pieces have been available in the sophisticated, frameless DIBOND® production technique, a visually minimalist and modern option to framing.<br><br>The print is sandwiched (using clear silicone) between 3mm highest grade acrylic glass by PLEXIGLASS® and 3mm of DIBOND®, a rigid aluminum / polyethylene composite material. A hidden aluminum framework on the back adds stability and allows effortless mounting.<br><br>Milled with CNC precision, the finished piece weighs 5 kg / 11 lbs and seems to float on the wall. All used materials are recyclable, as is our custom, cardboard based box.</p>
                 </div>
             </div>
-        
             <div id="framed">
                 <div class="flexslider" data-role="overlay-slider">
                     <ul class="slides">
-                        
                             <li>
                                 <figure>
                                     <img src="../../images/spec_frame.jpg">
                                 </figure>
                             </li>
-                        
                     </ul>
                 </div>                
                 <div class="text-content">
@@ -331,19 +310,15 @@
                     <p class="text">A classic, hand built wooden frame, available in black and oak is the third and most exclusive option we offer.<br><br>Behind 3mm highest grade acrylic glass by PLEXIGLASS®, the print remains protected yet intact (compared to DIBOND®, where the print is permanently laminated to the acrylic glass with silicone), a common requirement by collectors.<br><br>The back of the piece is covered in a textured, black fabric, invisible when the piece is mounted, nevertheless a treat for the connoisseur of subtle details.<br><br>Weighin in at 6 kg / xx lbs, the piece comes with screw-in hooks, ready to mount, and ships in a custom, cardboard based box.</p>
                 </div>
             </div>
-        
-    
 </div>
             </div>
 
             <footer class="legal-footer content">
-    © 2009 - 2015 | ALL RIGHTS RESERVED | <a href="../../meta/agb/index.html">TERMS AND CONDITIONS</a> | <a href="../../meta/imprint/index.html">CONTACT</a>
-</footer>
-        </div>
+                © 2009 - 2015 | ALL RIGHTS RESERVED | <a href="../../meta/agb/index.html">TERMS AND CONDITIONS</a> | <a href="../../meta/imprint/index.html">CONTACT</a>
+            </footer>        </div>
 
         <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><defs> <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #4b9e70; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill-rule: evenodd; } </style>  <style> .cls-1 { fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style> </defs><symbol viewBox="0 0 32 32" id="icon-arrow-down"><title>arrow-down</title>  <path id="arrow-down-arrow" class="cls-1" d="M520,614.6l-1.1-1.6-7.172,4.8L505.1,613l-1.1,1.6,7.724,6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-left"><title>arrow-left</title>  <path id="arrow-left-arrow" class="cls-1" d="M514.4,625l1.6-1.1-4.8-7.172L516,610.1l-1.6-1.1-6.4,7.724Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-right"><title>arrow-right</title>  <path id="arrow-right-arrow" class="cls-1" d="M509.6,625l-1.6-1.1,4.8-7.172L508,610.1l1.6-1.1,6.4,7.724Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-up"><title>arrow-up</title>  <path id="arrow-up-arrow" class="cls-1" d="M520,619.4l-1.1,1.6-7.172-4.8L505.1,621l-1.1-1.6,7.724-6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-cart_num"><title>cart_num</title>  <circle class="cls-1" cx="16" cy="16" r="14"/> </symbol><symbol viewBox="0 0 32 32" id="icon-close"><title>close</title>  <path id="close-close" class="cls-1" d="M928,130l-2-2-6,6-6-6-2,2,6,6-6,6,2,2,6-6,6,6,2-2-6-6Z" transform="translate(-904 -120)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-dropdown-close"><title>dropdown-close</title>  <path class="cls-1" d="M609,779h9l-4.5-8Z" transform="translate(-597.5 -759)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-dropdown-open"><title>dropdown-open</title>  <path class="cls-1" d="M609,771h9l-4.5,8Z" transform="translate(-597.5 -759)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-hamburger"><title>hamburger</title>  <path id="hamburger-_" data-name="|||" class="cls-1" d="M957.985,15v3.7h20V15h-20Zm0,7.155v3.7h20v-3.7h-20Zm0,7.155v3.7h20v-3.7h-20Z" transform="translate(-952 -8)"/> </symbol></svg>
                 <div class="overlay-container"><div class="overlay-wrapper"><div class="overlay-content"><div class="overlay"></div></div></div><div class="overlay-background"></div></div>
-        <script src="../../scripts/main.js"></script>
-
+                <script src="../../scripts/main.js"></script>
     </body>
 </html>
