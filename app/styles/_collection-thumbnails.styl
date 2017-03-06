@@ -43,7 +43,7 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                background-image: url(../images/thumb-sprite.jpg);
+                background-image: url(../images/tnw-collection/tnw-thumb-sprite.jpg);
                 background-size: 400% auto;
                 filter: grayscale(100%) brightness(0.5);
                 transition: all 0.5s ease-in-out;
@@ -57,14 +57,14 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                background-image: url(../images/thumb-logos.png);
+                background-image: url(../images/tnw-collection/thumb-logos.png);
                 background-size: 400% auto;
                 transition: all 0.3s ease-in-out;
             }
             
             &:hover {
                 &:before {
-                    filter: grayscale(0%) brightness(0.75);
+                    filter: grayscale(0%) brightness(1);
                 }
                 
                  &:after {
@@ -136,42 +136,46 @@
         }
     }
  
-    &.collection-itn {
+    &.collection-mart {
         li {
             width: 33%;
-            height: 512px;
-            
+            height: 768px;
+
             a {
+                transition: all 0.5s ease-in-out;
+                z-index: 2;
+
                 &:before {
-                    background-image: url(../images/itn-thumb-sprite.jpg);
+                    background-image: url(../images/mart-collection/thumb-sprite.jpg);
                     background-size: 1024px auto;
                     background-position: 0 0;
-                    filter: none;
                 }
                 
                 &:after {
-                    height: 50%;
-                    top: 75%;
-                    margin-top: -256px;
-                    background-position: -335px -380px;
+                    display: none;
                 }
                 
-                &.all-mart {
+                &.free {
                     &:before {
-                        background-position: -682px 0;
-                    }
-                    &:after {
-                        background-position: -1012px -51px;
+                        background-position: 0 0;
                     }
                 }
                 
-                &.world-of-drugs {
+                &.forever-sunshine {
                     &:before {
                         background-position: -341px 0;
                     }
-                    &:after {
-                        background-position: -670px -715px;
+                }
+
+                &.the-isle {
+                    &:before {
+                        background-position: -683px 0;
                     }
+                }
+
+                &:hover {
+                    z-index: 20;
+                    box-shadow: 0 0 120px 0 #000;
                 }
             }
         }

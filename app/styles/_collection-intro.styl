@@ -1,10 +1,5 @@
-tnw_intro_bg.jpg
-tnw_intro_headline.png
-tnw_logo_big.png
-tnw-title.png
 
-
-.collection-logo-tnw {
+.collection-logo-tnw , .collection-logo-mart {
     width: 1024px;
     height: 512px;
     background: url('../images/tnw-collection/tnw-title.png');
@@ -12,8 +7,13 @@ tnw-title.png
     background-size: 100% auto;
 }
 
+.collection-logo-mart {
+    background-image: url('../images/mart-collection/mart-title.png');
+}
+
 .collection-intro {
     background: url('../images/tnw-collection/tnw_intro_bg.jpg') 0 0;
+    background-size: 100% auto;
     padding: 0 128px 0;
     overflow: hidden;
     position: relative;
@@ -31,15 +31,11 @@ tnw-title.png
         line-height: 26px;
         padding: 0 65px 25px 65px;
         text-align: left;
-
-        &:last-child {
-            border-bottom: 2px solid #cacec6;
-        }
     }
     
     h2 {
         transition: all 0.3s 0.1s ease-in-out;
-        background: url('../images/tnw-collection/tnw_intro_headline.png');
+        background: url('../images/tnw-collection/tnw_intro_headline.png') no-repeat;
         background-size: 100% auto;
         width: 506px;
         height: 37px;
@@ -59,4 +55,13 @@ tnw-title.png
         margin-bottom: 60px;
     }
 
+    &--mart {
+        background: url('../images/mart-collection/mart_intro_bg.jpg') 0 0;
+
+        h2 {
+            width: 609px;
+            height: 26px;
+            background-image: url('../images/mart-collection/mart_intro_headline.png');
+        }
+    }
 }
