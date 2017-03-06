@@ -1,0 +1,74 @@
+{
+    "sizes": [
+        {
+            "size": "100cm x 62cm / 39.4\" x 24.4\"",
+            "edition": "Edition of 100",
+            "finishing-options": [
+                {
+                    "title": "Print Glossy",
+                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "weight": "0.615"
+                },
+                {
+                    "title": "Print Matte",
+                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "weight": "10"
+                },
+                {
+                    "title": "Alum. Dibond",
+                    "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\"}",
+                    "weight": "15"
+                },
+                 {
+                    "title": "Black Frame",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "weight": "15"
+                },
+                 {
+                    "title": "White Frame",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "weight": "15"
+                },
+                 {
+                    "title": "Maple Frame",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "weight": "15"
+                }
+            ]
+        }
+    ],
+    "finish-teaser": [
+        {
+            "title": "Print",
+            "id": "print-only",
+            "img": "../../images/teaser/finish-print.jpg"
+        },
+        {
+            "title": "Aluminium Dibond®",
+            "id": "aluminium-dibond",
+            "img": "../../images/teaser/finish-dibond.jpg"
+        },
+        {
+            "title": "Frame",
+            "id": "framed",
+            "img": "../../images/teaser/finish-framed.jpg"
+        }
+    ],
+    "artworks": {
+        "free": {
+            "title": "Free",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg"
+        },
+        "forever-sunshine": {
+            "title": "Forever Sunshine",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg"
+        },
+        "the-isle": {
+            "title": "The Isle",
+            "series": "Series I / 2011",
+            "image": "tnw_allmart.jpg"
+        }
+    }
+}

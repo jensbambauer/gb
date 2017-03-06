@@ -1,0 +1,35 @@
+---
+template: default.hbs
+slug: mart
+title: Mart
+transparent-header: true
+---
+<section class="content">
+    <ul class="collection-thumbnails collection-mart">
+        {{#each mart.artworks }}
+            <li>
+                <a href="{{@key}}/index.html" class="{{@key}}">
+                    {{title}}
+                    <span class="button inverted">View Piece</span>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+    <div class="collection-logo-mart"></div>
+    <div class="collection-intro collection-intro--mart">
+        <label for="collection-introduction" class="button toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>
+        <input type="checkbox" class="toggle-trigger" id="collection-introduction">
+        <div class="toggle-box-container">
+            <h2>Everything and nothing money can’t buy.</h2>
+            <div class="toggle-box has-delay">
+                <div class="scroll">
+                    <p>Mart™ by Geebird&Bamby™ visually reflects aspects of consumer culture by staging an ostensibly mundane, material world inside an American supermarket, set sometime in the late 20th century.</p>
+                    <p>The series’ contrasting juxtaposition of abundance and depletion, truth and invention, denial and make-believe echo the struggle of man with a life overexposed to advertising, torn between temptation and disgust, sometimes blatantly so, at other times concealed.</p>
+                    <p>The ongoing fine art photography series, representing a microcosm within „The New World“ series which preceded it, is presented in life-size at a dimension of 180cm x 114cm. The photographic exposures are limited to 25 per piece. In addition to the exposures, aluminum Dibond® and framing options are available.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{>photowall-quote }}
