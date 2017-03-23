@@ -124,6 +124,7 @@ var slider = (function (slider, $, undefined) {
 
             $(this).flexslider($.extend({
                 animation: "slide",
+                startAt: 1,
                 slideshow: false,
                 start: initLoading,
                 after: loadNext,

@@ -26,7 +26,7 @@
             vm.finishOptionText($(node).find('select option:selected').text());
             vm.weight($(node).find('select option:selected').data('weight'));
         }
-        
+
         $(document).on('regionUpdate', function() {
             updatePrice(vm.priceObject());
         });
