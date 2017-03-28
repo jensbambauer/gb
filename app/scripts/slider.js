@@ -62,17 +62,28 @@ var slider = (function (slider, $, undefined) {
 
     }
 
-    var initLoading = function(slider) {
-        loadImage($(slider[0]).find('[data-src]')[$(slider[0]).find('[data-src]').length - 1]);
-        loadImage($(slider[0]).find('[data-src]')[1]);
+    var initLoading = function(slider, start) {
+        $(slider).find('[data-src]').each(function() {
+            $(this).attr('src', $(this).data('src'));
+            $(this).parent().removeClass('preloading');
+        });
 
-        loadNext(slider);
-        onResize();
+        /*console.log(start, $(slider[start]).find('[data-src]') );
+        
+        loadImage(
+            $(slider[start]).find('[data-src]').parent().prev().find('[data-src]')
+        );
+        loadImage($(slider[start]).find('[data-src]')[1]);
+
+//        loadNext(slider);
+        onResize();*/
     }
 
     var init = function(selector, options) {
         $(selector).each(function() {
-
+            
+            var start = parseInt($(this).data('start')) || 0;
+            
             if ( $(this).data('order') === 'random') {
                 var categories = [];
                 var $el = $(this);
@@ -124,9 +135,11 @@ var slider = (function (slider, $, undefined) {
 
             $(this).flexslider($.extend({
                 animation: "slide",
-                startAt: 1,
+                startAt: start,
                 slideshow: false,
-                start: initLoading,
+                start: function(slider) {
+                    initLoading(slider, start)
+                },
                 after: loadNext,
                 nextText: '<svg><use xlink:href="#icon-arrow-right"/></svg>',
                 prevText: '<svg><use xlink:href="#icon-arrow-left"/></svg>'
