@@ -55,28 +55,13 @@ var slider = (function (slider, $, undefined) {
     }
 
     var loadNext = function(slider) {
-
-        loadImage($(slider[0]).find('[data-src]')[slider.currentSlide + 1]);
-
-        loadImage($(slider[0]).find('[data-src]')[slider.currentSlide + 2]);
-
+        loadImage($(slider[0]).find('.flex-active-slide').find('[data-src]')[0]);
+        loadImage($(slider[0]).find('.flex-active-slide').next().find('[data-src]')[0]);
+        loadImage($(slider[0]).find('.flex-active-slide').prev().find('[data-src]')[0]);
     }
 
     var initLoading = function(slider, start) {
-        $(slider).find('[data-src]').each(function() {
-            $(this).attr('src', $(this).data('src'));
-            $(this).parent().removeClass('preloading');
-        });
-
-        /*console.log(start, $(slider[start]).find('[data-src]') );
-        
-        loadImage(
-            $(slider[start]).find('[data-src]').parent().prev().find('[data-src]')
-        );
-        loadImage($(slider[start]).find('[data-src]')[1]);
-
-//        loadNext(slider);
-        onResize();*/
+        loadNext(slider);
     }
 
     var init = function(selector, options) {
