@@ -22,8 +22,8 @@ var slider = (function (slider, $, undefined) {
 
     }
 
-    var onImageLoad = function() {
-        $(this).parent().removeClass('preloading');
+    var onImageLoad = function(e) {
+        $(e.currentTarget).parent().removeClass('preloading');
     }
 
     var shuffle = function(array) {
@@ -46,10 +46,16 @@ var slider = (function (slider, $, undefined) {
     }
 
 
-    var loadImage = function(el) {
+    var loadImage = function(el, cb) {
         if ($(el).attr('src') === undefined) {
             $(el)
-                .on('load', onImageLoad)
+                .on('load', function(e) {
+                    onImageLoad(e);
+                    
+                    if(cb) {
+                        cb();
+                    }
+                })
                 .attr('src', $(el).data('src'));
         }
     }
@@ -61,7 +67,12 @@ var slider = (function (slider, $, undefined) {
     }
 
     var initLoading = function(slider, start) {
-        loadNext(slider);
+        
+        loadImage($(slider[0]).find('.flex-active-slide').find('[data-src]')[0], function() {
+            loadImage($(slider[0]).find('.flex-active-slide').next().find('[data-src]')[0]);
+            loadImage($(slider[0]).find('.flex-active-slide').prev().find('[data-src]')[0]);
+        });
+        
     }
 
     var init = function(selector, options) {
