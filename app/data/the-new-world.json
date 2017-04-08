@@ -175,7 +175,43 @@
         "modern-gentleman": {
             "title": "The Modern Gentleman",
             "series": "Series I / 2011",
-            "image": "tnw_tmg.jpg",
+            "images": [
+                {
+                    "1024": "SI-themoderngentleman_1_1024.jpg",
+                    "1440": "SI-themoderngentleman_1_1440.jpg",
+                    "1680": "SI-themoderngentleman_1_1680.jpg",
+                    "2048": "SI-themoderngentleman_1_2048.jpg",
+                    "2880": "SI-themoderngentleman_1_2880.jpg"
+                },
+                {
+                    "1024": "SI-themoderngentleman_2_1024.jpg",
+                    "1440": "SI-themoderngentleman_2_1440.jpg",
+                    "1680": "SI-themoderngentleman_2_1680.jpg",
+                    "2048": "SI-themoderngentleman_2_2048.jpg",
+                    "2880": "SI-themoderngentleman_2_2880.jpg"
+                },
+                {
+                    "1024": "SI-themoderngentleman_3_1024.jpg",
+                    "1440": "SI-themoderngentleman_3_1440.jpg",
+                    "1680": "SI-themoderngentleman_3_1680.jpg",
+                    "2048": "SI-themoderngentleman_3_2048.jpg",
+                    "2880": "SI-themoderngentleman_3_2880.jpg"
+                },
+                {
+                    "1024": "SI-themoderngentleman_4_1024.jpg",
+                    "1440": "SI-themoderngentleman_4_1440.jpg",
+                    "1680": "SI-themoderngentleman_4_1680.jpg",
+                    "2048": "SI-themoderngentleman_4_2048.jpg",
+                    "2880": "SI-themoderngentleman_4_2880.jpg"
+                },
+                {
+                    "1024": "SI-themoderngentleman_5_1024.jpg",
+                    "1440": "SI-themoderngentleman_5_1440.jpg",
+                    "1680": "SI-themoderngentleman_5_1680.jpg",
+                    "2048": "SI-themoderngentleman_5_2048.jpg",
+                    "2880": "SI-themoderngentleman_5_2880.jpg"
+                }
+            ],
             "additional-buying-options": [
                 {
                     "title": "At LUMAS Galleries and Online Store",

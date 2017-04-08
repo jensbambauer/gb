@@ -1,5 +1,28 @@
-<section class="main-stage single">
+<!--section class="main-stage single">
     <div class="preloader preloading">
-        <img class="stage" data-src="../../images/artworks/{{image}}">
+        <img class="stage" data-src="../../../../images/artworks/{{image}}">
+    </div>
+</section-->
+
+<section class="main-stage">
+    <div class="home-stage">
+        <div class="flexslider" data-role="slider" data-start="0">
+            <ul class="slides">
+                {{#each images}}
+                    <li>
+                        <div class="slide-content">
+                            <div class="slider-preloader">
+                                <picture>
+                                    <source srcset="../../../../images/artworks/highres/{{1680}}" media="(min-width: 1920px)">
+                                    <source srcset="../../../../images/artworks/highres/{{1440}}, ../../../../images/artworks/highres/{{2880}} 2x" media="(min-width: 1440px)">
+                                    <source srcset="../../../../images/artworks/highres/{{1024}}, ../../../../images/artworks/highres/{{2048}} 2x">
+                                    <img srcset="../../../../images/artworks/highres/{{1024}}, ../../../../images/artworks/highres/{{2048}} 2x" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
     </div>
 </section>
