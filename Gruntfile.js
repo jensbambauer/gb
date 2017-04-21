@@ -171,6 +171,7 @@ module.exports = function(grunt) {
                     'bower_components/flexslider/jquery.flexslider.js',
                     'bower_components/velocity/velocity.js',
                     'bower_components/twitter-fetcher/js/twitterFetcher.js',
+                    'bower_components/lazysizes/lazysizes.js',
                     'app/scripts/{,*/}*.js'
                 ],
                 dest: '.tmp/scripts/main.js'

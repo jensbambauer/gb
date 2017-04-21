@@ -67,15 +67,27 @@ var slider = (function (slider, $, undefined) {
     }
 
     var initLoading = function(slider, start) {
+
+        $(slider[0]).find('.flex-active-slide').find('img').addClass('lazyload');
         
+        
+        /*
         loadImage($(slider[0]).find('.flex-active-slide').find('[data-src]')[0], function() {
             loadImage($(slider[0]).find('.flex-active-slide').next().find('[data-src]')[0]);
             loadImage($(slider[0]).find('.flex-active-slide').prev().find('[data-src]')[0]);
         });
-        
+        */
     }
 
+    var onImageLoad = function(e) {
+        $(e.target).parents('li').next().find('img').addClass('lazyload');
+        $(e.target).parents('li').prev().find('img').addClass('lazyload');
+    };
+
     var init = function(selector, options) {
+        
+        document.addEventListener('lazybeforeunveil', onImageLoad);
+        
         $(selector).each(function() {
             
             var start = parseInt($(this).data('start')) || 0;

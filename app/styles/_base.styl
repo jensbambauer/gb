@@ -264,9 +264,16 @@ header {
 
 .slider-preloader {
     height: 100%;
+    background: black url(../images/preloader_black.gif) no-repeat center center;
+    background-size: 150px 175px;
 
     img {
+        opacity: 0;
         transition: 1s all;
+    }
+
+    img.lazyloaded {
+        opacity: 1;
     }
 
     .no-anim {
