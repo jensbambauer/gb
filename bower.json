@@ -8,9 +8,13 @@
   "devDependencies": {
     "flexslider": "~2.5.0",
     "handlebars": "~3.0.3",
+    "jquery.event.move": "~2.0.1",
+    "jquery.event.swipe": "~0.5.4",
     "knockout": "knockoutjs#~3.3.0",
     "lazysizes": "~3.0.0",
+    "swiper": "~3.4.2",
     "twitter-fetcher": "16.0.3",
+    "unslider": "jquery.unslider#~2.0.3",
     "velocity": "~1.3.1"
   }
 }

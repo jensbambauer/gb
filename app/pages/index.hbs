@@ -4,9 +4,9 @@ transparent-header: true
 ---
 <section class="main-stage">
     <div class="home-stage">
-        <div class="flexslider" data-role="slider" data-priority="itn" data-order="random" data-start="1">
-            <ul class="slides">
-                <li class="itn">
+        <div class="swiper-container" data-role="slider" data-priority="itn" data-order="random" data-start="1">
+            <ul class="slides swiper-wrapper">
+                <li class="swiper-slide itn">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
@@ -19,7 +19,7 @@ transparent-header: true
                         <a href="in-the-news/allmart/index.html" class="button">View Piece</a>
                     </div>
                 </li>
-                <li class="itn">
+                <li class="swiper-slide itn">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
@@ -32,7 +32,7 @@ transparent-header: true
                         <a href="in-the-news/allmart/index.html" class="button">View Piece</a>
                     </div>
                 </li>
-                <li class="itn">
+                <li class="swiper-slide itn">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
@@ -45,7 +45,7 @@ transparent-header: true
                         <a href="in-the-news/allmart/index.html" class="button">View Piece</a>
                     </div>
                 </li>
-                <li class="tnw">
+                <li class="swiper-slide tnw">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
@@ -58,7 +58,7 @@ transparent-header: true
                         <a href="in-the-news/allmart/index.html" class="button">View Piece</a>
                     </div>
                 </li>
-                <li class="tnw">
+                <li class="swiper-slide tnw">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
@@ -71,7 +71,7 @@ transparent-header: true
                         <a href="in-the-news/allmart/index.html" class="button">View Piece</a>
                     </div>
                 </li>
-                <li class="tnw">
+                <li class="swiper-slide tnw">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
@@ -85,11 +85,12 @@ transparent-header: true
                     </div>
                 </li>
             </ul>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><svg><use xlink:href="#icon-arrow-left"/></svg></div>
+            <div class="swiper-button-next"><svg><use xlink:href="#icon-arrow-right"/></svg></div>
         </div>
     </div>
 </section>
-
-<div class="scroll-arrow" data-role="scroll-indicator"><svg><use xlink:href="#icon-arrow-down"/></svg></div>
 
 <section class="content">
     <ul class="teaser grid">

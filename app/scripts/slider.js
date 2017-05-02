@@ -11,17 +11,6 @@
 var slider = (function (slider, $, undefined) {
     'use strict';
 
-    var onResize = function() {
-        // var w = $('[data-role="slider"]').find('.slides .flex-active-slide .slide-content').width();
-//
-//         $('[data-role="slider"]').find('.slides .flex-active-slide').each(function() {
-//             $(this).find('.slide-content').css({
-//                 marginLeft: ($(this).width() - $(this).find('.slide-content').width()) / 2
-//             });
-//         });
-
-    }
-
     var onImageLoad = function(e) {
         $(e.currentTarget).parent().removeClass('preloading');
     }
@@ -89,17 +78,18 @@ var slider = (function (slider, $, undefined) {
         document.addEventListener('lazybeforeunveil', onImageLoad);
         
         $(selector).each(function() {
-            
             var start = parseInt($(this).data('start')) || 0;
-            
+
             if ( $(this).data('order') === 'random') {
                 var categories = [];
                 var $el = $(this);
                 var $li = $(this).find('li');
 
                 $li.each(function() {
-                    if( $.inArray($(this).attr('class'), categories) === -1) {
-                        categories.push($(this).attr('class'));
+                    var cat = $(this).attr('class').split('swiper-slide ').join('');
+                    
+                    if( $.inArray(cat, categories) === -1) {
+                        categories.push(cat);
                     }
                 });
 
@@ -140,7 +130,7 @@ var slider = (function (slider, $, undefined) {
                 $el.find('.slides').append($container.html());
             }
 
-
+/*
             $(this).flexslider($.extend({
                 animation: "slide",
                 startAt: start,
@@ -152,10 +142,22 @@ var slider = (function (slider, $, undefined) {
                 nextText: '<svg><use xlink:href="#icon-arrow-right"/></svg>',
                 prevText: '<svg><use xlink:href="#icon-arrow-left"/></svg>'
             }, options || {}));
+*/
+            
 
+            var mySwiper = new Swiper('.swiper-container', {
+                speed: 400,
+                spaceBetween: 0,
+                loop: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev'
+            });
+
+            
+            
+            $(slider[0]).find('.flex-active-slide').find('img').addClass('lazyload');
         });
 
-        $(window).on('resize', onResize);
 
 
     };

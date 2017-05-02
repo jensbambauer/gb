@@ -169,6 +169,7 @@ module.exports = function(grunt) {
                     'bower_components/handlebars/handlebars.js',
                     'bower_components/knockout/dist/knockout.js',
                     'bower_components/flexslider/jquery.flexslider.js',
+                    'bower_components/swiper/dist/js/swiper.jquery.min.js',
                     'bower_components/velocity/velocity.js',
                     'bower_components/twitter-fetcher/js/twitterFetcher.js',
                     'bower_components/lazysizes/lazysizes.js',
