@@ -149,8 +149,12 @@ var slider = (function (slider, $, undefined) {
                 speed: 400,
                 spaceBetween: 0,
                 loop: true,
+				autoHeight: true,
                 nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev'
+                prevButton: '.swiper-button-prev',
+                onSlideChangeEnd: function(swiper) {
+                    swiper.slides.filter('.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next').find('img').not('.lazyloaded').addClass('lazyload');
+                }
             });
 
             

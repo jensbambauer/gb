@@ -245,6 +245,28 @@ header {
 .push-right {
     float: right;
 }
+
+.slider-preloader {
+    height: 100%;
+    background: black url(../images/preloader_black.gif) no-repeat center center;
+    background-size: 150px 175px;
+
+    img {
+        opacity: 0;
+        transform: scale(1.05);
+        transition: 1s all;
+    }
+
+    img.lazyloaded {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .no-anim {
+        transition: none;
+    }
+}
+
 /*
 .preloader {
     background: black;
