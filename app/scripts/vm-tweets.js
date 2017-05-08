@@ -36,10 +36,9 @@
                 var filtered = [];
                 
                 $.each(tweets, function(i, tweet) {
-
                     if ($(tweet.author).find('[data-scribe="element:screen_name"]').text() === '@geebirdandbamby') {
                         filtered.push({
-                            date: tweet.time,
+                            date: moment(tweet.timestamp).format('MMMM Do'),
                             link: tweet.permalinkURL,
                             tweet: tweet.tweet
                         });

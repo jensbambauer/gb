@@ -153,7 +153,11 @@ var slider = (function (slider, $, undefined) {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 onSlideChangeEnd: function(swiper) {
-                    swiper.slides.filter('.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next').find('img').not('.lazyloaded').addClass('lazyload');
+                    swiper.slides.filter('.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next').find('img').each(function() {
+                        if(!$(this).hasClass('lazyload') && !$(this).hasClass('lazyloaded')) {
+                            $(this).addClass('lazyload');
+                        }
+                    });
                 }
             });
 
