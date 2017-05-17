@@ -5,10 +5,10 @@ title: Mart
 transparent-header: true
 ---
 <section class="content">
-    <ul class="collection-thumbnails collection-mart">
+    <ul class="collection-thumbnails collection-mart" data-role="one-hover">
         {{#each mart.artworks }}
             <li>
-                <a href="{{@key}}/index.html" class="{{@key}}">
+                <a href="{{@key}}/index.html" class="{{@key}} {{#is @key "forever-sunshine"}}hover{{/is}}">
                     {{title}}
                     <span class="button inverted">View Piece</span>
                 </a>
@@ -32,4 +32,4 @@ transparent-header: true
     </div>
 </section>
 
-{{>photowall-quote }}
+{{>photowall-newsletter }}

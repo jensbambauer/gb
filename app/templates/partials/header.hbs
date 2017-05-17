@@ -4,26 +4,26 @@
                     <input id="navigation-toggle" name="nav" type="checkbox" autocomplete="off">
                     <nav class="main-nav">
                         <ul>
-                            <li>
+                            <li {{#is basename "index"}}{{#unless layout}} class="active"{{/unless}}{{/is}}>
                                 <a href="{{assets}}/index.html">Home</a>
                             </li>
-                            <li>
+                            <li {{#is basename "mart"}} class="active"{{/is}}>
                                 <a href="{{assets}}/mart/index.html">Mart</a>
                             </li>
-                            <li>
+                            <li {{#is basename "the-new-world"}} class="active"{{/is}}>
                                 <a href="{{assets}}/the-new-world/index.html">The New World</a>
                             </li>
-                            <li>
+                            <li {{#is basename "about"}} class="active"{{/is}}>
                                 <a href="{{assets}}/meta/about/index.html">About</a>
                             </li>
-                            <li>
+                            <li {{#is basename "index"}}{{#is layout "journal.hbs"}} class="active"{{/is}}{{/is}}>
                                 <a href="{{assets}}/journal/index.html">Journal</a>
                             </li>
                             <li>
                                 <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>
                             </li>
                         </ul>
-                        <label for="navigation-toggle" class="icon-navi"><svg><use xlink:href="#icon-hamburger"/></svg></label>
+                        <label for="navigation-toggle" class="icon-navi"><svg class="closed"><use xlink:href="#icon-hamburger"/></svg><svg class="open"><use xlink:href="#icon-close"/></svg></label>
                         <a href="" class="cart-link" data-role="toggle-cart">Cart</a>
                     </nav>
                 </div>

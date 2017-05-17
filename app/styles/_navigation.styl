@@ -12,14 +12,20 @@
     transition: all 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
     margin-top: 48px;
     
+    .closed , .open {
+        
+        transition: all 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
     
     #navigation-toggle:checked + & {
         transform: translate3d(0,0,0);
         margin-top: 0px;
         
         label {
-            background: #eeeeee;
-            color: black;
+        }
+        
+        .closed, .open {
+            transform: translate3d(0,-63px,0);
         }
     }
     
@@ -29,6 +35,14 @@
         display: block;
         background: white;
         border-bottom: 2px solid #eee;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        &.active {
+            background: #eee;
+        }
     }
     
     a {

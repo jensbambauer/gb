@@ -62,7 +62,7 @@
                 transition: all 0.3s ease-in-out;
             }
             
-            &:hover {
+            &:hover , &.hover {
                 &:before {
                     filter: grayscale(0%) brightness(1);
                 }
@@ -142,7 +142,7 @@
             height: 768px;
 
             a {
-                transition: all 0.5s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 z-index: 2;
 
                 &:before {
@@ -173,7 +173,7 @@
                     }
                 }
 
-                &:hover {
+                &.hover {
                     z-index: 20;
                     box-shadow: 0 0 120px 0 #000;
                 }
