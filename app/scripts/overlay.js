@@ -7,6 +7,14 @@
  
 /*jslint browser: true*/
 
+var getScrollBarWidth = function() {
+  var scrollDiv = document.createElement('div');
+  scrollDiv.className = 'scrollbar-measure';
+  document.body.appendChild(scrollDiv);
+  var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
+  document.body.removeChild(scrollDiv);
+  return scrollbarWidth;
+};
 
 var overlay = (function (overlay, $, undefined) {
     'use strict';
@@ -21,6 +29,9 @@ var overlay = (function (overlay, $, undefined) {
         
         var close = function() {
             $('.overlay-container').removeClass('open');
+            
+            document.body.style.overflow = 'auto';
+            document.body.style.paddingRight = '0px';
         };
         
         var removeClose = function() {
@@ -29,6 +40,9 @@ var overlay = (function (overlay, $, undefined) {
         
         var open = function(id) {
             $('.overlay-container').addClass('open');
+            
+            document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = getScrollBarWidth() + 'px';
             
             $('.overlay').empty()
                 .append( $(id).html() )

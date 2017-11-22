@@ -58,12 +58,84 @@
         "all-mart": {
             "title": "All Mart",
             "series": "Series I / 2011",
-            "image": "tnw_allmart.jpg"
+            "images": [
+                {
+                    "1024": "allmart/SI-allmart_1_1024.jpg",
+                    "1440": "allmart/SI-allmart_1_1440.jpg",
+                    "1680": "allmart/SI-allmart_1_1680.jpg",
+                    "2048": "allmart/SI-allmart_1_2048.jpg",
+                    "2880": "allmart/SI-allmart_1_2880.jpg"
+                },
+                {
+                    "1024": "allmart/SI-allmart_2_1024.jpg",
+                    "1440": "allmart/SI-allmart_2_1440.jpg",
+                    "1680": "allmart/SI-allmart_2_1680.jpg",
+                    "2048": "allmart/SI-allmart_2_2048.jpg",
+                    "2880": "allmart/SI-allmart_2_2880.jpg"
+                },
+                {
+                    "1024": "allmart/SI-allmart_3_1024.jpg",
+                    "1440": "allmart/SI-allmart_3_1440.jpg",
+                    "1680": "allmart/SI-allmart_3_1680.jpg",
+                    "2048": "allmart/SI-allmart_3_2048.jpg",
+                    "2880": "allmart/SI-allmart_3_2880.jpg"
+                },
+                {
+                    "1024": "allmart/SI-allmart_4_1024.jpg",
+                    "1440": "allmart/SI-allmart_4_1440.jpg",
+                    "1680": "allmart/SI-allmart_4_1680.jpg",
+                    "2048": "allmart/SI-allmart_4_2048.jpg",
+                    "2880": "allmart/SI-allmart_4_2880.jpg"
+                },
+                {
+                    "1024": "allmart/SI-allmart_5_1024.jpg",
+                    "1440": "allmart/SI-allmart_5_1440.jpg",
+                    "1680": "allmart/SI-allmart_5_1680.jpg",
+                    "2048": "allmart/SI-allmart_5_2048.jpg",
+                    "2880": "allmart/SI-allmart_5_2880.jpg"
+                }
+            ]
         },
         "broken-hearts-hotel": {
             "title": "The Broken Hearts Hotel",
             "series": "Series II / 2013",
-            "image": "tnw_bhh.jpg",
+            "images": [
+                {
+                    "1024": "thebrokenheartshotel/SII-thebrokenheartshotel_1_1024.jpg",
+                    "1440": "thebrokenheartshotel/SII-thebrokenheartshotel_1_1440.jpg",
+                    "1680": "thebrokenheartshotel/SII-thebrokenheartshotel_1_1680.jpg",
+                    "2048": "thebrokenheartshotel/SII-thebrokenheartshotel_1_2048.jpg",
+                    "2880": "thebrokenheartshotel/SII-thebrokenheartshotel_1_2880.jpg"
+                },
+                {
+                    "1024": "thebrokenheartshotel/SII-thebrokenheartshotel_2_1024.jpg",
+                    "1440": "thebrokenheartshotel/SII-thebrokenheartshotel_2_1440.jpg",
+                    "1680": "thebrokenheartshotel/SII-thebrokenheartshotel_2_1680.jpg",
+                    "2048": "thebrokenheartshotel/SII-thebrokenheartshotel_2_2048.jpg",
+                    "2880": "thebrokenheartshotel/SII-thebrokenheartshotel_2_2880.jpg"
+                },
+                {
+                    "1024": "thebrokenheartshotel/SII-thebrokenheartshotel_3_1024.jpg",
+                    "1440": "thebrokenheartshotel/SII-thebrokenheartshotel_3_1440.jpg",
+                    "1680": "thebrokenheartshotel/SII-thebrokenheartshotel_3_1680.jpg",
+                    "2048": "thebrokenheartshotel/SII-thebrokenheartshotel_3_2048.jpg",
+                    "2880": "thebrokenheartshotel/SII-thebrokenheartshotel_3_2880.jpg"
+                },
+                {
+                    "1024": "thebrokenheartshotel/SII-thebrokenheartshotel_4_1024.jpg",
+                    "1440": "thebrokenheartshotel/SII-thebrokenheartshotel_4_1440.jpg",
+                    "1680": "thebrokenheartshotel/SII-thebrokenheartshotel_4_1680.jpg",
+                    "2048": "thebrokenheartshotel/SII-thebrokenheartshotel_4_2048.jpg",
+                    "2880": "thebrokenheartshotel/SII-thebrokenheartshotel_4_2880.jpg"
+                },
+                {
+                    "1024": "thebrokenheartshotel/SII-thebrokenheartshotel_5_1024.jpg",
+                    "1440": "thebrokenheartshotel/SII-thebrokenheartshotel_5_1440.jpg",
+                    "1680": "thebrokenheartshotel/SII-thebrokenheartshotel_5_1680.jpg",
+                    "2048": "thebrokenheartshotel/SII-thebrokenheartshotel_5_2048.jpg",
+                    "2880": "thebrokenheartshotel/SII-thebrokenheartshotel_5_2880.jpg"
+                }
+            ],
             "additional-buying-options": [
                 {
                     "title": "At LUMAS Galleries and Online Store",
@@ -83,12 +155,84 @@
         "ever-mall": {
             "title": "Ever Mall",
             "series": "Series II / 2013",
-            "image": "tnw_evermall.jpg"
+            "images": [
+                {
+                    "1024": "evermall/SII-evermall_1_1024.jpg",
+                    "1440": "evermall/SII-evermall_1_1440.jpg",
+                    "1680": "evermall/SII-evermall_1_1680.jpg",
+                    "2048": "evermall/SII-evermall_1_2048.jpg",
+                    "2880": "evermall/SII-evermall_1_2880.jpg"
+                },
+                {
+                    "1024": "evermall/SII-evermall_2_1024.jpg",
+                    "1440": "evermall/SII-evermall_2_1440.jpg",
+                    "1680": "evermall/SII-evermall_2_1680.jpg",
+                    "2048": "evermall/SII-evermall_2_2048.jpg",
+                    "2880": "evermall/SII-evermall_2_2880.jpg"
+                },
+                {
+                    "1024": "evermall/SII-evermall_3_1024.jpg",
+                    "1440": "evermall/SII-evermall_3_1440.jpg",
+                    "1680": "evermall/SII-evermall_3_1680.jpg",
+                    "2048": "evermall/SII-evermall_3_2048.jpg",
+                    "2880": "evermall/SII-evermall_3_2880.jpg"
+                },
+                {
+                    "1024": "evermall/SII-evermall_4_1024.jpg",
+                    "1440": "evermall/SII-evermall_4_1440.jpg",
+                    "1680": "evermall/SII-evermall_4_1680.jpg",
+                    "2048": "evermall/SII-evermall_4_2048.jpg",
+                    "2880": "evermall/SII-evermall_4_2880.jpg"
+                },
+                {
+                    "1024": "evermall/SII-evermall_5_1024.jpg",
+                    "1440": "evermall/SII-evermall_5_1440.jpg",
+                    "1680": "evermall/SII-evermall_5_1680.jpg",
+                    "2048": "evermall/SII-evermall_5_2048.jpg",
+                    "2880": "evermall/SII-evermall_5_2880.jpg"
+                }
+            ]
         },
         "fox-theatre": {
             "title": "Fox Theatre",
             "series": "Series I / 2011",
-            "image": "tnw_fox.jpg",
+            "images": [
+                {
+                    "1024": "foxtheatre/SI-foxtheatre_1_1024.jpg",
+                    "1440": "foxtheatre/SI-foxtheatre_1_1440.jpg",
+                    "1680": "foxtheatre/SI-foxtheatre_1_1680.jpg",
+                    "2048": "foxtheatre/SI-foxtheatre_1_2048.jpg",
+                    "2880": "foxtheatre/SI-foxtheatre_1_2880.jpg"
+                },
+                {
+                    "1024": "foxtheatre/SI-foxtheatre_2_1024.jpg",
+                    "1440": "foxtheatre/SI-foxtheatre_2_1440.jpg",
+                    "1680": "foxtheatre/SI-foxtheatre_2_1680.jpg",
+                    "2048": "foxtheatre/SI-foxtheatre_2_2048.jpg",
+                    "2880": "foxtheatre/SI-foxtheatre_2_2880.jpg"
+                },
+                {
+                    "1024": "foxtheatre/SI-foxtheatre_3_1024.jpg",
+                    "1440": "foxtheatre/SI-foxtheatre_3_1440.jpg",
+                    "1680": "foxtheatre/SI-foxtheatre_3_1680.jpg",
+                    "2048": "foxtheatre/SI-foxtheatre_3_2048.jpg",
+                    "2880": "foxtheatre/SI-foxtheatre_3_2880.jpg"
+                },
+                {
+                    "1024": "foxtheatre/SI-foxtheatre_4_1024.jpg",
+                    "1440": "foxtheatre/SI-foxtheatre_4_1440.jpg",
+                    "1680": "foxtheatre/SI-foxtheatre_4_1680.jpg",
+                    "2048": "foxtheatre/SI-foxtheatre_4_2048.jpg",
+                    "2880": "foxtheatre/SI-foxtheatre_4_2880.jpg"
+                },
+                {
+                    "1024": "foxtheatre/SI-foxtheatre_5_1024.jpg",
+                    "1440": "foxtheatre/SI-foxtheatre_5_1440.jpg",
+                    "1680": "foxtheatre/SI-foxtheatre_5_1680.jpg",
+                    "2048": "foxtheatre/SI-foxtheatre_5_2048.jpg",
+                    "2880": "foxtheatre/SI-foxtheatre_5_2880.jpg"
+                }
+            ],
             "additional-buying-options": [
                 {
                     "title": "At LUMAS Galleries and Online Store",
@@ -109,7 +253,43 @@
         "liquor-swamp": {
             "title": "Liquor Swamp",
             "series": "Series II / 2013",
-            "image": "tnw_lsw.jpg",
+            "images": [
+                {
+                    "1024": "liquorswamp/SII-liquorswamp_1_1024.jpg",
+                    "1440": "liquorswamp/SII-liquorswamp_1_1440.jpg",
+                    "1680": "liquorswamp/SII-liquorswamp_1_1680.jpg",
+                    "2048": "liquorswamp/SII-liquorswamp_1_2048.jpg",
+                    "2880": "liquorswamp/SII-liquorswamp_1_2880.jpg"
+                },
+                {
+                    "1024": "liquorswamp/SII-liquorswamp_2_1024.jpg",
+                    "1440": "liquorswamp/SII-liquorswamp_2_1440.jpg",
+                    "1680": "liquorswamp/SII-liquorswamp_2_1680.jpg",
+                    "2048": "liquorswamp/SII-liquorswamp_2_2048.jpg",
+                    "2880": "liquorswamp/SII-liquorswamp_2_2880.jpg"
+                },
+                {
+                    "1024": "liquorswamp/SII-liquorswamp_3_1024.jpg",
+                    "1440": "liquorswamp/SII-liquorswamp_3_1440.jpg",
+                    "1680": "liquorswamp/SII-liquorswamp_3_1680.jpg",
+                    "2048": "liquorswamp/SII-liquorswamp_3_2048.jpg",
+                    "2880": "liquorswamp/SII-liquorswamp_3_2880.jpg"
+                },
+                {
+                    "1024": "liquorswamp/SII-liquorswamp_4_1024.jpg",
+                    "1440": "liquorswamp/SII-liquorswamp_4_1440.jpg",
+                    "1680": "liquorswamp/SII-liquorswamp_4_1680.jpg",
+                    "2048": "liquorswamp/SII-liquorswamp_4_2048.jpg",
+                    "2880": "liquorswamp/SII-liquorswamp_4_2880.jpg"
+                },
+                {
+                    "1024": "liquorswamp/SII-liquorswamp_5_1024.jpg",
+                    "1440": "liquorswamp/SII-liquorswamp_5_1440.jpg",
+                    "1680": "liquorswamp/SII-liquorswamp_5_1680.jpg",
+                    "2048": "liquorswamp/SII-liquorswamp_5_2048.jpg",
+                    "2880": "liquorswamp/SII-liquorswamp_5_2880.jpg"
+                }
+            ],
             "additional-buying-options": [
                 {
                     "title": "At LUMAS Galleries and Online Store",
@@ -130,7 +310,43 @@
         "oasis-diner": {
             "title": "Oasis Diner",
             "series": "Series II / 2013",
-            "image": "tnw_ooasisdiner.jpg",
+            "images": [
+                {
+                    "1024": "oasisdiner/SII-oasisdiner_1_1024.jpg",
+                    "1440": "oasisdiner/SII-oasisdiner_1_1440.jpg",
+                    "1680": "oasisdiner/SII-oasisdiner_1_1680.jpg",
+                    "2048": "oasisdiner/SII-oasisdiner_1_2048.jpg",
+                    "2880": "oasisdiner/SII-oasisdiner_1_2880.jpg"
+                },
+                {
+                    "1024": "oasisdiner/SII-oasisdiner_2_1024.jpg",
+                    "1440": "oasisdiner/SII-oasisdiner_2_1440.jpg",
+                    "1680": "oasisdiner/SII-oasisdiner_2_1680.jpg",
+                    "2048": "oasisdiner/SII-oasisdiner_2_2048.jpg",
+                    "2880": "oasisdiner/SII-oasisdiner_2_2880.jpg"
+                },
+                {
+                    "1024": "oasisdiner/SII-oasisdiner_3_1024.jpg",
+                    "1440": "oasisdiner/SII-oasisdiner_3_1440.jpg",
+                    "1680": "oasisdiner/SII-oasisdiner_3_1680.jpg",
+                    "2048": "oasisdiner/SII-oasisdiner_3_2048.jpg",
+                    "2880": "oasisdiner/SII-oasisdiner_3_2880.jpg"
+                },
+                {
+                    "1024": "oasisdiner/SII-oasisdiner_4_1024.jpg",
+                    "1440": "oasisdiner/SII-oasisdiner_4_1440.jpg",
+                    "1680": "oasisdiner/SII-oasisdiner_4_1680.jpg",
+                    "2048": "oasisdiner/SII-oasisdiner_4_2048.jpg",
+                    "2880": "oasisdiner/SII-oasisdiner_4_2880.jpg"
+                },
+                {
+                    "1024": "oasisdiner/SII-oasisdiner_5_1024.jpg",
+                    "1440": "oasisdiner/SII-oasisdiner_5_1440.jpg",
+                    "1680": "oasisdiner/SII-oasisdiner_5_1680.jpg",
+                    "2048": "oasisdiner/SII-oasisdiner_5_2048.jpg",
+                    "2880": "oasisdiner/SII-oasisdiner_5_2880.jpg"
+                }
+            ],
             "additional-buying-options": [
                 {
                     "title": "At LUMAS Galleries and Online Store",
@@ -150,12 +366,84 @@
         "trans-pacific-terminal": {
             "title": "Trans Pacific Terminal",
             "series": "Series I / 2011",
-            "image": "tnw_terminal.jpg"
+            "images": [
+                {
+                    "1024": "transpacificterminal/SI-transpacificterminal_1_1024.jpg",
+                    "1440": "transpacificterminal/SI-transpacificterminal_1_1440.jpg",
+                    "1680": "transpacificterminal/SI-transpacificterminal_1_1680.jpg",
+                    "2048": "transpacificterminal/SI-transpacificterminal_1_2048.jpg",
+                    "2880": "transpacificterminal/SI-transpacificterminal_1_2880.jpg"
+                },
+                {
+                    "1024": "transpacificterminal/SI-transpacificterminal_2_1024.jpg",
+                    "1440": "transpacificterminal/SI-transpacificterminal_2_1440.jpg",
+                    "1680": "transpacificterminal/SI-transpacificterminal_2_1680.jpg",
+                    "2048": "transpacificterminal/SI-transpacificterminal_2_2048.jpg",
+                    "2880": "transpacificterminal/SI-transpacificterminal_2_2880.jpg"
+                },
+                {
+                    "1024": "transpacificterminal/SI-transpacificterminal_3_1024.jpg",
+                    "1440": "transpacificterminal/SI-transpacificterminal_3_1440.jpg",
+                    "1680": "transpacificterminal/SI-transpacificterminal_3_1680.jpg",
+                    "2048": "transpacificterminal/SI-transpacificterminal_3_2048.jpg",
+                    "2880": "transpacificterminal/SI-transpacificterminal_3_2880.jpg"
+                },
+                {
+                    "1024": "transpacificterminal/SI-transpacificterminal_4_1024.jpg",
+                    "1440": "transpacificterminal/SI-transpacificterminal_4_1440.jpg",
+                    "1680": "transpacificterminal/SI-transpacificterminal_4_1680.jpg",
+                    "2048": "transpacificterminal/SI-transpacificterminal_4_2048.jpg",
+                    "2880": "transpacificterminal/SI-transpacificterminal_4_2880.jpg"
+                },
+                {
+                    "1024": "transpacificterminal/SI-transpacificterminal_5_1024.jpg",
+                    "1440": "transpacificterminal/SI-transpacificterminal_5_1440.jpg",
+                    "1680": "transpacificterminal/SI-transpacificterminal_5_1680.jpg",
+                    "2048": "transpacificterminal/SI-transpacificterminal_5_2048.jpg",
+                    "2880": "transpacificterminal/SI-transpacificterminal_5_2880.jpg"
+                }
+            ]
         },
         "the-goodlife": {
             "title": "The Good Life",
             "series": "Series I / 2011",
-            "image": "tnw_tgl.jpg",
+            "images": [
+                {
+                    "1024": "thegoodlife/SI-thegoodlife_1_1024.jpg",
+                    "1440": "thegoodlife/SI-thegoodlife_1_1440.jpg",
+                    "1680": "thegoodlife/SI-thegoodlife_1_1680.jpg",
+                    "2048": "thegoodlife/SI-thegoodlife_1_2048.jpg",
+                    "2880": "thegoodlife/SI-thegoodlife_1_2880.jpg"
+                },
+                {
+                    "1024": "thegoodlife/SI-thegoodlife_2_1024.jpg",
+                    "1440": "thegoodlife/SI-thegoodlife_2_1440.jpg",
+                    "1680": "thegoodlife/SI-thegoodlife_2_1680.jpg",
+                    "2048": "thegoodlife/SI-thegoodlife_2_2048.jpg",
+                    "2880": "thegoodlife/SI-thegoodlife_2_2880.jpg"
+                },
+                {
+                    "1024": "thegoodlife/SI-thegoodlife_3_1024.jpg",
+                    "1440": "thegoodlife/SI-thegoodlife_3_1440.jpg",
+                    "1680": "thegoodlife/SI-thegoodlife_3_1680.jpg",
+                    "2048": "thegoodlife/SI-thegoodlife_3_2048.jpg",
+                    "2880": "thegoodlife/SI-thegoodlife_3_2880.jpg"
+                },
+                {
+                    "1024": "thegoodlife/SI-thegoodlife_4_1024.jpg",
+                    "1440": "thegoodlife/SI-thegoodlife_4_1440.jpg",
+                    "1680": "thegoodlife/SI-thegoodlife_4_1680.jpg",
+                    "2048": "thegoodlife/SI-thegoodlife_4_2048.jpg",
+                    "2880": "thegoodlife/SI-thegoodlife_4_2880.jpg"
+                },
+                {
+                    "1024": "thegoodlife/SI-thegoodlife_5_1024.jpg",
+                    "1440": "thegoodlife/SI-thegoodlife_5_1440.jpg",
+                    "1680": "thegoodlife/SI-thegoodlife_5_1680.jpg",
+                    "2048": "thegoodlife/SI-thegoodlife_5_2048.jpg",
+                    "2880": "thegoodlife/SI-thegoodlife_5_2880.jpg"
+                }
+            ],
             "additional-buying-options": [
                 {
                     "title": "At LUMAS Galleries and Online Store",
@@ -177,39 +465,39 @@
             "series": "Series I / 2011",
             "images": [
                 {
-                    "1024": "SI-themoderngentleman_1_1024.jpg",
-                    "1440": "SI-themoderngentleman_1_1440.jpg",
-                    "1680": "SI-themoderngentleman_1_1680.jpg",
-                    "2048": "SI-themoderngentleman_1_2048.jpg",
-                    "2880": "SI-themoderngentleman_1_2880.jpg"
+                    "1024": "themoderngentleman/SI-themoderngentleman_1_1024.jpg",
+                    "1440": "themoderngentleman/SI-themoderngentleman_1_1440.jpg",
+                    "1680": "themoderngentleman/SI-themoderngentleman_1_1680.jpg",
+                    "2048": "themoderngentleman/SI-themoderngentleman_1_2048.jpg",
+                    "2880": "themoderngentleman/SI-themoderngentleman_1_2880.jpg"
                 },
                 {
-                    "1024": "SI-themoderngentleman_2_1024.jpg",
-                    "1440": "SI-themoderngentleman_2_1440.jpg",
-                    "1680": "SI-themoderngentleman_2_1680.jpg",
-                    "2048": "SI-themoderngentleman_2_2048.jpg",
-                    "2880": "SI-themoderngentleman_2_2880.jpg"
+                    "1024": "themoderngentleman/SI-themoderngentleman_2_1024.jpg",
+                    "1440": "themoderngentleman/SI-themoderngentleman_2_1440.jpg",
+                    "1680": "themoderngentleman/SI-themoderngentleman_2_1680.jpg",
+                    "2048": "themoderngentleman/SI-themoderngentleman_2_2048.jpg",
+                    "2880": "themoderngentleman/SI-themoderngentleman_2_2880.jpg"
                 },
                 {
-                    "1024": "SI-themoderngentleman_3_1024.jpg",
-                    "1440": "SI-themoderngentleman_3_1440.jpg",
-                    "1680": "SI-themoderngentleman_3_1680.jpg",
-                    "2048": "SI-themoderngentleman_3_2048.jpg",
-                    "2880": "SI-themoderngentleman_3_2880.jpg"
+                    "1024": "themoderngentleman/SI-themoderngentleman_3_1024.jpg",
+                    "1440": "themoderngentleman/SI-themoderngentleman_3_1440.jpg",
+                    "1680": "themoderngentleman/SI-themoderngentleman_3_1680.jpg",
+                    "2048": "themoderngentleman/SI-themoderngentleman_3_2048.jpg",
+                    "2880": "themoderngentleman/SI-themoderngentleman_3_2880.jpg"
                 },
                 {
-                    "1024": "SI-themoderngentleman_4_1024.jpg",
-                    "1440": "SI-themoderngentleman_4_1440.jpg",
-                    "1680": "SI-themoderngentleman_4_1680.jpg",
-                    "2048": "SI-themoderngentleman_4_2048.jpg",
-                    "2880": "SI-themoderngentleman_4_2880.jpg"
+                    "1024": "themoderngentleman/SI-themoderngentleman_4_1024.jpg",
+                    "1440": "themoderngentleman/SI-themoderngentleman_4_1440.jpg",
+                    "1680": "themoderngentleman/SI-themoderngentleman_4_1680.jpg",
+                    "2048": "themoderngentleman/SI-themoderngentleman_4_2048.jpg",
+                    "2880": "themoderngentleman/SI-themoderngentleman_4_2880.jpg"
                 },
                 {
-                    "1024": "SI-themoderngentleman_5_1024.jpg",
-                    "1440": "SI-themoderngentleman_5_1440.jpg",
-                    "1680": "SI-themoderngentleman_5_1680.jpg",
-                    "2048": "SI-themoderngentleman_5_2048.jpg",
-                    "2880": "SI-themoderngentleman_5_2880.jpg"
+                    "1024": "themoderngentleman/SI-themoderngentleman_5_1024.jpg",
+                    "1440": "themoderngentleman/SI-themoderngentleman_5_1440.jpg",
+                    "1680": "themoderngentleman/SI-themoderngentleman_5_1680.jpg",
+                    "2048": "themoderngentleman/SI-themoderngentleman_5_2048.jpg",
+                    "2880": "themoderngentleman/SI-themoderngentleman_5_2880.jpg"
                 }
             ],
             "additional-buying-options": [
@@ -233,7 +521,43 @@
         "world-of-drugs": {
             "title": "World of Drugs",
             "series": "Series II / 2013",
-            "image": "tnw_wod.jpg"
+            "images": [
+                {
+                    "1024": "worldofdrugs/SII-worldofdrugs_1_1024.jpg",
+                    "1440": "worldofdrugs/SII-worldofdrugs_1_1440.jpg",
+                    "1680": "worldofdrugs/SII-worldofdrugs_1_1680.jpg",
+                    "2048": "worldofdrugs/SII-worldofdrugs_1_2048.jpg",
+                    "2880": "worldofdrugs/SII-worldofdrugs_1_2880.jpg"
+                },
+                {
+                    "1024": "worldofdrugs/SII-worldofdrugs_2_1024.jpg",
+                    "1440": "worldofdrugs/SII-worldofdrugs_2_1440.jpg",
+                    "1680": "worldofdrugs/SII-worldofdrugs_2_1680.jpg",
+                    "2048": "worldofdrugs/SII-worldofdrugs_2_2048.jpg",
+                    "2880": "worldofdrugs/SII-worldofdrugs_2_2880.jpg"
+                },
+                {
+                    "1024": "worldofdrugs/SII-worldofdrugs_3_1024.jpg",
+                    "1440": "worldofdrugs/SII-worldofdrugs_3_1440.jpg",
+                    "1680": "worldofdrugs/SII-worldofdrugs_3_1680.jpg",
+                    "2048": "worldofdrugs/SII-worldofdrugs_3_2048.jpg",
+                    "2880": "worldofdrugs/SII-worldofdrugs_3_2880.jpg"
+                },
+                {
+                    "1024": "worldofdrugs/SII-worldofdrugs_4_1024.jpg",
+                    "1440": "worldofdrugs/SII-worldofdrugs_4_1440.jpg",
+                    "1680": "worldofdrugs/SII-worldofdrugs_4_1680.jpg",
+                    "2048": "worldofdrugs/SII-worldofdrugs_4_2048.jpg",
+                    "2880": "worldofdrugs/SII-worldofdrugs_4_2880.jpg"
+                },
+                {
+                    "1024": "worldofdrugs/SII-worldofdrugs_5_1024.jpg",
+                    "1440": "worldofdrugs/SII-worldofdrugs_5_1440.jpg",
+                    "1680": "worldofdrugs/SII-worldofdrugs_5_1680.jpg",
+                    "2048": "worldofdrugs/SII-worldofdrugs_5_2048.jpg",
+                    "2880": "worldofdrugs/SII-worldofdrugs_5_2880.jpg"
+                }
+            ]
         }
     }
 }

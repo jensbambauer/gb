@@ -143,13 +143,11 @@ var slider = (function (slider, $, undefined) {
                 prevText: '<svg><use xlink:href="#icon-arrow-left"/></svg>'
             }, options || {}));
 */
-            
-
-            var mySwiper = new Swiper('.swiper-container', {
+            var swiperOptions = $.extend({
                 speed: 400,
                 spaceBetween: 0,
                 loop: true,
-				autoHeight: true,
+                autoHeight: true,
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 onSlideChangeEnd: function(swiper) {
@@ -159,23 +157,25 @@ var slider = (function (slider, $, undefined) {
                         }
                     });
                 }
-            });
+            }, options || {});
+            
+            console.log(swiperOptions);
+            
+            var mySwiper = new Swiper(this, swiperOptions);
 
-            
-            
             $(slider[0]).find('.flex-active-slide').find('img').addClass('lazyload');
         });
-
-
 
     };
 
     init('[data-role="slider"]');
 
     $(document).on('overlay-content-ready', function() {
-        init('[data-role="overlay-slider"]', {
-            animationLoop: false,
-            slideshow: true
+        init('.overlay-container [data-role="overlay-slider"]', {
+            loop: false,
+            autoplay: true,
+            preloadImages: false,
+            lazyLoading: true
         });
     });
 

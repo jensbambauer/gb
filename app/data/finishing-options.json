@@ -4,13 +4,7 @@
             "id": "print-only",
             "slides": [
                 {
-                    "src": "../../images/print_1.jpg"
-                },
-                {
-                    "src": "../../images/print_2.jpg"
-                },
-                {
-                    "src": "../../images/print_3.jpg"
+                    "src": "../../images/print.jpg"
                 }
             ],
             "headline": "Print",
@@ -20,10 +14,7 @@
             "id": "aluminium-dibond",
             "slides": [
                 {
-                    "src": "../../images/dibond_1.jpg"
-                },
-                {
-                    "src": "../../images/dibond_2.jpg"
+                    "src": "../../images/dibond.jpg"
                 }
             ],
             "headline": "Aluminum Dibond&reg;",
@@ -33,16 +24,7 @@
             "id": "framed",
             "slides": [
                 {
-                    "src": "../../images/framed_1.jpg"
-                },
-                {
-                    "src": "../../images/framed_2.jpg"
-                },
-                {
-                    "src": "../../images/framed_3.jpg"
-                },
-                {
-                    "src": "../../images/framed_4.jpg"
+                    "src": "../../images/framed.jpg"
                 }
             ],
             "headline": "Frame",

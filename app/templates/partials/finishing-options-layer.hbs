@@ -3,17 +3,18 @@
     {{#finishing-options }}
         {{~#each options}}
             <div id="{{id}}">
-                <div class="flexslider" data-role="overlay-slider">
-                    <ul class="slides">
+                <div class="swiper-container" data-role="overlay-slider">
+                    <ul class="slides swiper-wrapper">
                         {{#each slides}}
-                            <li>
-                                <figure>
-                                    <img src="{{this.src}}">
-                                </figure>
+                            <li class="swiper-slide">
+
+                                <img width="768" height="512" data-src="{{this.src}}" class="swiper-lazy">
+
+                                <div class="swiper-lazy-preloader"></div>
                             </li>
                         {{/each}}
                     </ul>
-                </div>                
+                </div>
                 <div class="text-content">
                     <h3>{{{headline}}}</h3>
                     {{basename}}
