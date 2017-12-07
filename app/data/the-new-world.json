@@ -6,12 +6,12 @@
             "finishing-options": [
                 {
                     "title": "Print Glossy",
-                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "price": "{\"eu\": \"419.33\",\"usa\": \"419\",\"world\": \"419\"}",
                     "weight": "0.615"
                 },
                 {
                     "title": "Print Matte",
-                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "price": "{\"eu\": \"419.33\",\"usa\": \"419\",\"world\": \"419\"}",
                     "weight": "10"
                 },
                 {

@@ -17,7 +17,14 @@ FC.override = FC.override || {};
     function CartItem() {
         var vm = this;
         vm.qty = ko.observable(0);
-
+        vm.p = ko.observable(0);
+        vm.displayPrice = ko.computed(function() {
+            if (localStorage.getItem('region') === 'eu') {
+                return Math.round(vm.p() * 1.19);
+            } else {
+                return vm.p();
+            }
+        });
     }
 
     function FcCart() {
@@ -33,13 +40,15 @@ FC.override = FC.override || {};
         var region = ko.observable(localStorage.getItem('region'));
 
         var update = function() {
-
+            var reg = region();
+            var vat = reg === 'eu' ? 1.19 : 1;
             // TODO: nicer remove function
             items.removeAll();
 
             $.each(FC.json.items, function() {
                 var item = new CartItem();
                 $.extend(item, this);
+                item.p(item.price);
                 item.qty(item.quantity);
                 item.qty.subscribe(function(val) {
                     updateItemQty(item, val);
@@ -61,8 +70,7 @@ FC.override = FC.override || {};
 
             shippingCost(shipping);
 
-
-            total(FC.json.total_item_price + shipping);
+            total(Math.round((FC.json.total_item_price * vat)) + shipping);
 
             // update navigaiton link
             $('[data-role="toggle-cart"]')
@@ -79,7 +87,7 @@ FC.override = FC.override || {};
             var reg = region();
             var tablePrice;
             var insurance;
-            var vat = region() === 'eu' ? 1.19 : 1;
+            var vat = reg === 'eu' ? 1.19 : 1;
             var formula;
             var shippingPrice;
 
@@ -105,7 +113,6 @@ FC.override = FC.override || {};
                 } else if (reg === 'world') {
                     shippingPrice = 43.69;
                 }
-
             }
 
             return Math.ceil(shippingPrice);
@@ -143,9 +150,8 @@ FC.override = FC.override || {};
 
             // delete previous shipping item
             $.each(FC.json.items, function() {
-                if ( this.name === 'shipping') {
+                if ( this.name === 'Shipping & Handling') {
                     shippingItem = this;
-
                 }
             });
 
@@ -157,10 +163,14 @@ FC.override = FC.override || {};
         }
 
         var checkout = function() {
+            var region = localStorage.getItem('region');
             var shipping = {
                 quantity: 1,
-                name: "shipping",
-                price: calcShippingPrice()
+                name: "Shipping & Handling",
+                price: region === 'eu' ?
+                    (totalWeight() < 5 ? calcShippingPrice : calcShippingPrice() / 1.19) :
+                    calcShippingPrice(),
+                category: region === 'eu' && totalWeight() > 5 ? 'DEFAULT' : 'shipping'
             };
 
             cartRequest($.param(shipping), false, function() {

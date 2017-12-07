@@ -58,17 +58,125 @@
         "free": {
             "title": "Free",
             "series": "Series I / 2011",
-            "image": "tnw_allmart.jpg"
+            "images": [
+                {
+                    "1024": "free/free_1_1024.jpg",
+                    "1440": "free/free_1_1440.jpg",
+                    "1680": "free/free_1_1680.jpg",
+                    "2048": "free/free_1_2048.jpg",
+                    "2880": "free/free_1_2880.jpg"
+                },
+                {
+                    "1024": "free/free_2_1024.jpg",
+                    "1440": "free/free_2_1440.jpg",
+                    "1680": "free/free_2_1680.jpg",
+                    "2048": "free/free_2_2048.jpg",
+                    "2880": "free/free_2_2880.jpg"
+                },
+                {
+                    "1024": "free/free_3_1024.jpg",
+                    "1440": "free/free_3_1440.jpg",
+                    "1680": "free/free_3_1680.jpg",
+                    "2048": "free/free_3_2048.jpg",
+                    "2880": "free/free_3_2880.jpg"
+                },
+                {
+                    "1024": "free/free_4_1024.jpg",
+                    "1440": "free/free_4_1440.jpg",
+                    "1680": "free/free_4_1680.jpg",
+                    "2048": "free/free_4_2048.jpg",
+                    "2880": "free/free_4_2880.jpg"
+                },
+                {
+                    "1024": "free/free_5_1024.jpg",
+                    "1440": "free/free_5_1440.jpg",
+                    "1680": "free/free_5_1680.jpg",
+                    "2048": "free/free_5_2048.jpg",
+                    "2880": "free/free_5_2880.jpg"
+                }
+            ]
         },
         "forever-sunshine": {
             "title": "Forever Sunshine",
             "series": "Series I / 2011",
-            "image": "tnw_allmart.jpg"
+            "images": [
+                {
+                    "1024": "forever-sunshine/fsun_1_1024.jpg",
+                    "1440": "forever-sunshine/fsun_1_1440.jpg",
+                    "1680": "forever-sunshine/fsun_1_1680.jpg",
+                    "2048": "forever-sunshine/fsun_1_2048.jpg",
+                    "2880": "forever-sunshine/fsun_1_2880.jpg"
+                },
+                {
+                    "1024": "forever-sunshine/fsun_2_1024.jpg",
+                    "1440": "forever-sunshine/fsun_2_1440.jpg",
+                    "1680": "forever-sunshine/fsun_2_1680.jpg",
+                    "2048": "forever-sunshine/fsun_2_2048.jpg",
+                    "2880": "forever-sunshine/fsun_2_2880.jpg"
+                },
+                {
+                    "1024": "forever-sunshine/fsun_3_1024.jpg",
+                    "1440": "forever-sunshine/fsun_3_1440.jpg",
+                    "1680": "forever-sunshine/fsun_3_1680.jpg",
+                    "2048": "forever-sunshine/fsun_3_2048.jpg",
+                    "2880": "forever-sunshine/fsun_3_2880.jpg"
+                },
+                {
+                    "1024": "forever-sunshine/fsun_4_1024.jpg",
+                    "1440": "forever-sunshine/fsun_4_1440.jpg",
+                    "1680": "forever-sunshine/fsun_4_1680.jpg",
+                    "2048": "forever-sunshine/fsun_4_2048.jpg",
+                    "2880": "forever-sunshine/fsun_4_2880.jpg"
+                },
+                {
+                    "1024": "forever-sunshine/fsun_5_1024.jpg",
+                    "1440": "forever-sunshine/fsun_5_1440.jpg",
+                    "1680": "forever-sunshine/fsun_5_1680.jpg",
+                    "2048": "forever-sunshine/fsun_5_2048.jpg",
+                    "2880": "forever-sunshine/fsun_5_2880.jpg"
+                }
+            ]
         },
         "the-isle": {
             "title": "The Isle",
             "series": "Series I / 2011",
-            "image": "tnw_allmart.jpg"
+            "images": [
+                {
+                    "1024": "isle/isle_1_1024.jpg",
+                    "1440": "isle/isle_1_1440.jpg",
+                    "1680": "isle/isle_1_1680.jpg",
+                    "2048": "isle/isle_1_2048.jpg",
+                    "2880": "isle/isle_1_2880.jpg"
+                },
+                {
+                    "1024": "isle/isle_2_1024.jpg",
+                    "1440": "isle/isle_2_1440.jpg",
+                    "1680": "isle/isle_2_1680.jpg",
+                    "2048": "isle/isle_2_2048.jpg",
+                    "2880": "isle/isle_2_2880.jpg"
+                },
+                {
+                    "1024": "isle/isle_3_1024.jpg",
+                    "1440": "isle/isle_3_1440.jpg",
+                    "1680": "isle/isle_3_1680.jpg",
+                    "2048": "isle/isle_3_2048.jpg",
+                    "2880": "isle/isle_3_2880.jpg"
+                },
+                {
+                    "1024": "isle/isle_4_1024.jpg",
+                    "1440": "isle/isle_4_1440.jpg",
+                    "1680": "isle/isle_4_1680.jpg",
+                    "2048": "isle/isle_4_2048.jpg",
+                    "2880": "isle/isle_4_2880.jpg"
+                },
+                {
+                    "1024": "isle/isle_5_1024.jpg",
+                    "1440": "isle/isle_5_1440.jpg",
+                    "1680": "isle/isle_5_1680.jpg",
+                    "2048": "isle/isle_5_2048.jpg",
+                    "2880": "isle/isle_5_2880.jpg"
+                }
+            ]
         }
     }
 }

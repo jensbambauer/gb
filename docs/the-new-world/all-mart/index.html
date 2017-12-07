@@ -76,6 +76,7 @@
                                                     <p class="left">DHL GoGreen</p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>
+                                                <!--ko text: shippingFormula --><!-- /ko-->
                                                 <!-- /ko -->
                                             </div>
                                         </div>
@@ -109,7 +110,7 @@
                                                     <!--ko text: qty--><!--/ko-->
                                                 </div>
                                                 <div class="col-5">
-                                                    <span class="price" data-bind="text: price"></span>
+                                                    <span class="price" data-bind="text: displayPrice"></span>
                                                 </div>
                                             </div>
                                         </script>
@@ -228,8 +229,8 @@
                             <td class="col-1">100cm x 62cm / 39.4&quot; x 24.4&quot; / Edition of 100</td>
                             <td class="col-2">
                                 <select data-role="selectbox" data-bind="value: priceObject">
-                                        <option value='{&quot;eu&quot;: &quot;499&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="0.615">Print Glossy</option>
-                                        <option value='{&quot;eu&quot;: &quot;499&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="10">Print Matte</option>
+                                        <option value='{&quot;eu&quot;: &quot;419.33&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="0.615">Print Glossy</option>
+                                        <option value='{&quot;eu&quot;: &quot;419.33&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="10">Print Matte</option>
                                         <option value='{&quot;eu&quot;: &quot;819&quot;,&quot;usa&quot;: &quot;689&quot;,&quot;world&quot;: &quot;689&quot;}' data-weight="15">Alum. Dibond</option>
                                         <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">Black Frame</option>
                                         <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">White Frame</option>
@@ -242,7 +243,7 @@
                                 <input type="hidden" name="edition" value="Edition of 100">
                                 <input type="hidden" name="weight" data-bind="value: weight">
                             </td>
-                            <td class="col-3 price"><!--ko text: price--><!--/ko--></td>
+                            <td class="col-3 price"><!--ko text: displayPrice --><!--/ko--></td>
                             <td class="col-4"><button type="submit" class="primary">Add to Cart</button></td>
                         </tr>
                     </tbody>

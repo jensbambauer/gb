@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <title>Welcome to Our New Website and Online Store | Journal of Geebird&Bamby™</title>
+                <meta charset="utf-8">
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width">
+                <link rel="shortcut icon" href="/favicon.ico">
+                <link rel="stylesheet" href="../../../styles/main.css">
+                <script src="../../../scripts/vendor/modernizr.js"></script>
+                <script>
+                    var config = {
+                        assetsPath: '../../..'
+                    };
+                </script>    </head>
+    <body>
+        <div class="page transparent-header">
+                        <header class="transparent">
+                            <div class="content">
+                                <a class="logo" href="../../../index.html"><img src="../../../images/logo.svg" width="198" height="28"></a>
+                                <input id="navigation-toggle" name="nav" type="checkbox" autocomplete="off">
+                                <nav class="main-nav">
+                                    <ul>
+                                        <li >
+                                            <a href="../../../index.html">Home</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../../mart/index.html">Mart</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../../the-new-world/index.html">The New World</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../../meta/about/index.html">About</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../../journal/index.html">Journal</a>
+                                        </li>
+                                        <li>
+                                            <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>
+                                        </li>
+                                    </ul>
+                                    <label for="navigation-toggle" class="icon-navi"><svg class="closed"><use xlink:href="#icon-hamburger"/></svg><svg class="open"><use xlink:href="#icon-close"/></svg></label>
+                                    <a href="" class="cart-link" data-role="toggle-cart">Cart</a>
+                                </nav>
+                            </div>
+                        </header>
+                        <div class="overlay-cart">
+                            <div class="overlay-cart-container">
+                                <div class="content">
+                                    <a class="logo" href="index.html"><img src="../../../images/logo_black.svg" width="198" height="28"></a>
+                                    <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
+                                    <div class="cart-table">
+                                        <ul class="header">
+                                            <li class="col-1">Identifier</li>
+                                            <li class="col-2">Artwork Title &amp; Info</li>
+                                            <li class="col-3">Finish</li>
+                                            <li class="col-4">Quantity</li>
+                                            <li class="col-5">Price</li>
+                                        </ul>
+                                        <div class="cart-rows">
+                                            <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
+                                            <div class="row">
+                                                <!--ko if: totalWeight() > 5 -->
+                                                <div class="ups-shipping">
+                                                    <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
+                                                    <span class="price" data-bind="text: shippingCost"></span>
+                                                </div>
+                                                <!-- /ko -->
+                                                <!--ko if: totalWeight() < 5 -->
+                                                <div class="dhl-shipping">
+                                                    <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">DHL GoGreen</p>
+                                                    <span class="price" data-bind="text: shippingCost"></span>
+                                                </div>
+                                                <!--ko text: shippingFormula --><!-- /ko-->
+                                                <!-- /ko -->
+                                            </div>
+                                        </div>
+                                        <div class="cart-total">
+                                            <!--ko if: region() == "eu" -->
+                                            Order Value incl. 19% VAT
+                                            <!-- /ko -->
+                                            <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
+                                            <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
+                                        </div>
+            
+                                        <script type="text/html" id="cart-row">
+                                            <div class="row" data-id="{{id}}">
+                                                <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"></a>
+                                                <div class="col-1">
+                                                    <img src="http://placehold.it/128x128" width="128" height="128" class="round">
+                                                </div>
+                                                <div class="col-2">
+                                                    <h3><!--ko text: name--><!--/ko--></h3>
+                                                    <!--ko text: size--><!--/ko--> <br>
+                                                    <!--ko text: edition--><!--/ko-->
+                                                </div>
+                                                <div class="col-3 no-headline">
+                                                    <!--ko text: finish--><!--/ko-->
+                                                </div>
+                                                <div class="col-4 no-headline">
+                                                    <input type="text" data-bind="value: qty">
+                                                    <!--ko text: qty--><!--/ko-->
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="price" data-bind="text: displayPrice"></span>
+                                                </div>
+                                            </div>
+                                        </script>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            <div class="main">
+
+                    <article class="content blog  ">
+                        <time>December 18th, 2017</time>
+
+
+<h1 id="welcome-to-our-new-website-and-online-store">Welcome to Our New Website and Online Store</h1>
+<p>We’d like to take a minute to welcome you to our new website and online store. Designed and developed from scratch and in-house, there are two major advancements that we’d like to focus on in this post. The presentation of the artworks and our custom shipping costs calculation engine.</p>
+<p>First off, the presentation of the artworks. Presenting art online is hard, especially considering the plethora of different devices websites are viewed on these days. While viewing art online may never live up to experiencing the actual artworks in person, there are certainly better ways than slapping a small image on a white page and calling it a day. Going big comes with its own challenges, however. We opted against utilizing any browser scaling of images, as today’s browsers are just very bad at it - if you’re a stickler for details that is. We ended up with five media queries for the main stage of the website. Depending on browser window size, desktops are served three different image sizes (1024px, 1440px and 1680px), iPad and other modern tablets receive 2048px, and we serve a massive 2880px image (the premier choice for print-it-yourself art lovers) to high-resolution desktops such as the iMac 4K/5K. To put this into perspective, where the old website used three images per artwork, our new site uses 25. Furthermore, all other images on the website are served in high resolution. Intelligent pre-loaders ensure everything should be smooth on your end, given you have a decent connection. While we do not offer a dedicated mobile version for now, we ensured the interface allows viewing and shopping artworks on modern smartphones. That is not to say we don’t have plans for mobile.</p>
+<p>Second, the new store is capable of calculating the shipping costs for any item combination for our three regions (United States, European Union, World) - that is before you enter your address. Showing shipping costs up front has always been a high priority for us, nevertheless it’s very hard to get right (hence our long-lasting free shipping deal, sorry you’re late). The items you intend to purchase may be of significantly different size and weight: take a large framed piece in a wooden crate plus a print in a standard cardboard tube. Additionally, UPS® tariffs are complicated. Jens coded a formula that ensures you get a precise quote for the shipping costs for whatever’s in your cart, right at the moment you add an item. This includes switching to DHL whenever possible (DHL is cheaper, however, most of our offerings are too large to ship with DHL). While free shipping is a thing of the past for us, that doesn’t mean we don’t subsidize shipping costs to some extent. The UPS® list price for shipping a framed piece of „The New World“ is well north of 250€, but you will find out that you’ll end up paying a lot less than that. In part that’s due to our monthly volume, but it’s also because we’re being nice here. Everybody hates shipping costs - but they’re unavoidable, unfortunately (unless you opt to pick up your order). We will continuously monitor the market and incorporate changes that will lower shipping costs. Watch this space for announcements.</p>
+
+                            <p class="back-button">
+                                <a href="../../index.html" class="button inverted">View all entries</a>
+                            </p>
+
+                    </article>
+
+                <section class="content">
+                    <ul class="teaser grid">
+                        <li class="col-1-3">
+                            <a href="/the-new-world/index.html" class="teaser-content">
+                                <img src="/images/teaser/the-new-world.jpg">
+                                <span>View Series</span>
+                            </a>
+                        </li>
+                        <li class="col-1-3">
+                            <div class="teaser-content">
+                                <img src="/images/teaser/twitter.jpg">
+                                <div class="tweets" data-role="tweets">
+                                    <h4>Activity on <a href="http://www.twitter.com/geebirdandbamby" target="_blank">@geebirdandbamby</a></h4>
+                                    <div class="tweet-container">
+                                        <ul data-bind="foreach: tweets">
+                                            <li data-bind="css: {active: $index() === 0}">
+                                                <a data-bind="text: date, attr: {href: link}" target="_blank"></a><br>
+                                                <div data-bind="html: tweet"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="icon-more more-tweets" data-role="next-tweet"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-1-3">
+                            <a href="meta/about/index.html" class="teaser-content">
+                                <img src="/images/teaser/teaser_about.jpg">
+                                <span class="center">About G&amp;B</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- photowall-newsletter -->
+                <section class="content">
+                    <div data-role="photowall" class="photowall grid flat">
+                        <div class="photowall-content">
+                            <div class="newsletter">
+                                <p class="success"></p>
+                                <div class="form-cols">
+                                    <p>Please join our mailing list to be informed when<br> we release new work or plan a show.</p>
+                                    <form data-role="mailchimp-form" action="http://geebirdandbamby.us12.list-manage.com/subscribe/post-json?u=97fb451b06e51488018177edf&id=8fa4a35b80&c=?" method="post" name="mc-embedded-subscribe-form" novalidate="">
+                                        <div class="mc-field-group input-submit-group">
+                                    	    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your e-mail">
+                                            <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button inverted">
+                                            <div class="error-response"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper"></div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="legal-footer content">
+                © 2009 - 2017 | ALL RIGHTS RESERVED | <a href="../../../meta/agb/index.html">TERMS AND CONDITIONS</a> | <a href="../../../meta/imprint/index.html">CONTACT</a>
+            </footer>        </div>
+
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><defs> <style> .cls-2 { fill: #000; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #4b9e70; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill-rule: evenodd; } </style>  <style> .cls-1 { fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style> </defs><symbol viewBox="0 0 32 32" id="icon-arrow-down-black"><title>arrow-down-black</title>  <path id="arrow-down-black-arrow" class="cls-2" d="M520,614.6l-1.1-1.6-7.172,4.8L505.1,613l-1.1,1.6,7.724,6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-down"><title>arrow-down</title>  <path id="arrow-down-arrow" class="cls-1" d="M520,614.6l-1.1-1.6-7.172,4.8L505.1,613l-1.1,1.6,7.724,6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-left"><title>arrow-left</title>  <path id="arrow-left-arrow" class="cls-1" d="M514.4,625l1.6-1.1-4.8-7.172L516,610.1l-1.6-1.1-6.4,7.724Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-right"><title>arrow-right</title>  <path id="arrow-right-arrow" class="cls-1" d="M509.6,625l-1.6-1.1,4.8-7.172L508,610.1l1.6-1.1,6.4,7.724Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-up"><title>arrow-up</title>  <path id="arrow-up-arrow" class="cls-1" d="M520,619.4l-1.1,1.6-7.172-4.8L505.1,621l-1.1-1.6,7.724-6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-cart_num"><title>cart_num</title>  <circle class="cls-1" cx="16" cy="16" r="14"/> </symbol><symbol viewBox="0 0 32 32" id="icon-close"><title>close</title>  <path id="close-close" class="cls-1" d="M928,130l-2-2-6,6-6-6-2,2,6,6-6,6,2,2,6-6,6,6,2-2-6-6Z" transform="translate(-904 -120)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-dropdown-close"><title>dropdown-close</title>  <path class="cls-1" d="M609,779h9l-4.5-8Z" transform="translate(-597.5 -759)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-dropdown-open"><title>dropdown-open</title>  <path class="cls-1" d="M609,771h9l-4.5,8Z" transform="translate(-597.5 -759)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-hamburger"><title>hamburger</title>  <path id="hamburger-_" data-name="|||" class="cls-1" d="M957.985,15v3.7h20V15h-20Zm0,7.155v3.7h20v-3.7h-20Zm0,7.155v3.7h20v-3.7h-20Z" transform="translate(-952 -8)"/> </symbol></svg>
+                <div class="overlay-container"><div class="overlay-wrapper"><div class="overlay-content"><div class="overlay"></div></div></div><div class="overlay-background"></div></div>
+                <script src="../../../scripts/main.js"></script>
+    </body>
+</html>

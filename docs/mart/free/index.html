@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <title>Free - Mart | Geebird&Bamby™</title>
+                <meta charset="utf-8">
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width">
+                <link rel="shortcut icon" href="/favicon.ico">
+                <link rel="stylesheet" href="../../styles/main.css">
+                <script src="../../scripts/vendor/modernizr.js"></script>
+                <script>
+                    var config = {
+                        assetsPath: '../..'
+                    };
+                </script>    </head>
+    <body>
+        <div class="page">
+                        <header>
+                            <div class="content">
+                                <a class="logo" href="../../index.html"><img src="../../images/logo.svg" width="198" height="28"></a>
+                                <input id="navigation-toggle" name="nav" type="checkbox" autocomplete="off">
+                                <nav class="main-nav">
+                                    <ul>
+                                        <li >
+                                            <a href="../../index.html">Home</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../mart/index.html">Mart</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../the-new-world/index.html">The New World</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../meta/about/index.html">About</a>
+                                        </li>
+                                        <li >
+                                            <a href="../../journal/index.html">Journal</a>
+                                        </li>
+                                        <li>
+                                            <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>
+                                        </li>
+                                    </ul>
+                                    <label for="navigation-toggle" class="icon-navi"><svg class="closed"><use xlink:href="#icon-hamburger"/></svg><svg class="open"><use xlink:href="#icon-close"/></svg></label>
+                                    <a href="" class="cart-link" data-role="toggle-cart">Cart</a>
+                                </nav>
+                            </div>
+                        </header>
+                        <div class="overlay-cart">
+                            <div class="overlay-cart-container">
+                                <div class="content">
+                                    <a class="logo" href="index.html"><img src="../../images/logo_black.svg" width="198" height="28"></a>
+                                    <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
+                                    <div class="cart-table">
+                                        <ul class="header">
+                                            <li class="col-1">Identifier</li>
+                                            <li class="col-2">Artwork Title &amp; Info</li>
+                                            <li class="col-3">Finish</li>
+                                            <li class="col-4">Quantity</li>
+                                            <li class="col-5">Price</li>
+                                        </ul>
+                                        <div class="cart-rows">
+                                            <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
+                                            <div class="row">
+                                                <!--ko if: totalWeight() > 5 -->
+                                                <div class="ups-shipping">
+                                                    <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
+                                                    <span class="price" data-bind="text: shippingCost"></span>
+                                                </div>
+                                                <!-- /ko -->
+                                                <!--ko if: totalWeight() < 5 -->
+                                                <div class="dhl-shipping">
+                                                    <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
+                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">DHL GoGreen</p>
+                                                    <span class="price" data-bind="text: shippingCost"></span>
+                                                </div>
+                                                <!--ko text: shippingFormula --><!-- /ko-->
+                                                <!-- /ko -->
+                                            </div>
+                                        </div>
+                                        <div class="cart-total">
+                                            <!--ko if: region() == "eu" -->
+                                            Order Value incl. 19% VAT
+                                            <!-- /ko -->
+                                            <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
+                                            <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
+                                        </div>
+            
+                                        <script type="text/html" id="cart-row">
+                                            <div class="row" data-id="{{id}}">
+                                                <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"></a>
+                                                <div class="col-1">
+                                                    <img src="http://placehold.it/128x128" width="128" height="128" class="round">
+                                                </div>
+                                                <div class="col-2">
+                                                    <h3><!--ko text: name--><!--/ko--></h3>
+                                                    <!--ko text: size--><!--/ko--> <br>
+                                                    <!--ko text: edition--><!--/ko-->
+                                                </div>
+                                                <div class="col-3 no-headline">
+                                                    <!--ko text: finish--><!--/ko-->
+                                                </div>
+                                                <div class="col-4 no-headline">
+                                                    <input type="text" data-bind="value: qty">
+                                                    <!--ko text: qty--><!--/ko-->
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="price" data-bind="text: displayPrice"></span>
+                                                </div>
+                                            </div>
+                                        </script>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            <div class="main">
+                
+
+<!-- artwork-single -->
+<!--section class="main-stage single">
+    <div class="preloader preloading">
+        <img class="stage" data-src="../../images/artworks/">
+    </div>
+</section-->
+<section class="main-stage">
+    <div class="home-stage">
+        <div class="swiper-container" data-role="slider" data-start="0">
+            <ul class="slides swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slider-preloader">
+                                <picture>
+                                    <source data-srcset="../../images/artworks/free/free_1_1680.jpg" media="(min-width: 1920px)">
+                                    <source data-srcset="../../images/artworks/free/free_1_1440.jpg, ../../images/artworks/free/free_1_2880.jpg 2x" media="(min-width: 1440px)">
+                                    <source data-srcset="../../images/artworks/free/free_1_1024.jpg, ../../images/artworks/free/free_1_2048.jpg 2x">
+                                    <img data-srcset="../../images/artworks/free/free_1_1024.jpg, ../../images/artworks/free/free_1_2048.jpg 2x" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slider-preloader">
+                                <picture>
+                                    <source data-srcset="../../images/artworks/free/free_2_1680.jpg" media="(min-width: 1920px)">
+                                    <source data-srcset="../../images/artworks/free/free_2_1440.jpg, ../../images/artworks/free/free_2_2880.jpg 2x" media="(min-width: 1440px)">
+                                    <source data-srcset="../../images/artworks/free/free_2_1024.jpg, ../../images/artworks/free/free_2_2048.jpg 2x">
+                                    <img data-srcset="../../images/artworks/free/free_2_1024.jpg, ../../images/artworks/free/free_2_2048.jpg 2x" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slider-preloader">
+                                <picture>
+                                    <source data-srcset="../../images/artworks/free/free_3_1680.jpg" media="(min-width: 1920px)">
+                                    <source data-srcset="../../images/artworks/free/free_3_1440.jpg, ../../images/artworks/free/free_3_2880.jpg 2x" media="(min-width: 1440px)">
+                                    <source data-srcset="../../images/artworks/free/free_3_1024.jpg, ../../images/artworks/free/free_3_2048.jpg 2x">
+                                    <img data-srcset="../../images/artworks/free/free_3_1024.jpg, ../../images/artworks/free/free_3_2048.jpg 2x" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slider-preloader">
+                                <picture>
+                                    <source data-srcset="../../images/artworks/free/free_4_1680.jpg" media="(min-width: 1920px)">
+                                    <source data-srcset="../../images/artworks/free/free_4_1440.jpg, ../../images/artworks/free/free_4_2880.jpg 2x" media="(min-width: 1440px)">
+                                    <source data-srcset="../../images/artworks/free/free_4_1024.jpg, ../../images/artworks/free/free_4_2048.jpg 2x">
+                                    <img data-srcset="../../images/artworks/free/free_4_1024.jpg, ../../images/artworks/free/free_4_2048.jpg 2x" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="slider-preloader">
+                                <picture>
+                                    <source data-srcset="../../images/artworks/free/free_5_1680.jpg" media="(min-width: 1920px)">
+                                    <source data-srcset="../../images/artworks/free/free_5_1440.jpg, ../../images/artworks/free/free_5_2880.jpg 2x" media="(min-width: 1440px)">
+                                    <source data-srcset="../../images/artworks/free/free_5_1024.jpg, ../../images/artworks/free/free_5_2048.jpg 2x">
+                                    <img data-srcset="../../images/artworks/free/free_5_1024.jpg, ../../images/artworks/free/free_5_2048.jpg 2x" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+            <div class="swiper-button-prev"><svg><use xlink:href="#icon-arrow-left"/></svg></div>
+            <div class="swiper-button-next"><svg><use xlink:href="#icon-arrow-right"/></svg></div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <!-- artwork-details -->
+<div class="artwork-details">
+    <h1>Free</h1>
+    <p class="series">Series I / 2011</p>
+    <div class="show-availabilty">
+        <p class="starting">From €399 + Shipping</p>
+        <label for="buying-options" class="button toggle-switch" data-role="scroll-in-view"><span class="off">Show</span><span class="on">Hide</span> Availabilty</label>
+    </div>
+    <input type="checkbox" class="toggle-trigger" id="buying-options">
+    <div class="toggle-box">
+        <div class="buying-options">
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="4">Our Store</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- artwork-finishing-options -->
+    <tr>
+        <td colspan="4">
+            <form action="#" method="get" data-role="add-to-cart-form" data-ko-model="artwork-details">
+                <table class="subtable">
+                    <tbody>
+                        <tr>
+                            <td class="col-1">100cm x 62cm / 39.4&quot; x 24.4&quot; / Edition of 100</td>
+                            <td class="col-2">
+                                <select data-role="selectbox" data-bind="value: priceObject">
+                                        <option value='{&quot;eu&quot;: &quot;499&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="0.615">Print Glossy</option>
+                                        <option value='{&quot;eu&quot;: &quot;499&quot;,&quot;usa&quot;: &quot;419&quot;,&quot;world&quot;: &quot;419&quot;}' data-weight="10">Print Matte</option>
+                                        <option value='{&quot;eu&quot;: &quot;819&quot;,&quot;usa&quot;: &quot;689&quot;,&quot;world&quot;: &quot;689&quot;}' data-weight="15">Alum. Dibond</option>
+                                        <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">Black Frame</option>
+                                        <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">White Frame</option>
+                                        <option value='{&quot;eu&quot;: &quot;869&quot;,&quot;usa&quot;: &quot;729&quot;,&quot;world&quot;: &quot;729&quot;}' data-weight="15">Maple Frame</option>
+                                </select>
+                                <input type="hidden" name="name" value="Free">
+                                <input type="hidden" name="finish" data-bind="value: finishOptionText">
+                                <input type="hidden" name="price" class="price" data-bind="value: price">
+                                <input type="hidden" name="size" value="100cm x 62cm / 39.4&quot; x 24.4&quot;">
+                                <input type="hidden" name="edition" value="Edition of 100">
+                                <input type="hidden" name="weight" data-bind="value: weight">
+                            </td>
+                            <td class="col-3 price"><!--ko text: displayPrice --><!--/ko--></td>
+                            <td class="col-4"><button type="submit" class="primary">Add to Cart</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </td>
+    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+    <!-- artwork-finishing-teaser -->
+<div class="teaser-container">
+    <h3>Available finishing options</h3>
+    <ul class="teaser grid teaser-center">
+            <li class="col-1-3">
+                <a href="#print-only" class="teaser-content" data-role="overlay">
+                    <img src="../../images/teaser/finish-print.jpg">
+                    <span>Print</span>
+                </a>
+            </li>
+            <li class="col-1-3">
+                <a href="#aluminium-dibond" class="teaser-content" data-role="overlay">
+                    <img src="../../images/teaser/finish-dibond.jpg">
+                    <span>Aluminium Dibond®</span>
+                </a>
+            </li>
+            <li class="col-1-3">
+                <a href="#framed" class="teaser-content" data-role="overlay">
+                    <img src="../../images/teaser/finish-framed.jpg">
+                    <span>Frame</span>
+                </a>
+            </li>
+    </ul>
+</div>
+</section>
+
+<!-- photowall-contact -->
+<section class="content">
+    <div data-role="photowall" class="photowall grid flat">
+        <div class="photowall-content">
+            <div class="newsletter contact" data-role="contact-form">
+                <div class="form-cols contact-message">
+                    <p>IF YOU HAVE QUESTIONS OR NEED ASSISTANCE WITH<br> YOUR ORDER, PLEASE DON’T HESITATE TO CONTACT US.</p>
+                    <button class="inverted">Get in touch</button>
+                </div>
+                <div class="form-cols thank-you hidden">
+                    <p>We will get back to you shortly.</p>
+                </div>
+                <div class="form-cols contact-form hidden">
+                    <form action="">
+                        <div class="form-row">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter your name" class="contact-name">
+                        </div>
+                        <div class="form-row">
+                            <label>Your E-Mail</label>
+                            <input type="text" placeholder="Enter your E-Mail address"  class="contact-email">
+                        </div>
+                        <div class="form-row">
+                            <label>Your Message</label>
+                            <div class="text-input">
+                                <textarea  class="contact-text"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <legend>All Fields are required</legend>
+                            <button class="inverted abort">Abort</button>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper"></div>
+    </div>
+</section>
+<!-- finishing-options-layer -->
+<div class="overlay-contents">
+            <div id="print-only">
+                <div class="swiper-container" data-role="overlay-slider">
+                    <ul class="slides swiper-wrapper">
+                            <li class="swiper-slide">
+
+                                <img width="768" height="512" data-src="../../images/print.jpg" class="swiper-lazy">
+
+                                <div class="swiper-lazy-preloader"></div>
+                            </li>
+                    </ul>
+                </div>
+                <div class="text-content">
+                    <h3>Print</h3>
+                    
+                    <p class="text">Our prints (technically they’re digital photo exposures) are made with highest grade Fuji Color DPII FG Crystal Archive paper, allowing precise color reproduction and maximum longevity.<br><br>You have the option of glossy or matte, the latter is recommended if you plan to frame the piece. While glossy paper (which is used for our Dibond® process) carries a bit more “punch“, matte paper effectively minimizes reflections when framed under glass.<br><br>Utilizing a Durst Lambda, the industry leading photochemical printer, reference image quality is maintained during the process of digital laser exposure and traditional chemical development.<br><br>A white border of 1cm / 0.4“ around the print is added to allow easy framing. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>
+                </div>
+            </div>
+            <div id="aluminium-dibond">
+                <div class="swiper-container" data-role="overlay-slider">
+                    <ul class="slides swiper-wrapper">
+                            <li class="swiper-slide">
+
+                                <img width="768" height="512" data-src="../../images/dibond.jpg" class="swiper-lazy">
+
+                                <div class="swiper-lazy-preloader"></div>
+                            </li>
+                    </ul>
+                </div>
+                <div class="text-content">
+                    <h3>Aluminum Dibond&reg;</h3>
+                    
+                    <p class="text">Our pieces are available in the sophisticated, frameless Aluminum Dibond® production technique, a modern, visually minimalist option to framing.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 4mm highest grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>Milled with CNC precision, the finished piece weighs 5 kg / 11 lbs and appears to be floating on the wall. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>
+                </div>
+            </div>
+            <div id="framed">
+                <div class="swiper-container" data-role="overlay-slider">
+                    <ul class="slides swiper-wrapper">
+                            <li class="swiper-slide">
+
+                                <img width="768" height="512" data-src="../../images/framed.jpg" class="swiper-lazy">
+
+                                <div class="swiper-lazy-preloader"></div>
+                            </li>
+                    </ul>
+                </div>
+                <div class="text-content">
+                    <h3>Frame</h3>
+                    
+                    <p class="text">Our frames are hand built and represent an addition to the Aluminum Dibond® production technique, allowing a mat-less frame with the piece extending all the way to the edges.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 2mm highest grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>The additional wooden frame is available in three colors: Black (Oak), White (Maple) and unpainted Maple. Now it’s up to you to choose a combination that benefits the piece and suits your space.<br><br>The framed piece weighs 6 kg / 13.2 lbs and comes with a signed certificate of authenticity carrying the serial number.</p>
+                </div>
+            </div>
+</div>
+            </div>
+
+            <footer class="legal-footer content">
+                © 2009 - 2017 | ALL RIGHTS RESERVED | <a href="../../meta/agb/index.html">TERMS AND CONDITIONS</a> | <a href="../../meta/imprint/index.html">CONTACT</a>
+            </footer>        </div>
+
+        <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><defs> <style> .cls-2 { fill: #000; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #4b9e70; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style>  <style> .cls-1 { fill-rule: evenodd; } </style>  <style> .cls-1 { fill-rule: evenodd; } </style>  <style> .cls-1 { fill: #fff; fill-rule: evenodd; } </style> </defs><symbol viewBox="0 0 32 32" id="icon-arrow-down-black"><title>arrow-down-black</title>  <path id="arrow-down-black-arrow" class="cls-2" d="M520,614.6l-1.1-1.6-7.172,4.8L505.1,613l-1.1,1.6,7.724,6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-down"><title>arrow-down</title>  <path id="arrow-down-arrow" class="cls-1" d="M520,614.6l-1.1-1.6-7.172,4.8L505.1,613l-1.1,1.6,7.724,6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-left"><title>arrow-left</title>  <path id="arrow-left-arrow" class="cls-1" d="M514.4,625l1.6-1.1-4.8-7.172L516,610.1l-1.6-1.1-6.4,7.724Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-right"><title>arrow-right</title>  <path id="arrow-right-arrow" class="cls-1" d="M509.6,625l-1.6-1.1,4.8-7.172L508,610.1l1.6-1.1,6.4,7.724Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-arrow-up"><title>arrow-up</title>  <path id="arrow-up-arrow" class="cls-1" d="M520,619.4l-1.1,1.6-7.172-4.8L505.1,621l-1.1-1.6,7.724-6.4Z" transform="translate(-496 -601)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-cart_num"><title>cart_num</title>  <circle class="cls-1" cx="16" cy="16" r="14"/> </symbol><symbol viewBox="0 0 32 32" id="icon-close"><title>close</title>  <path id="close-close" class="cls-1" d="M928,130l-2-2-6,6-6-6-2,2,6,6-6,6,2,2,6-6,6,6,2-2-6-6Z" transform="translate(-904 -120)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-dropdown-close"><title>dropdown-close</title>  <path class="cls-1" d="M609,779h9l-4.5-8Z" transform="translate(-597.5 -759)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-dropdown-open"><title>dropdown-open</title>  <path class="cls-1" d="M609,771h9l-4.5,8Z" transform="translate(-597.5 -759)"/> </symbol><symbol viewBox="0 0 32 32" id="icon-hamburger"><title>hamburger</title>  <path id="hamburger-_" data-name="|||" class="cls-1" d="M957.985,15v3.7h20V15h-20Zm0,7.155v3.7h20v-3.7h-20Zm0,7.155v3.7h20v-3.7h-20Z" transform="translate(-952 -8)"/> </symbol></svg>
+                <div class="overlay-container"><div class="overlay-wrapper"><div class="overlay-content"><div class="overlay"></div></div></div><div class="overlay-background"></div></div>
+                <script src="../../scripts/main.js"></script>
+    </body>
+</html>

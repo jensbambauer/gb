@@ -76,6 +76,7 @@
                                                     <p class="left">DHL GoGreen</p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>
+                                                <!--ko text: shippingFormula --><!-- /ko-->
                                                 <!-- /ko -->
                                             </div>
                                         </div>
@@ -109,7 +110,7 @@
                                                     <!--ko text: qty--><!--/ko-->
                                                 </div>
                                                 <div class="col-5">
-                                                    <span class="price" data-bind="text: price"></span>
+                                                    <span class="price" data-bind="text: displayPrice"></span>
                                                 </div>
                                             </div>
                                         </script>
@@ -178,7 +179,7 @@
                                 <input type="hidden" name="edition" value="Edition of 100">
                                 <input type="hidden" name="weight" data-bind="value: weight">
                             </td>
-                            <td class="col-3 price"><!--ko text: price--><!--/ko--></td>
+                            <td class="col-3 price"><!--ko text: displayPrice --><!--/ko--></td>
                             <td class="col-4"><button type="submit" class="primary">Add to Cart</button></td>
                         </tr>
                     </tbody>

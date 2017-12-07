@@ -122,27 +122,6 @@
             "src": "/images/wall/artwork/33.jpg"
         },
         {
-            "src": "/images/wall/artwork/34.jpg"
-        },
-        {
-            "src": "/images/wall/artwork/35.jpg"
-        },
-        {
-            "src": "/images/wall/artwork/36.jpg"
-        },
-        {
-            "src": "/images/wall/artwork/37.jpg"
-        },
-        {
-            "src": "/images/wall/artwork/38.jpg"
-        },
-        {
-            "src": "/images/wall/artwork/39.jpg"
-        },
-        {
-            "src": "/images/wall/artwork/40.jpg"
-        },
-        {
             "src": "/images/wall/graphic/1.jpg"
         },
         {
@@ -152,6 +131,9 @@
             "src": "/images/wall/graphic/3.jpg"
         },
         {
+            "src": "/images/wall/graphic/4.jpg"
+        },
+        {
             "src": "/images/wall/graphic/5.jpg"
         },
         {
@@ -159,6 +141,12 @@
         },
         {
             "src": "/images/wall/graphic/7.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/8.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/9.jpg"
         },
         {
             "src": "/images/wall/graphic/10.jpg"
@@ -189,6 +177,24 @@
         },
         {
             "src": "/images/wall/graphic/19.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/20.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/21.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/22.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/23.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/24.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/25.jpg"
         },
         {
             "src": "/images/wall/misc/1.jpg"
