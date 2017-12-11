@@ -20,7 +20,7 @@
                                                 {{#each data.slides}}
                                                     <li class="swiper-slide">
                                                         <figure>
-															<img src="{{../assets}}{{this.src}}" alt="">
+															<img src="..{{this.src}}" alt="">
                                                             {{#if this.caption}}
                                                                 <figcaption>{{this.caption}}</figcaption>
                                                             {{/if}}
@@ -33,7 +33,7 @@
                                         </div>
 									{{else}}
 										{{#each data.slides}}
-											<img class="blog-single-image" src="{{../assets}}{{this.src}}" alt="">
+											<img class="blog-single-image" src="..{{this.src}}" alt="">
 										{{/each}}
                                     {{/gt}}
                                     <div class="collapsed">
@@ -41,7 +41,7 @@
                                             {{this.page}}
                                         {{/markdown}}
                                     </div>
-                                    <a href="posts/{{this.slug}}/index.html">Continue reading…</a>
+                                    <a class="article-link" href="posts/{{this.slug}}/index.html">Continue reading</a>
 								</article>
                             {{/each}}
                         {{/withSort}}
@@ -55,7 +55,7 @@
 									{{#each slides}}
 										<li class="swiper-slide">
 											<figure>
-												<img src="{{../assets}}{{this.src}}" alt="">
+												<img src="../../..{{this.src}}" alt="">
 												{{#if this.caption}}
 													<figcaption>{{this.caption}}</figcaption>
 												{{/if}}
@@ -67,8 +67,8 @@
 								<div class="swiper-button-next"><svg><use xlink:href="#icon-arrow-right"/></svg></div>
 							</div>
 						{{else}}
-							{{#each data.slides}}
-								<img class="blog-single-image" src="{{../assets}}{{this.src}}" alt="">
+							{{#each slides}}
+								<img class="blog-single-image" src="../../..{{this.src}}" alt="">
 							{{/each}}
 						{{/gt}}
 

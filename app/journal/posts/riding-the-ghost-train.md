@@ -4,7 +4,7 @@ journal: true
 title: Riding the Ghost Train
 transparent-header: true
 date: 2017-04-06
-slides: [{"src": "/images/journal/riding_the_ghost_train.jpg", caption: 'Postcard depicting the Biltmore Terrace'}]
+slides: [{"src": "/images/journal/riding_the_ghost_train.jpg", "caption": "Postcard depicting the Biltmore Terrace"}]
 previews: 2
 ---
 
