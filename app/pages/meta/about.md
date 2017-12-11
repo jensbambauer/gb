@@ -3,7 +3,8 @@ layout: journal.hbs
 transparent-header: true
 meta-page: true
 fullslider: true
-slides: [{src: '../../images/about/about-1.jpg'}, {src: '../../images/about/about-2.jpg'},{src: '../../images/about/about-3.jpg'}, {src: '../../images/about/about-4.jpg', caption: 'gay'}, {src: '../../images/about/about-5.jpg'}, {src: '../../images/about/about-6.jpg', caption: 'cool'}, {src: '../../images/about/about-7.jpg'}, {src: '../../images/about/about-8.jpg'},{src: '../../images/about/about-9.jpg'}]
+slides: [{"src": "/images/about/about_1_2048.jpg"}, {"src":
+"/images/about/about_2_2048.jpg"}, {"src": "/images/about/about_3_2048.jpg"}]
 ---
 
 # About

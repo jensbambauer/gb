@@ -13,7 +13,7 @@
                         {{#withSort journal 'data.date'}}
                             {{#each this.pages }}
                                 <article class="content blog previews-{{data.previews}}">
-                                    <time>{{formatDate data.date "%m/%d/%Y"}}</time>
+                                    {{#if data.date}}<time>{{formatDate data.date "%m/%d/%Y"}}</time>{{/if}}
                                     {{#gt data.slides.length 1}}
                                         <div class="swiper-container" data-role="slider-journal">
                                             <ul class="slides swiper-wrapper">
@@ -48,7 +48,7 @@
                     </section>
                 {{else}}
                     <article class="content blog {{#if meta-page}}meta{{/if}} {{#if fullslider}}fullslider{{/if}}">
-						<time>{{formatDate date "%m/%d/%Y"}}</time>
+						{{#if date}}<time>{{formatDate date "%m/%d/%Y"}}</time>{{/if}}
 						{{#gt slides.length 1}}
 							<div class="swiper-container" data-role="slider-journal">
 								<ul class="slides swiper-wrapper">
@@ -87,11 +87,19 @@
 
                 <section class="content">
                     <ul class="teaser grid">
-                        <li class="col-1-3">
-                            <a href="{{assets}}/meta/about/index.html" class="teaser-content">
-                                <img src="{{assets}}/images/teaser/teaser_about.jpg">
-                            </a>
-                        </li>
+						{{#if meta-page}}
+							<li class="col-1-3">
+								<a href="{{assets}}/journal/index.html" class="teaser-content">
+									<img src="{{assets}}/images/teaser/teaser_journal.jpg">
+								</a>
+							</li>
+						{{else}}
+							<li class="col-1-3">
+								<a href="{{assets}}/meta/about/index.html" class="teaser-content">
+									<img src="{{assets}}/images/teaser/teaser_about.jpg">
+								</a>
+							</li>
+						{{/if}}
                         <li class="col-1-3">
                             <div class="teaser-content">
                                 <img src="{{assets}}/images/teaser/twitter.jpg">
