@@ -81,12 +81,20 @@
   width: 100%;
   height: 100%;
   position: relative;
-  opacity: 0.3;
+}
 
-   &-active {
+.single .swiper-slide {
+  transition: all 0.3s;
+
+  &:nth-child(1) , &:nth-child(2) {
+      opacity: 0.3;
+  }
+
+   &-active:nth-child(1), &-active:nth-child(2) {
        opacity: 1;
    }
 }
+
 /* Auto Height */
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {

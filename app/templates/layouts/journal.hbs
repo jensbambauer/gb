@@ -15,7 +15,7 @@
                                 <article class="content blog previews-{{data.previews}}">
                                     <time>{{formatDate data.date "%m/%d/%Y"}}</time>
                                     {{#gt data.slides.length 1}}
-                                        <div class="swiper-container" data-role="slider">
+                                        <div class="swiper-container" data-role="slider-journal">
                                             <ul class="slides swiper-wrapper">
                                                 {{#each data.slides}}
                                                     <li class="swiper-slide">
@@ -50,7 +50,7 @@
                     <article class="content blog {{#if meta-page}}meta{{/if}} {{#if fullslider}}fullslider{{/if}}">
 						<time>{{formatDate date "%m/%d/%Y"}}</time>
 						{{#gt slides.length 1}}
-							<div class="swiper-container" data-role="slider">
+							<div class="swiper-container" data-role="slider-journal">
 								<ul class="slides swiper-wrapper">
 									{{#each slides}}
 										<li class="swiper-slide">

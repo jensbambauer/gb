@@ -150,35 +150,41 @@ var slider = (function (slider, $, undefined) {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev'
            }, options || {});
-            
-            console.log(swiperOptions);
-            
+
             var mySwiper = new Swiper(this, swiperOptions);
+
+            if (swiperOptions.onSlideChangeEnd) {
+                swiperOptions.onSlideChangeEnd(mySwiper);
+            }
 
             $(slider[0]).find('.flex-active-slide').find('img').addClass('lazyload');
         });
-
     };
+
+    var onSlideChangeEnd = function(swiper) {
+        console.log(swiper)
+        $(swiper.slides[swiper.activeIndex]).find("img").addClass('lazyload');
+        if(swiper.activeIndex !== swiper.slides.length) {
+            $(swiper.slides[swiper.activeIndex + 1]).find("img").addClass('lazyload');
+        }
+        if (swiper.activeIndex > 0) {
+            $(swiper.slides[swiper.activeIndex - 1]).find("img").addClass('lazyload');
+        }
+    }
+
+    init('[data-role="slider-single"]', {
+        loop: false,
+        onSlideChangeEnd: onSlideChangeEnd
+    });
 
     init('[data-role="slider"]', {
         loop: true,
-        onSlideChangeEnd: function(swiper) {
-            $(swiper.slides[swiper.activeIndex]).find("img").addClass('lazyload');
-            if(swiper.activeIndex !== swiper.slides.length) {
-                $(swiper.slides[swiper.activeIndex + 1]).find("img").addClass('lazyload');
-            }
-            if (swiper.activeIndex > 0) {
-                $(swiper.slides[swiper.activeIndex - 1]).find("img").addClass('lazyload');
-            }
-            swiper.slides.filter('.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next').find('img').each(function() {
-                //if(!$(this).hasClass('lazyload') && !$(this).hasClass('lazyloaded')) {
-                    //$(this).addClass('lazyload');
-                //}
-            });
-        }
+        onSlideChangeEnd: onSlideChangeEnd
     });
 
-    init('[data-role="slider-journal"]', {});
+    init('[data-role="slider-journal"]', {
+        loop: false
+    });
 
     $(document).on('overlay-content-ready', function() {
         init('.overlay-container [data-role="overlay-slider"]', {
