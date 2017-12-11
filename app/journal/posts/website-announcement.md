@@ -4,6 +4,7 @@ journal: true
 title: Welcome to Our New Website and Online Store
 transparent-header: true
 date: 2017-12-18
+previews: 1
 ---
 
 # Welcome to Our New Website and Online Store

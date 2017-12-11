@@ -5,6 +5,7 @@ title: Interview for The Futurist, Milan, Italy
 transparent-header: true
 date: 2016-08-07
 slides: [{"src": "/images/journal/interview_1.jpg"}]
+previews: 4
 ---
 
 # Interview for The Futurist, Milan, Italy
@@ -27,7 +28,7 @@ This is of course a very brief rundown of the origins of "The New World", and I 
 
 *Italo Calvino, a famous Italian writer, wrote a book in the 70's called "The Invisible Cities“. The narrative structure is very complex and "combinatorial“, the reader is left with the game of finding solutions or hidden combinations. Marco Polo describes the real cities, imaginary, all fruit of his imagination, "City of Memory" and „Hidden City". "Everything imaginable can be dreamed, but even the most unexpected dream is a rebus that conceals a desire, or its reverse, a fear. Cities such as dreams are made of desires and fears, even if the thread of their discourse is secret, their rules absurd, misleading perspectives, and everything hides another". Did you find some similarity with your concept? And your outlook, your narrative, is it dynamic or static? What are the possible developments? What is your invisible city?*
 
-As I haven’t red Calvino, I won’t comment on the narrative structure of "Invisible Cities" or its combinatorial nature; I am not sure "The New World" qualifies for a credible comparison here. The pieces of "The New World" may be combined to a vision of a city, but at the same time, they stand on their own. Of greater interest to me is the fact that the book was written in the 1970s, the dawn of postmodernism, the time when people began to lose faith in modernist ideals, which is somewhat mirrored in the book by the oppressive, dismal state the cities Marco Polo describes in the book are in.
+As I haven’t read Calvino, I won’t comment on the narrative structure of "Invisible Cities" or its combinatorial nature; I am not sure "The New World" qualifies for a credible comparison here. The pieces of "The New World" may be combined to a vision of a city, but at the same time, they stand on their own. Of greater interest to me is the fact that the book was written in the 1970s, the dawn of postmodernism, the time when people began to lose faith in modernist ideals, which is somewhat mirrored in the book by the oppressive, dismal state the cities Marco Polo describes in the book are in.
 
 I agree that desires and fears define man and therefore his endeavors. Further, I believe that everything we create is shaped by obsessions that are part of our psyche, even if that’s not initially visible on the surface, or concealed on purpose. It’s these obsessions that interest me as an artist, and by acknowledging them, I feel relieved from the fact that we’re pretty lost. 
 

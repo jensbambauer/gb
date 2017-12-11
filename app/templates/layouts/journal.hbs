@@ -7,15 +7,12 @@
     <body>
         <div class="page{{#if transparent-header}} transparent-header{{/if}}">
             {{>header}}
-
             <div class="main">
-
                 {{#if overview}}
                     <section>
-
                         {{#withSort journal 'data.date'}}
                             {{#each this.pages }}
-                                <article class="content blog">
+                                <article class="content blog previews-{{data.previews}}">
                                     <time>{{formatDate data.date "%m/%d/%Y"}}</time>
                                     {{#gt data.slides.length 1}}
                                         <div class="swiper-container" data-role="slider">
@@ -23,7 +20,7 @@
                                                 {{#each data.slides}}
                                                     <li class="swiper-slide">
                                                         <figure>
-															<img src="{{this.src}}" alt="">
+															<img src="{{../assets}}{{this.src}}" alt="">
                                                             {{#if this.caption}}
                                                                 <figcaption>{{this.caption}}</figcaption>
                                                             {{/if}}
@@ -36,7 +33,7 @@
                                         </div>
 									{{else}}
 										{{#each data.slides}}
-											<img class="blog-single-image" src="{{this.src}}" alt="">
+											<img class="blog-single-image" src="{{../assets}}{{this.src}}" alt="">
 										{{/each}}
                                     {{/gt}}
                                     <div class="collapsed">
@@ -58,7 +55,7 @@
 									{{#each slides}}
 										<li class="swiper-slide">
 											<figure>
-												<img src="{{this.src}}" alt="">
+												<img src="{{../assets}}{{this.src}}" alt="">
 												{{#if this.caption}}
 													<figcaption>{{this.caption}}</figcaption>
 												{{/if}}
@@ -71,7 +68,7 @@
 							</div>
 						{{else}}
 							{{#each data.slides}}
-								<img class="blog-single-image" src="{{this.src}}" alt="">
+								<img class="blog-single-image" src="{{../assets}}{{this.src}}" alt="">
 							{{/each}}
 						{{/gt}}
 
@@ -91,14 +88,13 @@
                 <section class="content">
                     <ul class="teaser grid">
                         <li class="col-1-3">
-                            <a href="/the-new-world/index.html" class="teaser-content">
-                                <img src="/images/teaser/the-new-world.jpg">
-                                <span>View Series</span>
+                            <a href="{{assets}}/meta/about/index.html" class="teaser-content">
+                                <img src="{{assets}}/images/teaser/teaser_about.jpg">
                             </a>
                         </li>
                         <li class="col-1-3">
                             <div class="teaser-content">
-                                <img src="/images/teaser/twitter.jpg">
+                                <img src="{{assets}}/images/teaser/twitter.jpg">
                                 <div class="tweets" data-role="tweets">
                                     <h4>Activity on <a href="http://www.twitter.com/geebirdandbamby" target="_blank">@geebirdandbamby</a></h4>
                                     <div class="tweet-container">
@@ -114,9 +110,8 @@
                             </div>
                         </li>
                         <li class="col-1-3">
-                            <a href="meta/about/index.html" class="teaser-content">
-                                <img src="/images/teaser/teaser_about.jpg">
-                                <span class="center">About G&amp;B</span>
+                            <a href="http://www.instagram.com/geebirdandbamby" target="_blank" class="teaser-content">
+                                <img src="{{assets}}/images/teaser/teaser_instagram.jpg">
                             </a>
                         </li>
                     </ul>

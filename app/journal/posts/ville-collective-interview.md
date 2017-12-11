@@ -5,6 +5,7 @@ title: Interview for Ville Collective, Tokyo, Japan
 transparent-header: true
 date: 2014-09-30
 slides: [{"src": "/images/journal/interview_2.jpg"}]
+previews: 3
 ---
 
 # Interview for Ville Collective, Tokyo, Japan

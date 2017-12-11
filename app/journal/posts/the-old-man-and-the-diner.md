@@ -5,6 +5,7 @@ title: The Old Man and the Diner
 transparent-header: true
 date: 2016-06-25
 slides: [{"src": "/images/journal/old_man_and_the_diner.jpg"}]
+previews: 3
 ---
 
 # The Old Man and the Diner
@@ -21,7 +22,7 @@ I left inspired to capture this seemingly mundane restaurant, just having learne
 
 "Oasis Diner" eventually turned into a piece about saying your goodbyes, getting things in order, a place for that one last talk you may have with someone. I decided that it should be located in a remote, deserted setting and shot the material for the background at the Vasquez Rocks just outside of Palmdale, California, in February 2012.  
 
-I first met Vern in 1994. Ever since, I cherish the episodes he shared of the life he spent with his brilliant wife Renata. It would’ve been easy to mistake Vern for a grumpy old man. Having ticked off most life’s boxes, easily allowing him and Renata to spend their retirement on their own terms, he just couldn’t let go. Let go of his disappointment with certain people and the way of the world. He wasn’t bitter, he just saw straight through many things you better not. I was still growing up, and as a kid you get told that everything is going to be alright in the end. Looking into his old eyes, I eventually realized that that’s probably a lie.
+I first met Vern in 1994. Ever since, I cherish the episodes he shared of the life he spent with his brilliant wife Renata. It would’ve been easy to mistake Vern for a grumpy old man. Having ticked off most of life’s boxes, easily allowing him and Renata to spend their retirement on their own terms, he just couldn’t let go. Let go of his disappointment with people and the way of the world. He wasn’t bitter, he just saw straight through many things you’re not supposed to. I was still growing up, and as a kid you get told that everything is going to be alright in the end. Looking into his old eyes, I eventually realized that that’s probably a lie.
 
 Our last correspondence was about his recent E-Mail issues. He summarized: "The Spam was too much, but such is life."
 

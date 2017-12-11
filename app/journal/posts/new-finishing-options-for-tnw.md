@@ -5,6 +5,7 @@ title: New Finishing Options for "The New World"
 transparent-header: true
 date: 2017-12-17
 slides: [{"src": "/images/journal/options_frame.jpg"},{"src":"/images/journal/options_print.jpg"},{"src":"/images/journal/options_dibond.jpg"}]
+previews: 1
 ---
 
 # New Finishing Options for "The New World"
