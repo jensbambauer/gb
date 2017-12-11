@@ -3,7 +3,7 @@ layout: journal.hbs
 journal: true
 title: Welcome to Our New Website and Online Store
 transparent-header: true
-date: December 18th, 2017
+date: 2017-12-18
 ---
 
 # Welcome to Our New Website and Online Store

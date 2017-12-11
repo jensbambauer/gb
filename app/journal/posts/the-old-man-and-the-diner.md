@@ -3,8 +3,8 @@ layout: journal.hbs
 journal: true
 title: The Old Man and the Diner
 transparent-header: true
-date: June 25th, 2016
-slides: [{src: 'old_man_and_the_diner.jpg'}]
+date: 2016-06-25
+slides: [{"src": "/images/journal/old_man_and_the_diner.jpg"}]
 ---
 
 # The Old Man and the Diner

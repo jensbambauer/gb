@@ -3,7 +3,7 @@ layout: journal.hbs
 journal: true
 title: Making "Mart"
 transparent-header: true
-date: November 28th, 2017
+date: 2017-11-28
 ---
 
 # Making "Mart"

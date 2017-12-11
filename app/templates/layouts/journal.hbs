@@ -16,15 +16,14 @@
                         {{#withSort journal 'data.date'}}
                             {{#each this.pages }}
                                 <article class="content blog">
-                                    <time>{{data.date}}</time>
-
-                                    {{#if data.slides }}
-                                        <div class="flexslider" data-role="slider">
-                                            <ul class="slides">
+                                    <time>{{formatDate data.date "%m/%d/%Y"}}</time>
+                                    {{#gt data.slides.length 1}}
+                                        <div class="swiper-container" data-role="slider">
+                                            <ul class="slides swiper-wrapper">
                                                 {{#each data.slides}}
-                                                    <li>
+                                                    <li class="swiper-slide">
                                                         <figure>
-                                                            <img src="{{this.src}}">
+															<img src="{{this.src}}" alt="">
                                                             {{#if this.caption}}
                                                                 <figcaption>{{this.caption}}</figcaption>
                                                             {{/if}}
@@ -32,44 +31,49 @@
                                                     </li>
                                                 {{/each}}
                                             </ul>
+											<div class="swiper-button-prev"><svg><use xlink:href="#icon-arrow-left"/></svg></div>
+											<div class="swiper-button-next"><svg><use xlink:href="#icon-arrow-right"/></svg></div>
                                         </div>
-                                    {{/if}}
+									{{else}}
+										{{#each data.slides}}
+											<img class="blog-single-image" src="{{this.src}}" alt="">
+										{{/each}}
+                                    {{/gt}}
                                     <div class="collapsed">
                                         {{#markdown}}
                                             {{this.page}}
                                         {{/markdown}}
                                     </div>
                                     <a href="posts/{{this.slug}}/index.html">Continue reading…</a>
-                            </article>
+								</article>
                             {{/each}}
                         {{/withSort}}
-
                     </section>
                 {{else}}
                     <article class="content blog {{#if meta-page}}meta{{/if}} {{#if fullslider}}fullslider{{/if}}">
-                        {{#if date}}<time>{{date}}</time>{{/if}}
-
-                        {{#if slides }}
-                            <div class="flexslider" data-role="slider">
-                                <ul class="slides">
-                                    {{#if video}}
-                                        <li class="video-slide">
-                                            <iframe id="player_1" src="{{video}}" width="1024" height="589" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                                        </li>
-                                    {{/if}}
-                                    {{#each slides}}
-                                        <li>
-                                            <figure>
-                                                <img src="{{this.src}}">
-                                                {{#if this.caption}}
-                                                    <figcaption>{{this.caption}}</figcaption>
-                                                {{/if}}
-                                            </figure>
-                                        </li>
-                                    {{/each}}
-                                </ul>
-                            </div>
-                        {{/if}}
+						<time>{{formatDate date "%m/%d/%Y"}}</time>
+						{{#gt slides.length 1}}
+							<div class="swiper-container" data-role="slider">
+								<ul class="slides swiper-wrapper">
+									{{#each slides}}
+										<li class="swiper-slide">
+											<figure>
+												<img src="{{this.src}}" alt="">
+												{{#if this.caption}}
+													<figcaption>{{this.caption}}</figcaption>
+												{{/if}}
+											</figure>
+										</li>
+									{{/each}}
+								</ul>
+								<div class="swiper-button-prev"><svg><use xlink:href="#icon-arrow-left"/></svg></div>
+								<div class="swiper-button-next"><svg><use xlink:href="#icon-arrow-right"/></svg></div>
+							</div>
+						{{else}}
+							{{#each data.slides}}
+								<img class="blog-single-image" src="{{this.src}}" alt="">
+							{{/each}}
+						{{/gt}}
 
                         {{#markdown}}
                             {{> body }}

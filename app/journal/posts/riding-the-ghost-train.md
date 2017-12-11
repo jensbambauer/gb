@@ -3,8 +3,8 @@ layout: journal.hbs
 journal: true
 title: Riding the Ghost Train
 transparent-header: true
-date: April 6th, 2017
-slides: [{src: 'riding_the_ghost_train.jpg', caption: 'Postcard depicting the Biltmore Terrace'}]
+date: 2017-04-06
+slides: [{"src": "/images/journal/riding_the_ghost_train.jpg", caption: 'Postcard depicting the Biltmore Terrace'}]
 ---
 
 # Riding the Ghost Train

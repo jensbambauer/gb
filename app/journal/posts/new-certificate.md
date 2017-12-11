@@ -3,7 +3,7 @@ layout: journal.hbs
 journal: true
 title: New Certificates from January 2017
 transparent-header: true
-date: October 29th, 2017
+date: 2017-10-29
 ---
 
 # New Certificates from December 2017

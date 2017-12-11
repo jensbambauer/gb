@@ -3,8 +3,8 @@ layout: journal.hbs
 journal: true
 title: Interview for The Futurist, Milan, Italy
 transparent-header: true
-date: August 7th, 2016
-slides: [{src: 'interview_1.jpg'}]
+date: 2016-08-07
+slides: [{"src": "/images/journal/interview_1.jpg"}]
 ---
 
 # Interview for The Futurist, Milan, Italy

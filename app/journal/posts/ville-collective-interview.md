@@ -3,8 +3,8 @@ layout: journal.hbs
 journal: true
 title: Interview for Ville Collective, Tokyo, Japan
 transparent-header: true
-date: September 30th, 2014
-slides: [{src: 'interview_2.jpg'}]
+date: 2014-09-30
+slides: [{"src": "/images/journal/interview_2.jpg"}]
 ---
 
 # Interview for Ville Collective, Tokyo, Japan
