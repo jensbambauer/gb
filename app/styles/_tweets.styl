@@ -17,7 +17,7 @@
     .tweet-container {
         position: relative;
         overflow: hidden;
-        height: 100px;
+		height: 98px;
         
         ul {
             position: absolute;
@@ -32,8 +32,13 @@
         text-align: left;
         @extend $typewriter;
         font-size: 13px;
-        height: 100px;
         margin-bottom: 30px;
+		
+		div {
+			height: 84px;
+			overflow: hidden;
+			word-break: break-word;
+		}
         
         author , a{
             color: #999999;
@@ -46,6 +51,19 @@
             background: transparent;
         }
     }
+
+	a[data-expanded-url] {
+		font-size: 1px;
+		letter-spacing: -1px;
+		color: transparent;
+
+		&:before {
+			content: attr(href);
+			font-size: 13px;
+			letter-spacing: normal;
+			color: #000;
+		}
+	}
     
     .more-tweets {
         color: black;
