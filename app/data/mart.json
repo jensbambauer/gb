@@ -6,37 +6,69 @@
             "finishing-options": [
                 {
                     "title": "Print Glossy",
-                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "price": "{\"eu\": \"419.33\",\"usa\": \"419\",\"world\": \"419\",\"value\": \"glossy\"}",
                     "weight": "0.615"
                 },
                 {
                     "title": "Print Matte",
-                    "price": "{\"eu\": \"499\",\"usa\": \"419\",\"world\": \"419\"}",
+                    "price": "{\"eu\": \"419.33\",\"usa\": \"419\",\"world\": \"419\",\"value\": \"matte\"}",
                     "weight": "10"
                 },
                 {
                     "title": "Alum. Dibond",
-                    "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\"}",
+                    "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\",\"value\": \"dibond\"}",
                     "weight": "15"
                 },
                  {
                     "title": "Black Frame",
-                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"black\"}",
                     "weight": "15"
                 },
                  {
                     "title": "White Frame",
-                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"white\"}",
                     "weight": "15"
                 },
                  {
                     "title": "Maple Frame",
-                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\"}",
+                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"maple\"}",
                     "weight": "15"
                 }
             ]
         }
     ],
+	"finish-options": [
+		{
+            "id": "print-only",
+            "slides": [
+                {
+                    "src": "../../images/finishoptions/mart/print.jpg"
+                }
+            ],
+            "headline": "Print",
+            "text": "<p class=\"text\">Our digital photo exposures are made with highest grade Fuji Color DPII FG Crystal Archive paper, allowing precise color reproduction and maximum longevity.<br><br>You have the option of glossy or matte, the latter is recommended if you plan to have the piece framed by a shop of your choice. While glossy paper (which is used for our Aluminum Dibond® process) enables a slightly higher contrast, matte paper effectively minimizes reflections when framed under glass.<br><br>Utilizing a Durst Lambda, the industry-leading photochemical printer, reference image quality is maintained during the process of digital laser exposure and traditional chemical development.<br><br>A white border of 1cm / 0.4“ around the print is added to allow easy framing. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>"
+        },
+        {
+            "id": "aluminium-dibond",
+            "slides": [
+                {
+                    "src": "../../images/finishoptions/mart/dibond.jpg"
+                }
+            ],
+            "headline": "Aluminum Dibond&reg;",
+            "text": "<p class=\"text\">Our pieces are available in the sophisticated, frameless Aluminum Dibond® production technique, a modern, visually minimalist option to framing.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 4mm high grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>Milled with CNC precision, the finished piece weighs 17 kg / 38 lbs and will appear to be floating on the wall once mounted. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>"
+        },
+        {
+            "id": "framed",
+            "slides": [
+                {
+                    "src": "../../images/finishoptions/mart/framed.jpg"
+                }
+            ],
+            "headline": "Frame",
+            "text": "<p class=\"text\">Our frames are hand built and function as an addition to the Aluminum Dibond® production technique, allowing a mat-less frame with the piece extending all the way to the edges.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 2mm high grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>The added wooden frame measures 4cm / 1.6“ in width and 3cm / 1.2“ in depth. The frame is made of oak wood and painted black with a semi-gloss finish.<br><br>The framed piece weighs 20 kg / 44.1 lbs and comes with a signed certificate of authenticity carrying the serial number.</p>"
+        }
+	],
     "finish-teaser": [
         {
             "title": "Print",

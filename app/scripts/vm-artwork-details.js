@@ -28,6 +28,7 @@
             vm.displayPrice(displayPrice);
             vm.price(price);
             vm.finishOptionText($(node).find('select option:selected').text());
+            console.log(vm.finishOptionText())
             vm.weight($(node).find('select option:selected').data('weight'));
         }
 

@@ -1,26 +1,24 @@
 <!-- finishing-options-layer -->
 <div class="overlay-contents">
-    {{#finishing-options }}
-        {{~#each options}}
-            <div id="{{id}}">
-                <div class="swiper-container" data-role="overlay-slider">
-                    <ul class="slides swiper-wrapper">
-                        {{#each slides}}
-                            <li class="swiper-slide">
+	{{~#each finish-options}}
+		<div id="{{id}}">
+			<div class="swiper-container" data-role="overlay-slider">
+				<ul class="slides swiper-wrapper">
+					{{#each slides}}
+						<li class="swiper-slide">
 
-                                <img width="768" height="512" data-src="{{this.src}}" class="swiper-lazy">
+							<img width="768" height="512" data-src="{{this.src}}" class="swiper-lazy">
 
-                                <div class="swiper-lazy-preloader"></div>
-                            </li>
-                        {{/each}}
-                    </ul>
-                </div>
-                <div class="text-content">
-                    <h3>{{{headline}}}</h3>
-                    {{basename}}
-                    {{{text}}}
-                </div>
-            </div>
-        {{/each}}
-    {{/finishing-options }}
+							<div class="swiper-lazy-preloader"></div>
+						</li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="text-content">
+				<h3>{{{headline}}}</h3>
+				{{basename}}
+				{{{text}}}
+			</div>
+		</div>
+	{{/each}}
 </div>
