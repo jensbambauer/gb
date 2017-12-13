@@ -35,7 +35,6 @@
                         <a class="icon-button close" href="#" data-role="toggle-cart"><svg><use xlink:href="#icon-close"/></svg></a>
                         <div class="cart-table">
                             <ul class="header">
-                                <li class="col-1">Identifier</li>
                                 <li class="col-2">Artwork Title &amp; Info</li>
                                 <li class="col-3">Finish</li>
                                 <li class="col-4">Quantity</li>
@@ -43,7 +42,7 @@
                             </ul>
                             <div class="cart-rows">
                                 <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
-                                <div class="row">
+                                <div class="shipping-row row">
                                     <!--ko if: totalWeight() > 5 -->
                                     <div class="ups-shipping">
                                         <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
@@ -76,10 +75,7 @@
 
                             <script type="text/html" id="cart-row">
                                 <div class="row" data-id="\{{id}}">
-                                    <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"></a>
-                                    <div class="col-1">
-                                        <img src="http://placehold.it/128x128" width="128" height="128" class="round">
-                                    </div>
+                                    <a href="" class="remove icon-button-small" data-bind="click: $parent.removeCartItem"><svg><use xlink:href="#icon-close"/></svg></a>
                                     <div class="col-2">
                                         <h3><!--ko text: name--><!--/ko--></h3>
                                         <!--ko text: size--><!--/ko--> <br>
@@ -89,8 +85,11 @@
                                         <!--ko text: finish--><!--/ko-->
                                     </div>
                                     <div class="col-4 no-headline">
-                                        <input type="text" data-bind="value: qty">
-                                        <!--ko text: qty--><!--/ko-->
+										<div class="spinner">
+											<button data-bind="click: decreaseQty">-</button>
+											<span><!--ko text: qty--><!--/ko--></span>
+											<button data-bind="click: increaseQty">+</button>
+										</div>
                                     </div>
                                     <div class="col-5">
                                         <span class="price" data-bind="text: displayPrice"></span>

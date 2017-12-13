@@ -25,6 +25,12 @@ FC.override = FC.override || {};
                 return vm.p();
             }
         });
+        vm.increaseQty = function() {
+            vm.qty(vm.qty() + 1);
+        }
+        vm.decreaseQty = function() {
+            vm.qty(vm.qty() - 1);
+        }
     }
 
     function FcCart() {
@@ -79,6 +85,7 @@ FC.override = FC.override || {};
             if(items().length) {
                 $('[data-role="toggle-cart"]').addClass('hasItems');
             } else {
+                closeCart();
                 $('[data-role="toggle-cart"]').removeClass('hasItems');
             }
         };
@@ -143,7 +150,12 @@ FC.override = FC.override || {};
             }
 
             $el.toggleClass('open');
+            $('#navigation-toggle').attr('checked', !$el.hasClass('open'));
         };
+
+        var closeCart = function() {
+            $el.removeClass('open');
+        }
 
         var deleteShippingItem = function(callback) {
             var shippingItem;
