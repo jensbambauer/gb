@@ -7,17 +7,20 @@
                             <li {{#is basename "index"}}{{#unless layout}} class="active"{{/unless}}{{/is}}>
                                 <a href="{{assets}}/index.html">Home</a>
                             </li>
-                            <li {{#is basename "mart"}} class="active"{{/is}}>
-                                <a href="{{assets}}/mart/index.html">Mart</a>
-                            </li>
                             <li {{#is basename "the-new-world"}} class="active"{{/is}}>
                                 <a href="{{assets}}/the-new-world/index.html">The New World</a>
+                            </li>
+                            <li {{#is basename "mart"}} class="active"{{/is}}>
+                                <a href="{{assets}}/mart/index.html">Mart</a>
                             </li>
                             <li {{#is basename "about"}} class="active"{{/is}}>
                                 <a href="{{assets}}/meta/about/index.html">About</a>
                             </li>
                             <li {{#is basename "index"}}{{#is layout "journal.hbs"}} class="active"{{/is}}{{/is}}>
                                 <a href="{{assets}}/journal/index.html">Journal</a>
+                            </li>
+                            <li {{#is basename "imprint"}} class="active"{{/is}}>
+                                <a href="{{assets}}/meta/imprint/index.html">Contact</a>
                             </li>
                             <li>
                                 <a href="" data-role="region-select" onClick="$('#navigation-toggle').click()">Select Region</a>

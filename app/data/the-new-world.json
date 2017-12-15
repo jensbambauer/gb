@@ -16,22 +16,22 @@
                 },
                 {
                     "title": "Alum. Dibond",
-                    "price": "{\"eu\": \"819\",\"usa\": \"689\",\"world\": \"689\",\"value\": \"dibond\"}",
+                    "price": "{\"eu\": \"688.25\",\"usa\": \"689\",\"world\": \"689\",\"value\": \"dibond\"}",
                     "weight": "15"
                 },
                  {
                     "title": "Black Frame",
-                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"black\"}",
+                    "price": "{\"eu\": \"730.25\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"black\"}",
                     "weight": "15"
                 },
                  {
                     "title": "White Frame",
-                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"white\"}",
+                    "price": "{\"eu\": \"730.25\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"white\"}",
                     "weight": "15"
                 },
                  {
                     "title": "Maple Frame",
-                    "price": "{\"eu\": \"869\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"maple\"}",
+                    "price": "{\"eu\": \"730.25\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"maple\"}",
                     "weight": "15"
                 }
             ]

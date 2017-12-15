@@ -8,13 +8,13 @@ open-animation = 0.6s
     overflow: auto;
     color: black;
     pointer-events: none;
-    transition: all .7s ease-in-out;
+    transition: all .7s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 
     .overlay-cart-container {
         position: relative;
         height: 0;
         overflow: hidden;
-        transition: all .7s ease-in-out;
+        transition: all .7s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 
         .content:before {
             width: 100%;
@@ -24,7 +24,6 @@ open-animation = 0.6s
             left: 0;
             top: 0;
             background: white;
-            transition: all open-animation ease-in-out;
         }
     }
 
@@ -142,7 +141,7 @@ open-animation = 0.6s
             position: absolute;
             left: 0;
             margin-top: -16px;
-            top: 50%;
+            top: 9px;
         }
 
         h3 {
