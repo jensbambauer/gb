@@ -3,7 +3,8 @@ layout: journal.hbs
 transparent-header: true
 meta-page: true
 fullslider: true
-slides:
+slides: [{"src": "/images/about/about_1_2048.jpg"}, {"src":
+"/images/about/about_2_2048.jpg"}, {"src": "/images/about/about_3_2048.jpg"}]
 ---
 
 # About Geebird&Bamby™

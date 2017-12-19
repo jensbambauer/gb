@@ -60,7 +60,9 @@
 									{{#each slides}}
 										<li class="swiper-slide">
 											<figure>
-												<img src="{{#if ../meta-page}}../../{{else}}../../..{{/if}}{{this.src}}" alt="">
+                                                {{#if src}}
+                                                    <img src="{{#if ../meta-page}}../../{{else}}../../..{{/if}}{{this.src}}" alt="">
+                                                {{/if}}
 												{{#if this.caption}}
 													<figcaption>{{this.caption}}</figcaption>
 												{{/if}}
@@ -74,7 +76,13 @@
 						{{else}}
 							{{#each slides}}
 								<figure>
-									<img class="blog-single-image" src="../../..{{this.src}}" alt="">
+                                    {{#if src}}
+                                        <img class="blog-single-image" src="../../..{{this.src}}" alt="">
+                                    {{/if}}
+                                    {{#if src_x1}}
+                                        <img class="blog-single-image" src="../..{{this.src_x1}}"
+                                        srcset="../..{{this.src_x1}}, ../..{{this.src_x2}} 2x" alt="">
+                                    {{/if}}
 									{{#if this.caption}}
 										<figcaption>{{this.caption}}</figcaption>
 									{{/if}}
