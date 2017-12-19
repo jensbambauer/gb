@@ -8,16 +8,18 @@ transparent-header: true
     <picture class="collection-intro-image">
         <img src="../images/mart-collection/mart_collection_header_1x.jpg" srcset="../images/mart-collection/mart_collection_header_1x.jpg, ../images/mart-collection/mart_collection_header_2x.jpg 2x" alt="">
     </picture>
-    <ul class="collection-thumbnails collection-mart" data-role="one-hover">
-        {{#each mart.artworks }}
-            <li>
-                <a href="{{@key}}/index.html" class="{{@key}} {{#is @key "forever-sunshine"}}hover{{/is}}">
-                    {{title}}
-                    <span class="button inverted">View Piece</span>
-                </a>
-            </li>
-        {{/each}}
-    </ul>
+    <div class="collection-thumbnails-wrapper">
+        <ul class="collection-thumbnails collection-mart" data-role="one-hover">
+            {{#each mart.artworks }}
+                <li>
+                    <a href="{{@key}}/index.html" class="{{@key}} {{#is @key "free"}}hover{{/is}}">
+                        {{title}}
+                        <span class="button inverted">View Piece</span>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
     <div class="collection-logo-mart"></div>
     <div class="collection-intro collection-intro--mart">
         <label for="collection-introduction" class="button toggle-switch"><span class="off">Show</span><span class="on">Hide</span> Introduction</label>

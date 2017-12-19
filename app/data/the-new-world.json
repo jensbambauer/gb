@@ -42,17 +42,17 @@
 			"id": "print-only",
 			"slides": [
 				{
-					"src": "../../images/print.jpg"
+					"src": "../../images/finishoptions/tnw/print.jpg"
 				}
 			],
-			"headline": "11Print",
+			"headline": "Print",
 			"text": "<p class=\"text\">Our prints (technically they’re digital photo exposures) are made with highest grade Fuji Color DPII FG Crystal Archive paper, allowing precise color reproduction and maximum longevity.<br><br>You have the option of glossy or matte, the latter is recommended if you plan to frame the piece. While glossy paper (which is used for our Dibond® process) carries a bit more “punch“, matte paper effectively minimizes reflections when framed under glass.<br><br>Utilizing a Durst Lambda, the industry leading photochemical printer, reference image quality is maintained during the process of digital laser exposure and traditional chemical development.<br><br>A white border of 1cm / 0.4“ around the print is added to allow easy framing. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>"
 		},
 		{
 			"id": "aluminium-dibond",
 			"slides": [
 				{
-					"src": "../../images/dibond.jpg"
+					"src": "../../images/finishoptions/tnw/dibond.jpg"
 				}
 			],
 			"headline": "Aluminum Dibond&reg;",
@@ -62,7 +62,7 @@
 			"id": "framed",
 			"slides": [
 				{
-					"src": "../../images/framed.jpg"
+					"src": "../../images/finishoptions/tnw/framed.jpg"
 				}
 			],
 			"headline": "Frame",

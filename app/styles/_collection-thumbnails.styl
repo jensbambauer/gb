@@ -1,3 +1,10 @@
+.collection-thumbnails-wrapper {
+    width: 1024px;
+    height: 980px;
+    position: relative;
+    overflow: hidden;
+}
+
 .collection-thumbnails {
     overflow: hidden;
     background-size: 100%;
@@ -137,45 +144,63 @@
     }
  
     &.collection-mart {
+        height: 1418px;
+        width: 1418px;
+        position: relative;
+        transform: rotate(45deg);
+        position: absolute;
+        left: -200px;
+        top: -219px;
+
         li {
-            width: 33%;
-            height: 768px;
+            width: 402px;
+            height: 1418px;
+            z-index: 3;
+
+            &:first-child , &:last-child {
+                width: 508px;
+            }
+
+            &:last-child {
+            }
 
             a {
                 transition: all 0.3s ease-in-out;
                 z-index: 2;
 
                 &:before {
-                    background-image: url(../images/mart-collection/thumb-sprite.jpg);
-                    background-size: 1024px auto;
+                    background-image: url(../images/mart-collection/mart_collection_1x_rotate.jpg);
+                    background-size: 100% auto;
                     background-position: 0 0;
+                    background-repeat: no-repeat;
+                    width: 1418px;
+                    height: 1418px;
                 }
-                
+
                 &:after {
                     display: none;
                 }
                 
                 &.free {
                     &:before {
-                        background-position: 0 0;
                     }
                 }
                 
                 &.forever-sunshine {
+                    z-index: 3;
+
                     &:before {
-                        background-position: -341px 0;
+                        background-position: -508px 0;
                     }
                 }
 
                 &.the-isle {
                     &:before {
-                        background-position: -683px 0;
+                        background-position: -910px 0 ;
                     }
                 }
 
                 &.hover {
-                    z-index: 20;
-                    box-shadow: 0 0 120px 0 #000;
                 }
             }
         }
