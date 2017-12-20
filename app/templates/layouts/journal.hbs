@@ -5,7 +5,7 @@
         {{>html-head}}
     </head>
     <body>
-        <div class="page{{#if transparent-header}} transparent-header{{/if}}">
+        <div class="page{{#if transparent-header}} transparent-header{{/if}} grey-nav">
             {{>header}}
             <div class="main">
                 {{#if overview}}
@@ -80,8 +80,8 @@
                                         <img class="blog-single-image" src="../../..{{this.src}}" alt="">
                                     {{/if}}
                                     {{#if src_x1}}
-                                        <img class="blog-single-image" src="../..{{this.src_x1}}"
-                                        srcset="../..{{this.src_x1}}, ../..{{this.src_x2}} 2x" alt="">
+                                        <img class="blog-single-image"
+                                        src="../..{{this.src_x1}}" srcset="../..{{this.src_x1}}, ../..{{this.src_x2}} 2x" alt="">
                                     {{/if}}
 									{{#if this.caption}}
 										<figcaption>{{this.caption}}</figcaption>

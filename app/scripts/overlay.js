@@ -40,10 +40,10 @@ var overlay = (function (overlay, $, undefined) {
         
         var open = function(id) {
             $('.overlay-container').addClass('open');
-            
+
             document.body.style.overflow = 'hidden';
             document.body.style.paddingRight = getScrollBarWidth() + 'px';
-            
+
             $('.overlay').empty()
                 .append( $(id).html() )
                 .append( '<a class="icon-button close"><svg><use xlink:href="#icon-close"/></svg></a>' );

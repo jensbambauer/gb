@@ -74,12 +74,10 @@ var slider = (function (slider, $, undefined) {
     };
 
     var init = function(selector, options) {
-        
         document.addEventListener('lazybeforeunveil', onImageLoad);
         
         $(selector).each(function() {
             var start = parseInt($(this).data('start')) || 0;
-
             if ( $(this).data('order') === 'random') {
                 var categories = [];
                 var $el = $(this);
@@ -157,7 +155,6 @@ var slider = (function (slider, $, undefined) {
                 swiperOptions.onSlideChangeEnd(mySwiper);
             }
 
-            $(slider[0]).find('.flex-active-slide').find('img').addClass('lazyload');
         });
     };
 

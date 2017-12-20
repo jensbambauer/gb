@@ -13,8 +13,7 @@
     margin-top: 48px;
     
     .closed , .open {
-        
-        transition: all 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
     }
     
     #navigation-toggle:checked + & {
@@ -35,6 +34,7 @@
         display: block;
         background: white;
         border-bottom: 2px solid #eee;
+        transition: 0.3s all;
         
         &:last-child {
             border-bottom: none;
@@ -43,6 +43,19 @@
         &.active {
             background: #eee;
         }
+
+        &:hover {
+            background: black;
+            color: white;
+
+           a {
+               color: white;
+           }
+        }
+    }
+
+    .grey-nav & li , .grey-nav & .cart-link {
+        background: #eee;
     }
 
     a {
@@ -52,6 +65,7 @@
         font-size: 16px;
         padding-left: 32px;
         color: black;
+        transition: 0.3s all;
     }
     
     .cart-link {
@@ -62,6 +76,7 @@
         float: right;
         font-size: 20px;
         position: relative;
+        transition: 0.3s all;
         display: none;
                 
         &[data-item-count]:after {
@@ -83,10 +98,15 @@
         &.hasItems {
             display: block;
         }
+        &:hover {
+            background: black;
+            color: white;
+        }
     }
     
     label {
         @extend $squarebutton;
         float: right;
+        overflow: hidden;
     }
 }

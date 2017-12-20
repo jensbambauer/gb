@@ -26,12 +26,18 @@ button , .button {
     text-align: center;
     white-space: nowrap;
     border-radius: 0;
+    transition: background 0.3s, color 0.3s;
     -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
          -khtml-user-select: none; /* Konqueror HTML */
            -moz-user-select: none; /* Firefox */
             -ms-user-select: none; /* Internet Explorer/Edge */
                 user-select: none;
+
+    &:hover {
+        background: #a1a1a1;
+        color: black;
+    }
 
     &.primary {
         background-color: #4b9e70;

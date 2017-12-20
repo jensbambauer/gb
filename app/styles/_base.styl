@@ -46,11 +46,16 @@ $squarebutton {
     height: 48px;
     width: 48px;
     float: left;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s;
     font-size: 28px;
     line-height: 48px;
     text-align: center;
     cursor: pointer;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
 }
 
 h4 {
@@ -110,12 +115,14 @@ header {
     line-height: 48px;
     text-align: center;
     display: inline-block;
+    color: white;
 }
 
 .icon-button-small {
     @extend .icon-button;
     width: 32px;
     height: 32px;
+    color: white;
 
     svg {
         margin-top: -7px;
@@ -192,6 +199,7 @@ header {
             position: absolute;
             left: 0;
             top: 0;
+            transition: 0.3s all;
         }
         span {
             position: relative;
@@ -200,11 +208,21 @@ header {
             display: inline-block;
             background: black;
             line-height: 1.2;
+            transition: all 0.3s;
 
             &.center {
                 background: transparent;
                 top: 50%;
                 margin-top: -15px;
+            }
+        }
+        &:hover {
+            img {
+                filter: brightness(1.2);
+            }
+            span {
+                background: white;
+                color: black;
             }
         }
     }
@@ -229,16 +247,10 @@ header {
         }
         .teaser-content {
             overflow: hidden;
-            &:hover {
-                .button {
-                    transform: translateY(0);
-                }
-                .collection-logo {
-                    transform: scale(0.9);
-                    opacity: 0;
-                }
-                img {
-                }
+        }
+        &:hover {
+            img {
+                filter: brightness(1);
             }
         }
     }
@@ -272,7 +284,7 @@ header {
 }
 
 .currency-eu .price:after,
-.currency-us .price:after,
+.currency-usa .price:after,
 .currency-world .price:after {
     content: "€";
 }

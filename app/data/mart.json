@@ -1,8 +1,8 @@
 {
     "sizes": [
         {
-            "size": "100cm x 62cm / 39.4\" x 24.4\"",
-            "edition": "Edition of 100",
+            "size": "180cm x 112cm / 71\" x 44\"",
+            "edition": "Edition of 25",
             "finishing-options": [
                 {
                     "title": "Print Glossy",
@@ -12,17 +12,17 @@
                 {
                     "title": "Print Matte",
                     "price": "{\"eu\": \"2150.42\",\"usa\": \"2149\",\"world\": \"2149\",\"value\": \"matte\"}",
-                    "weight": "10"
+                    "weight": "0.615"
                 },
                 {
                     "title": "Alum. Dibond",
                     "price": "{\"eu\": \"2747.06\",\"usa\": \"2749\",\"world\": \"2749\",\"value\": \"dibond\"}",
-                    "weight": "15"
+                    "weight": "35.5"
                 },
                  {
                     "title": "Black Frame",
                     "price": "{\"eu\": \"2797.48\",\"usa\": \"2799\",\"world\": \"2799\",\"value\": \"black\"}",
-                    "weight": "15"
+                    "weight": "39.5"
                 }
             ]
         }
@@ -46,7 +46,7 @@
                 }
             ],
             "headline": "Aluminum Dibond&reg;",
-            "text": "<p class=\"text\">Our pieces are available in the sophisticated, frameless Aluminum Dibond® production technique, a modern, visually minimalist option to framing.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 4mm high grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>Milled with CNC precision, the finished piece weighs 17 kg / 38 lbs and will appear to be floating on the wall once mounted. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>"
+            "text": "<p class=\"text\">Our pieces are available in the sophisticated, frameless Aluminum Dibond® production technique, a modern, visually minimalist option to framing.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 4mm high grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>Milled with CNC precision, the finished piece weighs 21 kg / 46 lbs and will appear to be floating on the wall once mounted. Every piece comes with a signed certificate of authenticity carrying the serial number.</p>"
         },
         {
             "id": "framed",
@@ -56,7 +56,7 @@
                 }
             ],
             "headline": "Frame",
-            "text": "<p class=\"text\">Our frames are hand built and function as an addition to the Aluminum Dibond® production technique, allowing a mat-less frame with the piece extending all the way to the edges.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 2mm high grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>The added wooden frame measures 4cm / 1.6“ in width and 3cm / 1.2“ in depth. The frame is made of oak wood and painted black with a semi-gloss finish.<br><br>The framed piece weighs 20 kg / 44.1 lbs and comes with a signed certificate of authenticity carrying the serial number.</p>"
+            "text": "<p class=\"text\">Our frames are hand built and function as an addition to the Aluminum Dibond® production technique, allowing a mat-less frame with the piece extending all the way to the edges.<br><br>The photo exposure is sandwiched (using clear, permanently elastic silicone) between 2mm high grade acrylic glass and 3mm of Dibond®, a rigid aluminum / polyethylene composite material. A hidden aluminum rail on the back adds stability and allows effortless mounting.<br><br>The added wooden frame measures 4cm / 1.6“ in width and 3cm / 1.2“ in depth. The frame is made of oak wood and painted black with a semi-gloss finish.<br><br>The framed piece weighs 18 kg / 40 lbs and comes with a signed certificate of authenticity carrying the serial number.</p>"
         }
 	],
     "finish-teaser": [
@@ -79,7 +79,7 @@
     "artworks": {
         "free": {
             "title": "Free",
-            "series": "Series I / 2011",
+            "series": "2017",
             "images": [
                 {
                     "1024": "free/free_1_1024.jpg",
@@ -120,7 +120,7 @@
         },
         "forever-sunshine": {
             "title": "Forever Sunshine",
-            "series": "Series I / 2011",
+            "series": "2017",
             "images": [
                 {
                     "1024": "forever-sunshine/fsun_1_1024.jpg",
@@ -161,7 +161,7 @@
         },
         "the-isle": {
             "title": "The Isle",
-            "series": "Series I / 2011",
+            "series": "2017",
             "images": [
                 {
                     "1024": "isle/isle_1_1024.jpg",
