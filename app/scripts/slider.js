@@ -162,7 +162,6 @@ var slider = (function (slider, $, undefined) {
     };
 
     var onSlideChangeEnd = function(swiper) {
-        console.log(swiper)
         $(swiper.slides[swiper.activeIndex]).find("img").addClass('lazyload');
         if(swiper.activeIndex !== swiper.slides.length) {
             $(swiper.slides[swiper.activeIndex + 1]).find("img").addClass('lazyload');

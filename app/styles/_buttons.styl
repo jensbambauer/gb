@@ -41,6 +41,18 @@ button , .button {
     &.inverted {
         background-color: black;
         color: white;
+
+        &:hover {
+           background-color: white;
+           color: black;
+        }
+    }
+
+    a:hover & {
+        &.inverted {
+            background-color: white;
+            color: black;
+        }
     }
 
 }

@@ -78,7 +78,6 @@
                                                     <p class="left">DHL GoGreen</p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>
-                                                <!--ko text: shippingFormula --><!-- /ko-->
                                                 <!-- /ko -->
                                             </div>
                                         </div>
@@ -204,11 +203,11 @@
 
 <section class="content">
     <!-- artwork-details -->
-<div class="artwork-details">
+<div class="artwork-details" data-ko-model="artwork-details">
     <h1>Forever Sunshine</h1>
     <p class="series">Series I / 2011</p>
     <div class="show-availabilty">
-        <p class="starting">From €399 + Shipping</p>
+        <p class="starting">From €<!--ko text: startingPrice --><!--/ko--> + Shipping</p>
         <label for="buying-options" class="button toggle-switch" data-role="scroll-in-view"><span class="off">Show</span><span class="on">Hide</span> Availabilty</label>
     </div>
     <input type="checkbox" class="toggle-trigger" id="buying-options">
@@ -224,7 +223,7 @@
                     <!-- artwork-finishing-options -->
     <tr>
         <td colspan="4">
-            <form action="#" method="get" data-role="add-to-cart-form" data-ko-model="artwork-details">
+            <form action="#" method="get" data-role="add-to-cart-form">
                 <table class="subtable">
                     <tbody>
                         <tr>

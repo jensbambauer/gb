@@ -16,7 +16,7 @@
         vm.displayPrice = ko.observable();
         vm.finishOptionText = ko.observable();
         vm.weight = ko.observable();
-
+        vm.startingPrice = ko.observable();
         vm.priceObject.subscribe(updatePrice);
 
         function updatePrice(newValue) {
@@ -28,12 +28,27 @@
             vm.displayPrice(displayPrice);
             vm.price(price);
             vm.finishOptionText($(node).find('select option:selected').text());
-            console.log(vm.finishOptionText())
             vm.weight($(node).find('select option:selected').data('weight'));
         }
 
+        function updateStartingPrice() {
+            var prices = [];
+            $(node).find('select option').each(function() {
+                prices.push($.parseJSON($(this).val())[localStorage.getItem('region')]);
+            });
+
+            var startingPrice = Math.min(...prices);
+            if (localStorage.getItem('region') === 'eu') {
+                startingPrice = Math.round(parseFloat(startingPrice) * 1.19);
+            }
+            vm.startingPrice(startingPrice);
+        }
+
+        updateStartingPrice();
+
         $(document).on('regionUpdate', function() {
             updatePrice(vm.priceObject());
+            updateStartingPrice();
         });
     }
 
