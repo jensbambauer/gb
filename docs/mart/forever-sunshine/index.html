@@ -63,18 +63,18 @@
                                         <div class="cart-rows">
                                             <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
                                             <div class="shipping-row row">
-                                                <!--ko if: totalWeight() > 5 -->
+                                                <!--ko if: upsShipping() -->
                                                 <div class="ups-shipping">
                                                     <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
-                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">Insurance covering order value</p>
                                                     <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>
                                                 <!-- /ko -->
-                                                <!--ko if: totalWeight() < 5 -->
+                                                <!--ko if: dhlShipping() -->
                                                 <div class="dhl-shipping">
                                                     <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
-                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">Insurance covering order value</p>
                                                     <p class="left">DHL GoGreen</p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>
@@ -230,17 +230,17 @@
                             <td class="col-1">180cm x 112cm / 71&quot; x 44&quot; / Edition of 25</td>
                             <td class="col-2">
                                 <select data-role="selectbox" data-bind="value: priceObject">
-                                        <option value='{&quot;eu&quot;: &quot;2150.42&quot;,&quot;usa&quot;: &quot;2149&quot;,&quot;world&quot;: &quot;2149&quot;,&quot;value&quot;: &quot;glossy&quot;}' data-weight="0.615">Print Glossy</option>
-                                        <option value='{&quot;eu&quot;: &quot;2150.42&quot;,&quot;usa&quot;: &quot;2149&quot;,&quot;world&quot;: &quot;2149&quot;,&quot;value&quot;: &quot;matte&quot;}' data-weight="0.615">Print Matte</option>
-                                        <option value='{&quot;eu&quot;: &quot;2747.06&quot;,&quot;usa&quot;: &quot;2749&quot;,&quot;world&quot;: &quot;2749&quot;,&quot;value&quot;: &quot;dibond&quot;}' data-weight="35.5">Alum. Dibond</option>
-                                        <option value='{&quot;eu&quot;: &quot;2797.48&quot;,&quot;usa&quot;: &quot;2799&quot;,&quot;world&quot;: &quot;2799&quot;,&quot;value&quot;: &quot;black&quot;}' data-weight="39.5">Black Frame</option>
+                                        <option value='{&quot;eu&quot;: &quot;2150.42&quot;,&quot;usa&quot;: &quot;2149&quot;,&quot;world&quot;: &quot;2149&quot;,&quot;value&quot;: &quot;glossy&quot;}' data-id="large_print">Print Glossy</option>
+                                        <option value='{&quot;eu&quot;: &quot;2150.42&quot;,&quot;usa&quot;: &quot;2149&quot;,&quot;world&quot;: &quot;2149&quot;,&quot;value&quot;: &quot;matte&quot;}' data-id="large_print">Print Matte</option>
+                                        <option value='{&quot;eu&quot;: &quot;2747.06&quot;,&quot;usa&quot;: &quot;2749&quot;,&quot;world&quot;: &quot;2749&quot;,&quot;value&quot;: &quot;dibond&quot;}' data-id="large_dibond">Alum. Dibond</option>
+                                        <option value='{&quot;eu&quot;: &quot;2797.48&quot;,&quot;usa&quot;: &quot;2799&quot;,&quot;world&quot;: &quot;2799&quot;,&quot;value&quot;: &quot;black&quot;}' data-id="large_frame">Black Frame</option>
                                 </select>
                                 <input type="hidden" name="name" value="Forever Sunshine">
                                 <input type="hidden" name="finish" data-bind="value: finishOptionText">
                                 <input type="hidden" name="price" class="price" data-bind="value: price">
                                 <input type="hidden" name="size" value="180cm x 112cm / 71&quot; x 44&quot;">
                                 <input type="hidden" name="edition" value="Edition of 25">
-                                <input type="hidden" name="weight" data-bind="value: weight">
+                                <input type="hidden" name="internal_id" data-bind="value: id">
                             </td>
                             <td class="col-3 price"><!--ko text: displayPrice --><!--/ko--></td>
                             <td class="col-4"><button type="submit" class="primary">Add to Cart</button></td>

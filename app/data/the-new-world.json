@@ -7,32 +7,32 @@
                 {
                     "title": "Print Glossy",
                     "price": "{\"eu\": \"419.33\",\"usa\": \"419\",\"world\": \"419\",\"value\": \"glossy\"}",
-                    "weight": "0.19"
+                    "id": "small_print"
                 },
                 {
                     "title": "Print Matte",
                     "price": "{\"eu\": \"419.33\",\"usa\": \"419\",\"world\": \"419\",\"value\": \"matte\"}",
-                    "weight": "0.19"
+					"id": "small_print"
                 },
                 {
                     "title": "Alum. Dibond",
                     "price": "{\"eu\": \"688.25\",\"usa\": \"689\",\"world\": \"689\",\"value\": \"dibond\"}",
-                    "weight": "10.5"
+					"id": "small_dibond"
                 },
                  {
                     "title": "Black Frame",
                     "price": "{\"eu\": \"730.25\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"black\"}",
-                    "weight": "13.5"
+					"id": "small_frame"
                 },
                  {
                     "title": "White Frame",
                     "price": "{\"eu\": \"730.25\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"white\"}",
-                    "weight": "13.5"
+					"id": "small_frame"
                 },
                  {
                     "title": "Maple Frame",
                     "price": "{\"eu\": \"730.25\",\"usa\": \"729\",\"world\": \"729\",\"value\": \"maple\"}",
-                    "weight": "13.5"
+					"id": "small_frame"
                 }
             ]
         }

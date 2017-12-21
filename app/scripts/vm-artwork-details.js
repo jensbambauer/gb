@@ -15,7 +15,7 @@
         vm.price = ko.observable();
         vm.displayPrice = ko.observable();
         vm.finishOptionText = ko.observable();
-        vm.weight = ko.observable();
+        vm.id = ko.observable();
         vm.startingPrice = ko.observable();
         vm.priceObject.subscribe(updatePrice);
 
@@ -28,7 +28,7 @@
             vm.displayPrice(displayPrice);
             vm.price(price);
             vm.finishOptionText($(node).find('select option:selected').text());
-            vm.weight($(node).find('select option:selected').data('weight'));
+            vm.id($(node).find('select option:selected').data('id'));
         }
 
         function updateStartingPrice() {

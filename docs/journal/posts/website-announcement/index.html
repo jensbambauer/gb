@@ -63,18 +63,18 @@
                                         <div class="cart-rows">
                                             <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
                                             <div class="shipping-row row">
-                                                <!--ko if: totalWeight() > 5 -->
+                                                <!--ko if: upsShipping() -->
                                                 <div class="ups-shipping">
                                                     <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
-                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">Insurance covering order value</p>
                                                     <p class="left">UPS® carbon neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>
                                                 <!-- /ko -->
-                                                <!--ko if: totalWeight() < 5 -->
+                                                <!--ko if: dhlShipping() -->
                                                 <div class="dhl-shipping">
                                                     <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'us'">within the US</span><span data-bind="if: region() === 'world'">to anywhere in the World</span><br></h2>
-                                                    <p class="left"><span data-bind="text: totalWeight"></span>kg billed weight (dimensional weight)<br>Insurance covering order value</p>
+                                                    <p class="left">Insurance covering order value</p>
                                                     <p class="left">DHL GoGreen</p>
                                                     <span class="price" data-bind="text: shippingCost"></span>
                                                 </div>

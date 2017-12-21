@@ -41,6 +41,8 @@ FC.override = FC.override || {};
         var checkoutLink = ko.observable();
         var shippingCost = ko.observable();
         var totalWeight = ko.observable();
+        var dhlShipping = ko.observable(false);
+        var upsShipping = ko.observable(false);
         var shippingFormula = ko.observable();
         var shippingData = {};
         var region = ko.observable(localStorage.getItem('region'));
@@ -90,7 +92,110 @@ FC.override = FC.override || {};
             }
         };
 
+        var shippingTable = {
+            "small_print": {
+                "eu": 36,
+                "usa": 64,
+                "world": 96
+            },
+             "small_dibond": {
+                "eu": 45,
+                "usa": 124,
+                "world": 254
+            },
+            "small_frame": {
+                "eu": 46,
+                "usa": 136,
+                "world": 277
+            },
+            "large_print": {
+                "eu": 57,
+                "usa": 126,
+                "world": 230
+            },
+            "large_dibond": {
+                "eu": 148,
+                "usa": 296,
+                "world": 500
+            },
+            "large_frame": {
+                "eu": 148,
+                "usa": 296,
+                "world": 500
+            }
+        }
+        var shippingDhl = {
+            "eu": 17,
+            "usa": 36,
+            "world": 46
+        }
         var calcShippingPrice = function() {
+            var shippingPrices = [];
+            var shippingPricesPrints = [];
+            var dhlQualified = true;
+
+            $.each(FC.json.items, function() {
+                var finish_id = '';
+                var regionPriceIdentifier = localStorage.getItem('region');
+
+                $.each(this.options, function() {
+                    if (this.name === 'internal id') {
+                        finish_id = this.value;
+                    }
+                });
+
+                if (finish_id === 'large_print') {
+                    dhlQualified = false;
+                }
+
+                for (var i = 0; i < this.quantity; i++) {
+                    if (finish_id.indexOf('print') > -1) {
+                        shippingPricesPrints.push(shippingTable[finish_id][regionPriceIdentifier]);
+                    } else {
+                        shippingPrices.push(shippingTable[finish_id][regionPriceIdentifier]);
+                    }
+                }
+            });
+
+            var shippingPricePrints = shippingPricesPrints.length > 0 ? shippingPricesPrints[shippingPricesPrints.indexOf(Math.max(...shippingPricesPrints))] : 0;
+            var shippingPriceNonPrint = shippingPrices.reduce((a,b) => a+b, 0);
+            var vat = localStorage.getItem('region') === 'eu' ? 1.19 : 1;
+            var discount = 1;
+
+            if (shippingPriceNonPrint === 0 && dhlQualified) {
+                // DHL shipping overwrite
+                shippingPricePrints = shippingDhl[localStorage.getItem('region')];
+                vat = 1;
+                upsShipping(false);
+                dhlShipping(true);
+            } else {
+                upsShipping(true);
+                dhlShipping(false);
+
+                if (FC.json.item_count === 1 && localStorage.getItem('region') === 'eu') {
+                    discount = 0.85;
+                }
+
+                if (FC.json.item_count > 1) {
+                    var base_discount = 0.1;
+                    var item_discount = 0.1;
+                    var max_discount = 0.5;
+
+                    if (localStorage.getItem('region') === 'eu') {
+                        base_discount = 0.2;
+                        item_discount = 0.075;
+                    }
+                    if (localStorage.getItem('region') === 'world') {
+                        base_discount = 0.2;
+                        max_discount = 0.65;
+                    }
+
+                    discount = 1 - Math.min((base_discount) + (item_discount * FC.json.item_count), max_discount);
+                    console.log(discount);
+                }
+            }
+            return Math.round(((shippingPriceNonPrint + shippingPricePrints) * discount) * vat);
+            /*
             var reg = region();
             var tablePrice;
             var insurance;
@@ -123,6 +228,7 @@ FC.override = FC.override || {};
             }
 
             return Math.ceil(shippingPrice);
+            */
         }
 
         var removeCartItem = function() {
@@ -202,18 +308,19 @@ FC.override = FC.override || {};
             //FC.client.request('https://'+FC.settings.storedomain+'/cart?name=shipping&price=10&size=asdf&edition=asf&finish=aa&quantity=1');
 
             deleteShippingItem(function() {
-                $.get(config.assetsPath + '/data/ups.json', function(data) {
-                    shippingData = data;
-                    if(region()) {
-                        update();
-                    }
-                });
+                if(region()) {
+                    update();
+                }
             });
 
         };
 
         $(document).on('regionUpdate', function() {
             region(localStorage.getItem('region'));
+            if (FC.json.item_count > 0) {
+                FC.session.reset();
+                location.reload();
+            }
         });
 
         init();
@@ -230,6 +337,8 @@ FC.override = FC.override || {};
             region: region,
             checkout: checkout,
             totalWeight: totalWeight,
+            upsShipping: upsShipping,
+            dhlShipping: dhlShipping,
             shippingFormula: shippingFormula
         }
 
