@@ -215,14 +215,14 @@ header {
 
         img {
             display: block;
-            width: 100%;
+            width: 341px;
             position: absolute;
             left: 0;
             top: 0;
             transition: 0.3s all;
         }
         .bg {
-            opacity: 0.2;
+            opacity: 0.4;
         }
         span {
             position: relative;
@@ -241,15 +241,13 @@ header {
         }
         &:hover {
             .bg {
-                opacity: 0.6;
+                opacity: 0.8;
             }
             .attention {
                 animation-name: pulse;
                 animation-duration: 1s;
             }
             span {
-                background: white;
-                color: black;
             }
         }
     }
@@ -266,15 +264,15 @@ header {
     }
 
     &.large-teaser {
+        img {
+            width: 512px;
+        }
         .button {
-            transform: translateY(-100%);
         }
         .collection-logo , img , .button {
             transition: all 0.4s ease-in-out;
         }
         .collection-logo {
-            opacity: 0;
-            transform: scale(0.8);
         }
         .teaser-content {
             overflow: hidden;
@@ -283,16 +281,10 @@ header {
         }
         .teaser-content:hover {
             .button {
-                background: black;
-                color: white;
-                transform: translateY(0);
             }
             .collection-logo {
-                transform: scale(1);
-                opacity: 1;
             }
             img {
-                opacity: 0.8;
             }
         }
     }
