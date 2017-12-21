@@ -4,17 +4,19 @@ slug: mart
 title: Mart
 transparent-header: true
 ---
+
 <section class="content">
     <picture class="collection-intro-image">
         <img src="../images/mart-collection/mart_collection_header_1x.jpg" srcset="../images/mart-collection/mart_collection_header_1x.jpg, ../images/mart-collection/mart_collection_header_2x.jpg 2x" alt="">
     </picture>
     <div class="collection-thumbnails-wrapper">
-        <ul class="collection-thumbnails collection-mart" data-role="one-hover">
+        <ul class="collection-thumbnails-background" data-role="one-hover">
             {{#each mart.artworks }}
                 <li>
                     <a href="{{@key}}/index.html" class="{{@key}} {{#is @key "free"}}hover{{/is}}">
                         {{title}}
                     </a>
+                    <div class="{{@key}}"></div>
                 </li>
             {{/each}}
         </ul>
