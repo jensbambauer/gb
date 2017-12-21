@@ -2,18 +2,7 @@
 <div class="overlay-contents">
 	{{~#each finish-options}}
 		<div id="{{id}}">
-			<div class="swiper-container" data-role="overlay-slider">
-				<ul class="slides swiper-wrapper">
-					{{#each slides}}
-						<li class="swiper-slide">
-
-							<img width="768" height="512" data-src="{{this.src}}" class="swiper-lazy">
-
-							<div class="swiper-lazy-preloader"></div>
-						</li>
-					{{/each}}
-				</ul>
-			</div>
+            <img width="768" height="512" data-src="{{image.src}}" class="overlay-lazy">
 			<div class="text-content">
 				<h3>{{{headline}}}</h3>
 				{{basename}}

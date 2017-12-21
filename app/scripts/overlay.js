@@ -47,7 +47,11 @@ var overlay = (function (overlay, $, undefined) {
             $('.overlay').empty()
                 .append( $(id).html() )
                 .append( '<a class="icon-button close"><svg><use xlink:href="#icon-close"/></svg></a>' );
-            
+
+            $('.overlay .overlay-lazy').each(function() {
+                $(this).attr('src', $(this).attr('data-src'));
+            });
+
             $(document).trigger('overlay-content-ready');
             
             $('.overlay .close').one('click', onCloseClick);

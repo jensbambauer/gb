@@ -26,6 +26,12 @@
         .closed, .open {
             transform: translate3d(0,-63px,0);
         }
+        .cart-link {
+            border-top: 2px solid #eee;
+            &:hover {
+                border-top: 2px solid #56b37f !important;
+            }
+        }
     }
     
     li {
@@ -47,6 +53,7 @@
         &:hover {
             background: black;
             color: white;
+            border-color: black;
 
            a {
                color: white;
@@ -56,6 +63,16 @@
 
     .grey-nav & li , .grey-nav & .cart-link {
         background: #eee;
+
+        &:hover {
+            background: black;
+            color: white;
+            border-color: black;
+
+           a {
+               color: white;
+           }
+        }
     }
 
     a {
@@ -78,7 +95,7 @@
         position: relative;
         transition: 0.3s all;
         display: none;
-                
+
         &[data-item-count]:after {
             content: attr(data-item-count);
             background: #4b9e70;
@@ -99,7 +116,7 @@
             display: block;
         }
         &:hover {
-            background: black;
+            background: #56b37f !important;
             color: white;
         }
     }

@@ -86,9 +86,21 @@
         background: white;
         position: relative;
         margin: 48px 0;
+
+        &-footnote {
+            color: #ccc;
+            transform: translateY(100%);
+            text-align: center;
+
+            span {
+               background: black;
+               padding: 14px 30px;
+               display: inline-block;
+            }
+        }
     }
- 
-     .icon-button, .icon-button-small, .button , button {
+
+    .icon-button, .icon-button-small, .button , button {
         &:hover {
             background: #a1a1a1;
             color: black;
