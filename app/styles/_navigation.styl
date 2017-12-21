@@ -48,12 +48,14 @@
         
         &.active {
             background: #eee;
+            padding-top: 1px;
         }
 
         &:hover {
             background: black;
             color: white;
             border-color: black;
+            padding-top: 1px;
 
            a {
                color: white;
@@ -125,5 +127,9 @@
         @extend $squarebutton;
         float: right;
         overflow: hidden;
+
+        &:hover {
+            background: #eee;
+        }
     }
 }
