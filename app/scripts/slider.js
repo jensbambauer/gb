@@ -93,11 +93,11 @@ var slider = (function (slider, $, undefined) {
 
                 var randomCategories = shuffle(categories);
 
-                var priority = randomCategories.indexOf($(this).data('priority'));
+/*                var priority = randomCategories.indexOf($(this).data('priority'));
 
                 randomCategories.splice(priority, 1);
                 randomCategories.unshift($(this).data('priority'));
-
+*/
 
                 var orderedItems = new Array(randomCategories.length);
 

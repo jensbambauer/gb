@@ -189,12 +189,10 @@ FC.override = FC.override || {};
                         base_discount = 0.2;
                         max_discount = 0.65;
                     }
-
-                    discount = 1 - Math.min((base_discount) + (item_discount * FC.json.item_count), max_discount);
-                    console.log(discount);
+                    discount = 1 - Math.min((base_discount) + (item_discount * shippingPrices.length), max_discount);
                 }
             }
-            return Math.round(((shippingPriceNonPrint + shippingPricePrints) * discount) * vat);
+            return Math.round(((shippingPriceNonPrint * discount) + shippingPricePrints) * vat);
             /*
             var reg = region();
             var tablePrice;
