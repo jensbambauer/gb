@@ -17,7 +17,7 @@ var contactForm = (function (contactForm, $, undefined) {
             e.preventDefault();
             
             $.ajax({
-                url: "//formspree.io/jens.bambauer@gmx.de", 
+                url: "//formspree.io/mail@geebirdandbamby.com", 
                 method: "POST",
                 data: {
                     name: $el.find('.contact-name').val(),

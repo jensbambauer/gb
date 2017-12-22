@@ -12,7 +12,7 @@ Muellerstr. 1<br>
 Germany
 
 ####E-Mail
-mail@geebirdandbamby.com
+mail[at]geebirdandbamby.com
 
 ####Responsible for contents according to §5 TMD
 Robert G. Achtel
