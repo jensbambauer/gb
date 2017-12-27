@@ -4,7 +4,7 @@ journal: true
 title: Geebird&Bamby™ Announces the Release of "Mart"
 transparent-header: true
 date: 2017-12-20
-slides: [{"src": "/images/journal/1_mart_cover.jpg"},{"src":"/images/journal/2_mart_free.jpg", "caption": "Section of "Free""},{"src":"/images/journal/3_mart_fsun.jpg", "caption": "Forever Sunshine"},{"src":"/images/journal/4_mart_isle.jpg", "caption": "Section of "The Isle""}]
+slides: [{"src": "/images/journal/1_mart_cover.jpg"},{"src":"/images/journal/2_mart_free.jpg", "caption": "Section of \"Free\""},{"src":"/images/journal/3_mart_fsun.jpg", "caption": "Forever Sunshine"},{"src":"/images/journal/4_mart_isle.jpg", "caption": "Section of \"The Isle\""}]
 ---
 
 # Geebird&Bamby™ Announces the Release of "Mart"

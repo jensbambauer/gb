@@ -105,8 +105,8 @@ FC.override = FC.override || {};
             },
             "small_frame": {
                 "eu": 46,
-                "usa": 136,
-                "world": 277
+                "usa": 129,
+                "world": 264
             },
             "large_print": {
                 "eu": 57,
@@ -405,6 +405,6 @@ FC.override = FC.override || {};
 
     };
 
-    $.getScript('//cdn.foxycart.com/geebeedev/foxycart.jsonp.min.1439929745.js');
+    $.getScript('//cdn.foxycart.com/geebirdandbamby/loader.js');
 
 })(jQuery);
