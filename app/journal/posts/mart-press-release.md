@@ -9,7 +9,7 @@ slides: [{"src": "/images/journal/1_mart_cover.jpg"},{"src":"/images/journal/2_m
 
 # Geebird&Bamby™ Announces the Release of "Mart"
 
-Geebird&Bamby™ announces the release of the first three pieces of their new fine art photography series ["Mart"](https://store.geebirdandbamby.com/mart/index.html). Each piece is limited to 25 prints and presented in life-size at a dimension of 180cm x 112cm / 71" x 44".
+Geebird&Bamby™ announces the release of the first three pieces of their new fine art photography series ["Mart"](../mart/index.html). Each piece is limited to 25 prints and presented in life-size at a dimension of 180cm x 112cm / 71" x 44".
 
 The series "Mart" by Geebird&Bamby™ explores aspects of consumer culture by staging an ostensibly lighthearted, material world inside the American supermarket of the late 20th century.
 
