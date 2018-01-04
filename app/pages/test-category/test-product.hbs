@@ -1,0 +1,35 @@
+---
+template: default.hbs
+category: test-product
+slug: test-product
+title: Test
+---
+<br><br><br>
+<div class="buying-options">
+    <table>
+        <tbody>
+            <!-- artwork-finishing-options -->
+            <tr>
+                <td colspan="4">
+                    <form action="#" method="get" data-role="add-to-cart-form">
+                        <table class="subtable">
+                            <tbody>
+                                <tr>
+                                    <td>
+										<input type="hidden" name="name" value="The Isle">
+                                        <input type="hidden" name="finish" data-bind="value: finishOptionText" value="Black Frame">
+                                        <input type="hidden" name="price" class="price" data-bind="value: price" value="0.1">
+                                        <input type="hidden" name="size" value="180cm x 112cm / 71&quot; x 44&quot;">
+                                        <input type="hidden" name="edition" value="Edition of 25">
+                                        <input type="hidden" name="internal_id" data-bind="value: id" value="test">
+                                    </td>
+                                    <td class="col-4"><button type="submit" class="primary">Add to Cart</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -93,6 +93,11 @@ FC.override = FC.override || {};
         };
 
         var shippingTable = {
+            "test": {
+                "eu": 0.1,
+                "usa": 0.1,
+                "world": 0.1
+            },
             "small_print": {
                 "eu": 36,
                 "usa": 64,
