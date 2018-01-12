@@ -7,7 +7,7 @@ date: 2018-01-12
 slides: [{"src": "/images/journal/1_wod.jpg"},{"src":"/images/journal/2_od.jpg"} ,{"src":"/images/journal/3_bhh.jpg"}]
 ---
 
-#“Archive Series Vol. 1” Exclusively Available on Our Journal
+#"Archive Series Vol. 1" Exclusively Available on Our Journal
 
 "Archive Series Vol. 1" revisits the architectural motifs from our series ["The New World"](/the-new-world/index.html) (Series II, 2012), presenting them isolated and on a colored canvas. The series consists of three pieces, each released in a limited edition of 50 prints measuring 40cm x 25cm / 15.7" x 9.8" (a white border of 1cm is added).
 
