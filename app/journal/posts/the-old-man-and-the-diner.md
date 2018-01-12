@@ -12,7 +12,7 @@ previews: 3
 
 By Robert G. Achtel
 
-During a stay in Sarasota, Florida in the spring of 2009, I prepared to shoot the front of a Waffle House restaurant on U.S. 41, the Tamiami Trail, for what would later become ["Oasis Diner“](../the-new-world/oasis-diner/index.html).
+During a stay in Sarasota, Florida in the spring of 2009, I prepared to shoot the front of a Waffle House restaurant on U.S. 41, the Tamiami Trail, for what would later become ["Oasis Diner“](/the-new-world/oasis-diner/index.html).
 
 On the day of the shoot I had not figured out yet where the piece would go, but I was attracted by the aesthetics of the typical black steel and glass facade. Leaving the house, I met my friend Vern. He’d be around his garage at that time of the day, fixing up gear or taking care of his yard. Retired from his director position at PPG Industries, Vern had become a published botanical photographer, documenting orchids for the Marie Selby Botanical Gardens.
 
