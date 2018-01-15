@@ -4,7 +4,7 @@ journal: true
 title: Geebird&Bamby™ Announces the Release of "Archive Series Vol. 1"
 transparent-header: true
 date: 2018-01-12
-slides: [{"src": "/images/journal/1_wod.jpg"},{"src":"/images/journal/2_od.jpg"} ,{"src":"/images/journal/3_bhh.jpg"}]
+slides: [{"src": "/images/journal/1_wod.jpg"},{"src":"/images/journal/2_wod.jpg"} ,{"src":"/images/journal/3_od.jpg"}, {"src":"/images/journal/4_od.jpg"}, {"src": "/images/journal/5_bhh.jpg"}, {"src": "/images/journal/6_bhh.jpg"}]
 ---
 
 #"Archive Series Vol. 1" Exclusively Available on Our Journal
