@@ -71,24 +71,26 @@
                                         </ul>
                                         <div class="cart-rows">
                                             <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
-                                            <div class="shipping-row row">
-                                                <!--ko if: upsShipping() -->
-                                                <div class="ups-shipping">
-                                                    <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
-                                                    <p class="left"><span data-bind="if: region() === 'eu'">UPS® Standard</span><span data-bind="if: region() === 'usa'">UPS® Express Saver</span><span data-bind="if: region() === 'world'">UPS® Express Saver</span><br>Fully Insured</p>
-                                                    <p class="left">UPS® Carbon Neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
-                                                    <span class="price" data-bind="text: shippingCost"></span>
-                                                </div>
-                                                <!-- /ko -->
-                                                <!--ko if: dhlShipping() -->
-                                                <div class="dhl-shipping">
-                                                    <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
-                                                    <p class="left">Fully Insured</p>
-                                                    <p class="left">DHL GoGreen</p>
-                                                    <span class="price" data-bind="text: shippingCost"></span>
-                                                </div>
-                                                <!-- /ko -->
-                                            </div>
+            								<!--ko if: !pickupOrder() -->
+            									<div class="shipping-row row">
+            										<!--ko if: upsShipping() -->
+            										<div class="ups-shipping">
+            											<h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
+            											<p class="left"><span data-bind="if: region() === 'eu'">UPS® Standard</span><span data-bind="if: region() === 'usa'">UPS® Express Saver</span><span data-bind="if: region() === 'world'">UPS® Express Saver</span><br>Fully Insured</p>
+            											<p class="left">UPS® Carbon Neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
+            											<span class="price" data-bind="text: shippingCost"></span>
+            										</div>
+            										<!-- /ko -->
+            										<!--ko if: dhlShipping() -->
+            										<div class="dhl-shipping">
+            											<h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
+            											<p class="left">Fully Insured</p>
+            											<p class="left">DHL GoGreen</p>
+            											<span class="price" data-bind="text: shippingCost"></span>
+            										</div>
+            										<!-- /ko -->
+            									</div>
+            								<!-- /ko -->
                                         </div>
                                         <div class="cart-total">
                                             <!--ko if: region() == "eu" -->
@@ -103,6 +105,7 @@
                                             <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
                                         </div>
                                         <div class="cart-footer">
+            								<label class="checkbox"><input type="checkbox" name="pickup" data-bind="checked: pickupOrder"/><span class="checkbox-ui"></span>Check for pickup orders without shipping</label>
                                             <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
                                             <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
                                         </div>

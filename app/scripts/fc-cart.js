@@ -120,7 +120,13 @@ FC.override = FC.override || {};
         var upsShipping = ko.observable(false);
         var shippingFormula = ko.observable();
         var shippingData = {};
+        var pickupOrder = ko.observable(false);
         var region = ko.observable(localStorage.getItem('region'));
+
+        pickupOrder.subscribe(function (newText) {
+           update();
+           console.log(newText);
+        });
 
         var update = function() {
             var reg = region();
@@ -153,7 +159,7 @@ FC.override = FC.override || {};
 
             shippingCost(shipping);
 
-            total(Math.round((FC.json.total_item_price * vat)) + shipping);
+            total(Math.round((FC.json.total_item_price * vat)) + (pickupOrder() ? 0 : shipping));
 
             // update navigaiton link
             $('[data-role="toggle-cart"]')
@@ -397,10 +403,13 @@ FC.override = FC.override || {};
                 category: region === 'eu' && totalWeight() > 5 ? 'DEFAULT' : 'shipping'
             };
 
-            cartRequest($.param(shipping), false, function() {
+            if (pickupOrder()) {
                 window.location = 'http://' + FC.settings.storedomain + '/checkout?' + FC.session.get();
-            });
-
+            } else {
+                cartRequest($.param(shipping), false, function() {
+                    window.location = 'http://' + FC.settings.storedomain + '/checkout?' + FC.session.get();
+                });
+            }
         }
 
         var init = function() {
@@ -445,7 +454,8 @@ FC.override = FC.override || {};
             totalWeight: totalWeight,
             upsShipping: upsShipping,
             dhlShipping: dhlShipping,
-            shippingFormula: shippingFormula
+            shippingFormula: shippingFormula,
+            pickupOrder: pickupOrder
         }
 
     }

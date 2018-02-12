@@ -71,24 +71,26 @@
                                         </ul>
                                         <div class="cart-rows">
                                             <div data-bind="template: { name: 'cart-row' , foreach: items}"></div>
-                                            <div class="shipping-row row">
-                                                <!--ko if: upsShipping() -->
-                                                <div class="ups-shipping">
-                                                    <h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
-                                                    <p class="left"><span data-bind="if: region() === 'eu'">UPS® Standard</span><span data-bind="if: region() === 'usa'">UPS® Express Saver</span><span data-bind="if: region() === 'world'">UPS® Express Saver</span><br>Fully Insured</p>
-                                                    <p class="left">UPS® Carbon Neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
-                                                    <span class="price" data-bind="text: shippingCost"></span>
-                                                </div>
-                                                <!-- /ko -->
-                                                <!--ko if: dhlShipping() -->
-                                                <div class="dhl-shipping">
-                                                    <h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
-                                                    <p class="left">Fully Insured</p>
-                                                    <p class="left">DHL GoGreen</p>
-                                                    <span class="price" data-bind="text: shippingCost"></span>
-                                                </div>
-                                                <!-- /ko -->
-                                            </div>
+            								<!--ko if: !pickupOrder() -->
+            									<div class="shipping-row row">
+            										<!--ko if: upsShipping() -->
+            										<div class="ups-shipping">
+            											<h2>UPS® Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
+            											<p class="left"><span data-bind="if: region() === 'eu'">UPS® Standard</span><span data-bind="if: region() === 'usa'">UPS® Express Saver</span><span data-bind="if: region() === 'world'">UPS® Express Saver</span><br>Fully Insured</p>
+            											<p class="left">UPS® Carbon Neutral<br><span data-bind="if: region() === 'eu'">Includes 19% VAT</span></p>
+            											<span class="price" data-bind="text: shippingCost"></span>
+            										</div>
+            										<!-- /ko -->
+            										<!--ko if: dhlShipping() -->
+            										<div class="dhl-shipping">
+            											<h2>DHL Shipping &amp; Handling <span data-bind="if: region() === 'eu'">within the European Union</span><span data-bind="if: region() === 'usa'">to the United States</span><span data-bind="if: region() === 'world'">Worldwide</span><br></h2>
+            											<p class="left">Fully Insured</p>
+            											<p class="left">DHL GoGreen</p>
+            											<span class="price" data-bind="text: shippingCost"></span>
+            										</div>
+            										<!-- /ko -->
+            									</div>
+            								<!-- /ko -->
                                         </div>
                                         <div class="cart-total">
                                             <!--ko if: region() == "eu" -->
@@ -103,6 +105,7 @@
                                             <span class="total price"><em><!--ko text: total--><!--/ko--></em></span>
                                         </div>
                                         <div class="cart-footer">
+            								<label class="checkbox"><input type="checkbox" name="pickup" data-bind="checked: pickupOrder"/><span class="checkbox-ui"></span>Check for pickup orders without shipping</label>
                                             <a href="" data-bind="click: checkout" class="button primary push-right">Checkout</a>
                                             <a href="" data-role="toggle-cart" class="button inverted push-right">Continue Shopping</a>
                                         </div>
@@ -295,18 +298,42 @@
                         <a href="journal/posts/archive-series-release/index.html" class="button inverted">View Archive Series Vol. 1</a>
                     </div>
                 </li>
-                <!--li class="swiper-slide psm">
+                <li class="swiper-slide psm">
                     <div class="slide-content">
                         <div class="slider-preloader">
                             <picture>
-                                <source srcset="images/home/psm_1680.jpg" media="(min-width: 1920px)">
-                                <source srcset="images/home/psm_1440.jpg, images/home/psm_2048.jpg 2x" media="(min-width: 1440px)">
-                                <source srcset="images/home/psm_1024.jpg, images/home/psm_2880.jpg 2x">
-                                <img srcset="images/home/psm_1024.jpg, images/home/psm_2880.jpg 2x" alt="">
+                                <source srcset="images/home/psm_1_1680.jpg" media="(min-width: 1920px)">
+                                <source srcset="images/home/psm_1_1440.jpg, images/home/psm_1_2048.jpg 2x" media="(min-width: 1440px)">
+                                <source srcset="images/home/psm_1_1024.jpg, images/home/psm_1_2880.jpg 2x">
+                                <img srcset="images/home/psm_1_1024.jpg, images/home/psm_1_2880.jpg 2x" alt="">
                             </picture>
                         </div>
                     </div>
-                </li -->
+                </li>
+                <li class="swiper-slide psm">
+                    <div class="slide-content">
+                        <div class="slider-preloader">
+                            <picture>
+                                <source srcset="images/home/psm_2_1680.jpg" media="(min-width: 1920px)">
+                                <source srcset="images/home/psm_2_1440.jpg, images/home/psm_2_2048.jpg 2x" media="(min-width: 1440px)">
+                                <source srcset="images/home/psm_2_1024.jpg, images/home/psm_2_2880.jpg 2x">
+                                <img srcset="images/home/psm_2_1024.jpg, images/home/psm_2_2880.jpg 2x" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide psm">
+                    <div class="slide-content">
+                        <div class="slider-preloader">
+                            <picture>
+                                <source srcset="images/home/psm_3_1680.jpg" media="(min-width: 1920px)">
+                                <source srcset="images/home/psm_3_1440.jpg, images/home/psm_3_2048.jpg 2x" media="(min-width: 1440px)">
+                                <source srcset="images/home/psm_3_1024.jpg, images/home/psm_3_2880.jpg 2x">
+                                <img srcset="images/home/psm_3_1024.jpg, images/home/psm_3_2880.jpg 2x" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div class="swiper-button-prev"><svg><use xlink:href="#icon-arrow-left"/></svg></div>
             <div class="swiper-button-next"><svg><use xlink:href="#icon-arrow-right"/></svg></div>
