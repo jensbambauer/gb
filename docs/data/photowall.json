@@ -40,7 +40,7 @@
             "text": "Quand on aime l’univers des années 50, on ne peut qu’être séduit par ces images. Et pourtant, cette série m’a interpellé.",
             "author": "Juste Magazine, FR"
         }
-        
+
     ],
     "photos": [
         {
@@ -216,6 +216,15 @@
         },
         {
             "src": "/images/wall/graphic/25.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/26.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/27.jpg"
+        },
+        {
+            "src": "/images/wall/graphic/28.jpg"
         },
         {
             "src": "/images/wall/misc/1.jpg"
@@ -470,6 +479,24 @@
             "src": "/images/wall/misc/86.jpg"
         },
         {
+            "src": "/images/wall/misc/87.jpg"
+        },
+        {
+            "src": "/images/wall/misc/88.jpg"
+        },
+        {
+            "src": "/images/wall/misc/89.jpg"
+        },
+        {
+            "src": "/images/wall/misc/90.jpg"
+        },
+        {
+            "src": "/images/wall/misc/91.jpg"
+        },
+        {
+            "src": "/images/wall/misc/92.jpg"
+        },
+        {
             "src": "/images/wall/shows/1.jpg"
         },
         {
@@ -621,6 +648,30 @@
         },
         {
             "src": "/images/wall/shows/51.jpg"
+        },
+        {
+            "src": "/images/wall/shows/52.jpg"
+        },
+        {
+            "src": "/images/wall/shows/53.jpg"
+        },
+        {
+            "src": "/images/wall/shows/54.jpg"
+        },
+        {
+            "src": "/images/wall/shows/55.jpg"
+        },
+        {
+            "src": "/images/wall/shows/56.jpg"
+        },
+        {
+            "src": "/images/wall/shows/57.jpg"
+        },
+        {
+            "src": "/images/wall/shows/58.jpg"
+        },
+        {
+            "src": "/images/wall/shows/59.jpg"
         }
     ]
 }
